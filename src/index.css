@@ -131,3 +131,7 @@ html {
   flex-direction: column;
   align-items: center;
 }
+
+.construction-icon{
+  height: 10rem;
+}
