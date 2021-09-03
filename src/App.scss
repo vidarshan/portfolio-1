@@ -1,3 +1,10 @@
+$color-light-black: #000000;
+$color-light-white: #ffffff;
+$color-dark-black: #353434;
+$color-dark-white: #ffffff;
+$color-light-card-bg: #f3f3f3;
+$character-card-border-radius: 0.8rem;
+
 .App {
   text-align: center;
 }
@@ -13,6 +20,26 @@
   }
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  width: 7rem;
+  position: fixed;
+}
+
+.nav-icon-list {
+  svg {
+    fill: $color-light-white !important;
+  }
+  .nav-icon {
+    height: 3rem;
+    margin: 2.5rem 0rem;
+    fill: $color-light-white;
+  }
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
