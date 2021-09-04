@@ -30,6 +30,21 @@ $character-card-border-radius: 0.8rem;
   position: fixed;
 }
 
+.switch-theme {
+  position: fixed;
+  float: right;
+  width: 3rem;
+  height: 3rem;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 .nav-icon-list {
   svg {
     fill: $color-light-white !important;
@@ -62,4 +77,36 @@ $character-card-border-radius: 0.8rem;
   to {
     transform: rotate(360deg);
   }
+}
+
+.profile {
+  height: 100vh;
+  margin-left: 7rem;
+
+  .profile-row {
+    display: flex;
+    width: 100%;
+    background-color: sandybrown;
+    flex-direction: row;
+  }
+
+  .biography-col {
+    margin: 1rem;
+    width: 50%;
+    border-radius: 8px;
+    background-color: rebeccapurple;
+  }
+
+  .timeline-col {
+    width: 50%;
+    background-color: saddlebrown;
+
+    .timeline-items-row {
+      background-color: darkblue;
+    }
+  }
+}
+
+.color {
+  fill: red;
 }
