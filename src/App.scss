@@ -82,11 +82,11 @@ $character-card-border-radius: 0.8rem;
 .profile {
   height: 100vh;
   margin-left: 7rem;
+  padding: 0 6rem;
 
   .profile-row {
     display: flex;
     width: 100%;
-    background-color: sandybrown;
     flex-direction: row;
   }
 
@@ -99,10 +99,14 @@ $character-card-border-radius: 0.8rem;
 
   .timeline-col {
     width: 50%;
-    background-color: saddlebrown;
+    padding: 2rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: $character-card-border-radius;
 
     .timeline-items-row {
-      background-color: darkblue;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
 
 const All = () => {
   function myFunction() {
@@ -110,11 +109,64 @@ const All = () => {
             earum sapiente aut ad.
           </div>
           <div className='timeline-col'>
-            <div className='text-md'>Journey as a Developer</div>
+            <div className='text-md text-align-center spacing-bottom-1'>
+              Journey as a Developer
+            </div>
             <div className='timeline-items-row'>
-              <div className='timeline-item'></div>
-              <div className='timeline-item'></div>
-              <div className='timeline-item'></div>
+              <div className='timeline-item'>
+                <div className='timeline-item-icon text-align-center'>
+                  <img
+                    className='nav-icon'
+                    src={require('../img/code.svg').default}
+                    alt=''
+                  />
+                </div>
+                <div className='timeline-item-title text-align-center text-sm text-weight-600'>
+                  Started Coding
+                </div>
+                <div className='timeline-item-subtitle text-align-center text-sm-1 text-weight-600 text-color-disable'>
+                  As a college student
+                </div>
+                <div className='timeline-item-date text-align-center text-sm-1 text-weight-600'>
+                  04 / 2018
+                </div>
+              </div>
+              <div className='timeline-item'>
+                <div className='timeline-item-icon text-align-center'>
+                  <img
+                    className='nav-icon'
+                    src={require('../img/graduation.svg').default}
+                    alt=''
+                  />
+                </div>
+                <div className='timeline-item-title text-align-center text-sm text-weight-600'>
+                  Graduated
+                </div>
+                <div className='timeline-item-subtitle text-align-center text-sm-1 text-weight-600 text-color-disable'>
+                  Bsc. Software Engineering
+                </div>
+                <div className='timeline-item-date text-align-center text-sm-1 text-weight-600'>
+                  03 / 2021
+                </div>
+              </div>
+              <div className='timeline-item'>
+                <div className='timeline-item-icon text-align-center'>
+                  <img
+                    className='nav-icon'
+                    src={require('../img/job.svg').default}
+                    alt=''
+                  />
+                </div>
+                <div className='timeline-item-title text-align-center text-sm text-weight-600'>
+                  First Job
+                </div>
+                <div className='timeline-item-subtitle text-align-center text-sm-1 text-weight-600 text-color-disable'>
+                  Trainee Software Engineer
+                </div>
+                <div className='timeline-item-date text-align-center text-sm-1 text-weight-600'>
+                  04 / 2021
+                </div>
+              </div>
             </div>
           </div>
         </div>

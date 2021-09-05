@@ -7,6 +7,14 @@
   box-sizing: inherit;
 }
 
+$color-light-black: #000000;
+$color-light-white: #ffffff;
+$color-dark-black: #353434;
+$color-dark-white: #ffffff;
+$color-light-card-bg: #f3f3f3;
+$text-color-disable: #525252;
+$character-card-border-radius: 0.8rem;
+
 html {
   font-size: 62.5%;
   font-family: 'Inter', sans-serif;
@@ -24,8 +32,16 @@ html {
   font-size: 3rem;
 }
 
+.text-color-disable {
+  color: $text-color-disable !important;
+}
+
 .text-sm {
   font-size: 2rem;
+}
+
+.text-sm-1 {
+  font-size: 1.5rem;
 }
 
 .text-xs {
@@ -90,6 +106,26 @@ html {
 
 .spacing-right-5 {
   margin-right: 10rem;
+}
+
+.spacing-bottom-1 {
+  margin-bottom: 2rem;
+}
+
+.spacing-bottom-2 {
+  margin-bottom: 4rem;
+}
+
+.spacing-bottom-3 {
+  margin-bottom: 6rem;
+}
+
+.spacing-bottom-4 {
+  margin-bottom: 8rem;
+}
+
+.spacing-bottom-5 {
+  margin-bottom: 10rem;
 }
 
 .intro-text-container {
