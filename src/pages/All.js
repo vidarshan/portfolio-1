@@ -1,4 +1,5 @@
 import React from 'react';
+import TextField from '@material-ui/core/TextField';
 import ProjectCard from '../components/ProjectCard';
 
 const All = () => {
@@ -403,6 +404,109 @@ const All = () => {
                   <div className='numbers'>10</div>
                   <div className='title'>Stars</div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='contact'>
+        <div className='heading text-xl text-weight-600'>Reach out</div>
+
+        <div className='contact-socials'>
+          <div className='contact-form'>
+            <div className='text-md text-align-center text-weight-600'>
+              Send me a Message
+            </div>
+            <TextField
+              size='large'
+              fullWidth
+              id='standard-password-input'
+              label='Password'
+              type='text'
+              autoComplete='current-password'
+            />
+
+            <div className='form-row'>
+              <TextField
+                size='large'
+                fullWidth
+                id='standard-password-input'
+                label='Password'
+                type='email'
+                autoComplete='current-password'
+              />
+            </div>
+
+            <div className='form-row'>
+              <TextField
+                size='large'
+                fullWidth
+                id='standard-password-input'
+                label='Password'
+                type='text'
+                autoComplete='current-password'
+              />
+            </div>
+
+            <div className='form-row'>
+              <button className='send-btn'>Send Message</button>
+            </div>
+          </div>
+
+          <div className='socials'>
+            <div className='text-md text-align-center text-weight-600'>
+              Support me
+            </div>
+            <div className='row'>
+              <div className='item text-align-center'>
+                <div className='icon'>
+                  <img
+                    height='60'
+                    className='project-image'
+                    src={require('../img/github.svg').default}
+                    alt=''
+                  />
+                </div>
+                <div className='name text-weight-500'>Follow me on Github</div>
+              </div>
+              <div className='item text-align-center'>
+                <div className='icon'>
+                  <img
+                    height='60'
+                    className='project-image'
+                    src={require('../img/linkedin.svg').default}
+                    alt=''
+                  />
+                </div>
+                <div className='name text-weight-500'>
+                  Follow me on Linkedin
+                </div>
+              </div>
+
+              <div className='item text-align-center'>
+                <div className='icon'>
+                  <img
+                    height='60'
+                    className='project-image'
+                    src={require('../img/patreon.svg').default}
+                    alt=''
+                  />
+                </div>
+                <div className='name text-weight-500'>
+                  Support me on Patreon
+                </div>
+              </div>
+              <div className='item text-align-center'>
+                <div className='icon'>
+                  <img
+                    height='60'
+                    className='project-image'
+                    src={require('../img/newspaper.svg').default}
+                    alt=''
+                  />
+                </div>
+                <div className='name text-weight-500'>Read my Articles</div>
               </div>
             </div>
           </div>

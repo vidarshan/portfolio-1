@@ -263,3 +263,68 @@ $character-card-border-radius: 0.8rem;
     }
   }
 }
+
+.contact {
+  height: 100vh;
+  margin-left: 7rem;
+  padding: 0 6rem;
+
+  .contact-socials {
+    display: flex;
+    flex-direction: row;
+
+    .contact-form {
+      margin: 1rem;
+      padding: 4rem;
+      width: 50%;
+      background-color: #ebebeb;
+
+      .form-row {
+        margin: 1rem 0;
+
+        .send-btn {
+          padding: 1rem 0;
+          width: 100%;
+          background-color: $color-light-black;
+          font-family: inherit;
+          color: $color-dark-white;
+          border: none;
+        }
+
+        .send-btn:hover {
+          padding: 1rem 0;
+
+          width: 100%;
+          background-color: $color-dark-white;
+          font-family: inherit;
+          color: $color-light-black;
+          border: none;
+        }
+      }
+    }
+
+    .socials {
+      margin: 1rem;
+      padding: 4rem;
+      width: 50%;
+      background-color: #d1d1d1;
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .name {
+            font-size: 1.8rem !important;
+          }
+        }
+      }
+    }
+  }
+}
