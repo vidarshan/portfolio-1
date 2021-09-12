@@ -139,8 +139,8 @@ $character-card-border-radius: 0.8rem;
 
     .project-info {
       padding: 2rem;
-      color: rgb(0, 0, 0);
-      background-color: #b3b3b3;
+      color: rgb(255, 255, 255);
+      background-color: #000000;
 
       .project-title-action-row {
         display: flex;
@@ -210,6 +210,56 @@ $character-card-border-radius: 0.8rem;
           }
         }
       }
+    }
+  }
+}
+
+.achievements {
+  height: 100vh;
+  margin-left: 7rem;
+  padding: 0 6rem;
+
+  .tech-comp-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+
+    .tech-comp-icon-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem 0;
+
+      img {
+        margin: 1.5rem;
+      }
+    }
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: row;
+
+    .stackoverflow {
+      width: 40%;
+      background-color: rgb(135, 135, 136);
+
+      .medals {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .medal {
+          display: flex;
+          flex-direction: column;
+          justify-content: center !important;
+        }
+      }
+    }
+    .github {
+      width: 60%;
+      background-color: cadetblue;
     }
   }
 }

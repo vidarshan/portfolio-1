@@ -198,6 +198,216 @@ const All = () => {
           <ProjectCard />
         </div>
       </section>
+      <section className='achievements'>
+        <div className='heading text-xl text-weight-600'>
+          Competencies and Achievements
+        </div>
+
+        <div className='tech-comp-row'>
+          <div className='text-sm text-weight-600 text-align-center'>
+            Technical Competencies
+          </div>
+          <div className='tech-comp-icon-row'>
+            <img
+              height='80'
+              src={require('../img/003-java.svg').default}
+              alt=''
+            />
+            <img
+              height='80'
+              src={require('../img/004-docker.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/005-python.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/006-react.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/016-c-1.svg').default}
+              alt=''
+            />{' '}
+            <img height='80' src={require('../img/018-c.svg').default} alt='' />
+            <img
+              height='80'
+              src={require('../img/020-gnu-bash.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/021-mysql.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/025-typescript.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/026-sass.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/029-javascript.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/030-html-5.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/031-css.svg').default}
+              alt=''
+            />{' '}
+            <img
+              height='80'
+              src={require('../img/032-nodejs.svg').default}
+              alt=''
+            />{' '}
+          </div>
+          <div className='stats'>
+            <div className='stackoverflow'>
+              <div className='text-md text-weight-600 text-align-center'>
+                Stackoverflow
+                {/* https://stackoverflow.com/users/flair/15415996.json */}
+              </div>
+              <div className='reputation text-md text-weight-600 text-align-center'>
+                145
+              </div>
+              <div className='reputation-subtitle text-sm text-align-center'>
+                Reputation Points
+              </div>
+              <div className='medals'>
+                <div className='medal'>
+                  <div className='icon text-align-center'>
+                    <img
+                      height='54'
+                      src={require('../img/gold-medal.svg').default}
+                      alt=''
+                    />
+                  </div>
+                  <div className='count text-md text-weight-600 text-align-center'>
+                    1
+                  </div>
+                  <div className='count-subtitle text-sm text-weight-600 text-align-center'>
+                    Gold Badges
+                  </div>
+                </div>
+                <div className='medal'>
+                  <div className='icon text-align-center'>
+                    <img
+                      height='54'
+                      src={require('../img/silver-medal.svg').default}
+                      alt=''
+                    />
+                  </div>
+                  <div className='count text-md text-weight-600 text-align-center'>
+                    9
+                  </div>
+                  <div className='count-subtitle text-sm text-weight-600 text-align-center'>
+                    Silver Badges
+                  </div>
+                </div>
+                <div className='medal'>
+                  <div className='icon text-align-center'>
+                    <img
+                      height='54'
+                      src={require('../img/bronze-medal.svg').default}
+                      alt=''
+                    />
+                  </div>
+                  <div className='count text-md text-weight-600 text-align-center'>
+                    14
+                  </div>
+                  <div className='count-subtitle text-sm text-weight-600 text-align-center'>
+                    Bronze Badges
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className='github'>
+              <div className='text-md text-weight-600 text-align-center'>
+                Github
+              </div>
+
+              <img
+                src='http://ghchart.rshah.org/vidarshanadithya'
+                alt="2016rshah's Github chart"
+              />
+
+              <div className='github-numbers'>
+                {/* 
+              https://api.github.com/users/vidarshanadithya/events?page=1 */}
+                <div className='repos'>
+                  <div className='icon'>
+                    <img
+                      className='project-image'
+                      src={require('../img/026-sass.svg').default}
+                      alt=''
+                    />
+                  </div>
+                  <div className='numbers'>10</div>
+                  <div className='title'>Repositories</div>
+                </div>
+                <div className='repos'>
+                  <div className='icon'>
+                    <img
+                      className='project-image'
+                      src={require('../img/026-sass.svg').default}
+                      alt=''
+                    />
+                  </div>
+                  <div className='numbers'>10</div>
+                  <div className='title'>Repositories</div>
+                </div>
+                <div className='contributions'>
+                  <div className='icon'>
+                    <img
+                      className='project-image'
+                      src={require('../img/026-sass.svg').default}
+                      alt=''
+                    />
+                  </div>
+                  <div className='numbers'>10</div>
+                  <div className='title'>Contributions</div>
+                </div>
+                <div className='Pull Requests'>
+                  <div className='icon'>
+                    <img
+                      className='project-image'
+                      src={require('../img/026-sass.svg').default}
+                      alt=''
+                    />
+                  </div>
+                  <div className='numbers'>10</div>
+                  <div className='title'>Pull Requests</div>
+                </div>
+                <div className='Stars'>
+                  <div className='icon'>
+                    <img
+                      className='project-image'
+                      src={require('../img/026-sass.svg').default}
+                      alt=''
+                    />
+                  </div>
+                  <div className='numbers'>10</div>
+                  <div className='title'>Stars</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
