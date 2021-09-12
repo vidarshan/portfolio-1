@@ -259,63 +259,63 @@ const All = () => {
                 alt="2016rshah's Github chart"
               />
 
-              <div className='github-numbers'>
-                {/* 
-              https://api.github.com/users/vidarshanadithya/events?page=1 */}
-                <div className='repos'>
+              <div className='github-numbers text-align-center'>
+                {/*                 
+                https://api.github.com/users/vidarshanadithya/events?page=1 */}
+
+                <div className='item text-align-center'>
                   <div className='icon'>
                     <img
+                      height='30'
                       className='project-image'
-                      src={require('../img/026-sass.svg').default}
+                      src={require('../img/repo.svg').default}
                       alt=''
                     />
                   </div>
-                  <div className='numbers'>10</div>
-                  <div className='title'>Repositories</div>
+                  <div className='numbers text-md text-weight-600'>10</div>
+                  <div className='title text-sm text-weight-600'>
+                    Repositories
+                  </div>
                 </div>
-                <div className='repos'>
+                <div className='item text-align-center'>
                   <div className='icon'>
                     <img
+                      height='30'
                       className='project-image'
-                      src={require('../img/026-sass.svg').default}
+                      src={require('../img/commit.svg').default}
                       alt=''
                     />
                   </div>
-                  <div className='numbers'>10</div>
-                  <div className='title'>Repositories</div>
+                  <div className='number text-md text-weight-600'>10</div>
+                  <div className='title text-sm text-weight-600'>
+                    Contributions
+                  </div>
                 </div>
-                <div className='contributions'>
+                <div className='item text-align-center'>
                   <div className='icon'>
                     <img
+                      height='30'
                       className='project-image'
-                      src={require('../img/026-sass.svg').default}
+                      src={require('../img/pr.svg').default}
                       alt=''
                     />
                   </div>
-                  <div className='numbers'>10</div>
-                  <div className='title'>Contributions</div>
+                  <div className='numbers text-md text-weight-600'>10</div>
+                  <div className='title text-sm text-weight-600'>
+                    Pull Requests
+                  </div>
                 </div>
-                <div className='Pull Requests'>
+                <div className='item text-align-center'>
                   <div className='icon'>
                     <img
+                      height='30'
                       className='project-image'
-                      src={require('../img/026-sass.svg').default}
+                      src={require('../img/star.svg').default}
                       alt=''
                     />
                   </div>
-                  <div className='numbers'>10</div>
-                  <div className='title'>Pull Requests</div>
-                </div>
-                <div className='Stars'>
-                  <div className='icon'>
-                    <img
-                      className='project-image'
-                      src={require('../img/026-sass.svg').default}
-                      alt=''
-                    />
-                  </div>
-                  <div className='numbers'>10</div>
-                  <div className='title'>Stars</div>
+                  <div className='numbers text-md text-weight-600'>10</div>
+                  <div className='title text-sm text-weight-600'>Stars</div>
                 </div>
               </div>
             </div>

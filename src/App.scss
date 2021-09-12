@@ -43,6 +43,12 @@ $character-card-border-radius: 0.8rem;
 .dark-mode {
   background-color: black;
   color: white;
+
+  .github {
+    border-radius: $character-card-border-radius;
+    color: $color-dark-white;
+    background-color: $color-dark-black !important;
+  }
 }
 
 .nav-icon-list {
@@ -257,8 +263,16 @@ $character-card-border-radius: 0.8rem;
       }
     }
     .github {
+      display: flex;
+      flex-direction: column;
       width: 60%;
-      background-color: cadetblue;
+      background-color: $color-light-card-bg;
+
+      .github-numbers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0.2rem;
+      }
     }
   }
 }
