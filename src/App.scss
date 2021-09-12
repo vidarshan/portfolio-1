@@ -114,3 +114,50 @@ $character-card-border-radius: 0.8rem;
 .color {
   fill: red;
 }
+
+.projects {
+  height: 100vh;
+  margin-left: 7rem;
+  padding: 0 6rem;
+
+  .projects-row {
+    display: flex;
+    background-color: darkcyan;
+  }
+  .project-item {
+    border-radius: 8px;
+    background-color: rgb(211, 211, 211);
+    width: max-content;
+    margin: 1rem;
+
+    .project-image-container {
+      .project-image {
+        width: auto;
+        height: 10rem;
+      }
+    }
+
+    .project-info {
+      padding: 2rem;
+      color: white;
+      background-color: #000000;
+
+      .project-title-action-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .project-code,
+        .project-demo {
+          margin: 0.1rem;
+        }
+      }
+
+      .project-icons {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
