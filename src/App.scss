@@ -127,20 +127,20 @@ $character-card-border-radius: 0.8rem;
   .project-item {
     border-radius: 8px;
     background-color: rgb(211, 211, 211);
-    width: max-content;
+    width: 40rem;
     margin: 1rem;
 
     .project-image-container {
       .project-image {
         width: auto;
-        height: 10rem;
+        height: 30rem;
       }
     }
 
     .project-info {
       padding: 2rem;
-      color: white;
-      background-color: #000000;
+      color: rgb(0, 0, 0);
+      background-color: #b3b3b3;
 
       .project-title-action-row {
         display: flex;
@@ -148,15 +148,67 @@ $character-card-border-radius: 0.8rem;
         justify-content: space-between;
         align-items: center;
 
-        .project-code,
-        .project-demo {
-          margin: 0.1rem;
+        .project-icons {
+          display: flex;
+          align-items: center;
+
+          .project-code,
+          .project-demo {
+            margin: 0.5rem;
+          }
         }
       }
 
-      .project-icons {
+      .seperator {
+        height: 0.2rem;
+        background-color: $color-dark-white;
+      }
+      .project-description {
+        margin: 2rem 0;
+        font-size: 1.5rem;
+        text-align: justify;
+      }
+
+      .project-tech {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
+        margin: 0.5rem 0;
+
+        .projects-techs {
+          display: flex;
+
+          .tech-icon {
+            margin: 0.5rem;
+          }
+        }
+      }
+
+      .project-role-date {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 0;
+
+        .project-role {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+
+          .role {
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        .project-date {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+
+          .launched {
+            margin-bottom: 0.5rem;
+          }
+        }
       }
     }
   }
