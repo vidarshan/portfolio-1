@@ -33,8 +33,6 @@ const ProjectCard = () => {
           suscipit libero maiores minus nisi, nemo voluptatem harum repudiandae
           quibusdam animi dolore porro quae id. Quod ea totam, harum odit
           voluptates itaque in dolores consectetur voluptatum quo voluptatibus,
-          provident temporibus optio libero necessitatibus nemo ipsa fugiat qui.
-          Delectus fugiat itaque amet ea maiores dignissimos labore reiciendis
         </div>
         <div className='seperator'></div>
         <div className='project-tech'>
