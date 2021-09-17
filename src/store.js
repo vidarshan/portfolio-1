@@ -1,15 +1,14 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import {stackOverflowReducer} from './reducers/reducers';
 
 const reducer = combineReducers({
- 
+ stackoverflow: stackOverflowReducer
 });
 
 
-const initialState = {
-  
-};
+const initialState = {};
 
 const middlware = [thunk];
 const store = createStore(

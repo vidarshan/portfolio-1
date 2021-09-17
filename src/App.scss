@@ -60,6 +60,15 @@ $character-card-border-radius: 0.8rem;
     margin: 2.5rem 0rem;
     fill: $color-light-white;
   }
+
+  .active-nav-icon{
+
+
+    svg {
+      fill: red !important;
+    }
+    fill: red !important;
+  }
 }
 .App-header {
   background-color: #282c34;
@@ -349,4 +358,60 @@ $character-card-border-radius: 0.8rem;
       }
     }
   }
+}
+
+.scrollspy {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $color-light-black;
+  height: 100vh;
+  width: 7rem;
+  position: fixed;
+  top: 0;
+
+  ul {
+    list-style: none !important;
+  }
+  
+  img{
+    height: 4rem !important;
+  }
+  
+  li {
+    list-style: none !important;
+    margin: 2.5rem 0;
+    svg{
+      fill: white !important;
+      height: 4rem !important;
+    }
+  
+  }
+
+
+  .nav-icon{
+    svg{
+      fill: white !important;
+    }
+  }
+
+
+
+  a {
+    color: white;
+  }
+  .isCurrent {
+    font-weight: bold;
+  }
+  
+  .isCurrent  svg {
+    fill:red !important
+  }
+  
+}
+
+
+
+svg{
+  fill : black !important
 }

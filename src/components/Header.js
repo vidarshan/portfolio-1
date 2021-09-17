@@ -1,7 +1,8 @@
 import React from 'react';
+import Scrollspy from 'react-scrollspy'
 
 const Header = () => {
-  return <div>Header</div>;
+  return <ScrollSpy>Header</ScrollSpy>;
 };
 
 export default Header;
