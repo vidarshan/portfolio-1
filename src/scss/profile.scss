@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+.profile-container {
+  .profile-heading {
+    color: $text-color-lighter;
+    text-align: left;
+    font-size: 7rem !important;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .profile-info {
+    .profile-info-text {
+      width: 50%;
+      text-align: justify;
+      font-size: 2rem;
+      white-space: pre-line;
+    }
+    .underlined-text {
+      color: royalblue;
+      text-decoration: underline;
+    }
+
+    .underlined-text:hover {
+      background-color: red !important;
+    }
+  }
+
+  .languages {
+    display: flex;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: red;
+
+    .language-heading {
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap");
 *,
 *::after,
 *::before {
@@ -17,7 +17,7 @@ $character-card-border-radius: 0.8rem;
 
 html {
   font-size: 62.5%;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .text-xl {
@@ -158,13 +158,24 @@ html {
   height: 100vh;
   display: flex;
   align-items: center;
-  margin-left: 7rem;
+  justify-content: center;
+  margin: 0 20%;
+}
+
+.profile {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20%;
 }
 
 .nav-icon-list .nav-icon {
-  height: 3rem;
-  margin: 2.5rem 0rem;
-  fill: #ffffff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20%;
 }
 
 .text-cursor-same-line {
