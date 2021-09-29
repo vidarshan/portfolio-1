@@ -1,0 +1,52 @@
+@import "./variables.scss";
+
+.project-container {
+  width: 100%;
+  .project-heading-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .project-heading {
+      display: flex;
+      color: $text-color-lighter;
+      text-align: left;
+      font-size: 7rem !important;
+      font-weight: 600;
+    }
+
+    .project-number {
+      font-size: 6rem;
+      font-weight: 600;
+      color: $text-color-lighter;
+    }
+  }
+
+  .project {
+    margin-top: 2rem;
+    padding: 1rem;
+    .project-name {
+      text-align: left;
+      font-size: 3rem;
+      border-bottom: 2px solid $text-color-lighter;
+    }
+
+    .project-image-desc {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .project-image {
+        img {
+          width: 40%;
+        }
+      }
+
+      .project-desc {
+        width: 60%;
+        background-color: darkturquoise;
+      }
+    }
+  }
+}

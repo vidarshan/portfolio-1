@@ -8,6 +8,7 @@ import ProjectCard from '../components/ProjectCard';
 import { getStackOverflowDetails } from '../actions/actions';
 import Home from '../components/Home';
 import Profile from '../components/Profile';
+import Project from '../components/Project';
 
 const All = () => {
 
@@ -43,13 +44,7 @@ const All = () => {
             <Profile />
           </section>
           <section id='projects' className='projects'>
-            <div className='heading text-xl text-weight-600'>Projects</div>
-
-            <div className='projects-row'>
-              <ProjectCard />
-              <ProjectCard />
-              <ProjectCard />
-            </div>
+            <Project />
           </section>
           <section id='achievements' className='achievements'>
             <div className='heading text-xl text-weight-600'>

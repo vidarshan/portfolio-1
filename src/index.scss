@@ -18,6 +18,7 @@ $character-card-border-radius: 0.8rem;
 html {
   font-size: 62.5%;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .text-xl {
@@ -159,7 +160,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 20%;
+  margin: 0 15%;
 }
 
 .profile {
@@ -167,7 +168,13 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 20%;
+  margin: 0 15%;
+}
+
+.projects {
+  height: 100vh;
+  display: flex;
+  margin: 0 15%;
 }
 
 .nav-icon-list .nav-icon {

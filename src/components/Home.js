@@ -3,12 +3,12 @@ import '../scss/home.scss';
 
 const Home = () => {
 
-    const [things, setThings] = useState(['I\'m a Software Engineer👨‍💻']);
+    const [things, setThings] = useState(['I\'m a Software Engineer. 👨‍💻']);
 
     useEffect(() => {
 
         let optionNo = 0;
-        const stuff = ['I\'m a Software Engineer👨‍💻', 'I create stuff for the Web🌎', 'I create stuff for Mobile 📱', 'I create stuff for Desktop 🖥️'];
+        const stuff = ['I create stuff for the Web 🌎', 'I create stuff for Mobile 📱', 'I create stuff for Desktop 🖥️', 'I\'m a Software Engineer. 👨‍💻',];
 
         setInterval(() => {
             if (optionNo < 4) {

@@ -1,9 +1,4 @@
-$color-light-black: #000000;
-$color-light-white: #ffffff;
-$color-dark-black: #353434;
-$color-dark-white: #ffffff;
-$color-light-card-bg: #f3f3f3;
-$character-card-border-radius: 0.8rem;
+@import "./scss/variables.scss";
 
 .App {
   text-align: center;
@@ -43,6 +38,20 @@ $character-card-border-radius: 0.8rem;
 .dark-mode {
   background-color: black;
   color: white;
+
+  .home-container {
+    .hello-text {
+      color: $dark-text-color-lighter;
+    }
+
+    .name-text {
+      color: $dark-text-color-dark;
+    }
+
+    .def-text {
+      color: $dark-text-color-light;
+    }
+  }
 
   .github {
     border-radius: $character-card-border-radius;
@@ -89,105 +98,6 @@ $character-card-border-radius: 0.8rem;
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-.projects {
-  height: 100vh;
-  margin-left: 7rem;
-  padding: 0 6rem;
-
-  .projects-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: darkcyan;
-  }
-  .project-item {
-    border-radius: 8px;
-    background-color: rgb(211, 211, 211);
-    width: 40rem;
-    margin: 1rem;
-
-    .project-image-container {
-      .project-image {
-        width: auto;
-      }
-    }
-
-    .project-info {
-      padding: 2rem;
-      color: rgb(255, 255, 255);
-      background-color: #000000;
-
-      .project-title-action-row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        .project-icons {
-          display: flex;
-          align-items: center;
-
-          .project-code,
-          .project-demo {
-            margin: 0.5rem;
-          }
-        }
-      }
-
-      .seperator {
-        height: 0.2rem;
-        background-color: $color-dark-white;
-      }
-      .project-description {
-        margin: 2rem 0;
-        font-size: 1.2rem;
-        text-align: justify;
-      }
-
-      .project-tech {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0.5rem 0;
-
-        .projects-techs {
-          display: flex;
-
-          .tech-icon {
-            margin: 0.5rem;
-          }
-        }
-      }
-
-      .project-role-date {
-        display: flex;
-        flex-direction: row;
-        margin: 1rem 0;
-
-        .project-role {
-          display: flex;
-          flex-direction: column;
-          width: 50%;
-
-          .role {
-            margin-bottom: 0.5rem;
-          }
-        }
-
-        .project-date {
-          display: flex;
-          flex-direction: column;
-          width: 50%;
-
-          .launched {
-            margin-bottom: 0.5rem;
-          }
-        }
-      }
-    }
   }
 }
 
