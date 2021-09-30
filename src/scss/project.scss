@@ -2,50 +2,55 @@
 
 .project-container {
   width: 100%;
-  .project-heading-number {
+
+  .project-heading {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    .project-heading {
-      display: flex;
-      color: $text-color-lighter;
-      text-align: left;
-      font-size: 7rem !important;
-      font-weight: 600;
-    }
-
-    .project-number {
-      font-size: 6rem;
-      font-weight: 600;
-      color: $text-color-lighter;
-    }
+    color: $text-color-lighter;
+    text-align: left;
+    font-size: 7rem !important;
+    font-weight: 600;
   }
 
   .project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
     margin-top: 2rem;
     padding: 1rem;
-    .project-name {
-      text-align: left;
-      font-size: 3rem;
-      border-bottom: 2px solid $text-color-lighter;
-    }
 
-    .project-image-desc {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    .item {
+      background-color: rgb(63, 63, 63);
+      padding: 1.5rem;
+      color: white;
 
-      .project-image {
-        img {
-          width: 40%;
+      .name-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .name {
+          text-align: left;
+          font-size: 2.4rem;
+          font-weight: 600;
+        }
+
+        .icons {
+          display: flex;
+          svg {
+            margin: 0 0.5rem;
+            fill: rgb(212, 212, 212) !important;
+          }
         }
       }
 
-      .project-desc {
-        width: 60%;
-        background-color: darkturquoise;
+      .desc,
+      .tech,
+      .contribution,
+      .release {
+        padding: 1rem 0;
+        text-align: left;
+        font-size: 1.5rem;
       }
     }
   }
