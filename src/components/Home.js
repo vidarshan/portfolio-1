@@ -1,9 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import Fade from 'react-reveal/Fade';
 import '../scss/home.scss';
 
 const Home = () => {
 
+    const [show, setShow] = useState(true);
     const [things, setThings] = useState(['I\'m a Software Engineer. 👨‍💻']);
+
+    const showInfo = () => {
+        setShow(!show);
+    }
 
     useEffect(() => {
 
@@ -21,17 +27,23 @@ const Home = () => {
 
         }, 2000)
 
+        showInfo();
+
     }, [])
 
+
+
     return (
-        <div className='home-container'>
+        <Fade duration={2000} bottom>
+            <div className='home-container'>
 
-            <div class="hello-text">Hello.</div>
-            <div class="name-text">I'm Vidarshan.</div>
-            <div class="def-text">{things}</div>
+                <div class="hello-text">Hello.</div>
+                <div class="name-text">I'm Vidarshan.</div>
+                <div class="def-text">{things}</div>
 
-            {/* / mobile📱/ desktop 🖥️ */}
-        </div>
+                {/* / mobile📱/ desktop 🖥️ */}
+            </div>
+        </Fade>
     )
 }
 

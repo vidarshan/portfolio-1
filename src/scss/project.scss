@@ -10,47 +10,85 @@
     font-size: 7rem !important;
     font-weight: 600;
   }
+}
 
-  .project {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    margin-top: 2rem;
-    padding: 1rem;
+.project {
+  margin-top: 2rem;
+  padding: 1rem;
 
-    .item {
-      background-color: rgb(63, 63, 63);
+  .item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+
+    .project-image {
+      width: 100%;
+    }
+
+    .project-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 1.5rem;
-      color: white;
 
       .name-links {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
         .name {
           text-align: left;
-          font-size: 2.4rem;
+          font-size: 4rem;
           font-weight: 600;
         }
 
-        .icons {
-          display: flex;
-          svg {
-            margin: 0 0.5rem;
-            fill: rgb(212, 212, 212) !important;
-          }
+        .link {
+          margin: 0 0.5rem;
+          padding: 0.5rem;
+          height: 2rem;
+          border: 1px solid black;
+          background-color: sienna;
+        }
+
+        .link:hover {
+          background-color: burlywood;
         }
       }
 
-      .desc,
-      .tech,
-      .contribution,
-      .release {
-        padding: 1rem 0;
+      .desc {
+        padding: 2rem 0;
+        text-align: justify;
+        font-size: 1.7rem;
+        line-height: 25px;
+        color: rgb(158, 158, 158);
+      }
+
+      .tech {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         text-align: left;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+        padding: 0.5rem 0;
+        color: rgb(150, 150, 150);
+
+        img {
+          margin: 0 0.5rem;
+        }
+      }
+
+      .contribution-launched {
+        display: flex;
+
+        .contribution,
+        .release {
+          width: 50%;
+          padding: 1rem 0;
+          font-size: 1.5rem;
+          line-height: 25px;
+          text-align: left;
+        }
       }
     }
   }
