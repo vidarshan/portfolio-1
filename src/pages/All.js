@@ -13,19 +13,35 @@ import ReachOut from '../components/ReachOut';
 
 const All = () => {
 
-
   const dispatch = useDispatch();
+  const [theme, setTheme] = useState();
 
   const stackoverflowinfo = useSelector((state) => state.stackoverflow);
 
   const { stackoverflow, loading, error } = stackoverflowinfo;
 
-  function myFunction() {
+  const changeTheme = () => {
     var element = document.body;
     element.classList.toggle('dark-mode');
+
+    if (element.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+      setTheme('dark')
+    } else {
+      localStorage.setItem('theme', 'light');
+      setTheme('light')
+    }
   }
 
+
   useEffect(() => {
+
+    if (localStorage.getItem('theme') === 'dark') {
+      var element = document.body;
+      element.classList.toggle('dark-mode');
+      setTheme('dark')
+    }
+
     dispatch(getStackOverflowDetails())
   }, [dispatch])
 
@@ -34,10 +50,14 @@ const All = () => {
 
       <div className="App">
         <div>
-          <img
-            onClick={myFunction}
+          {theme === 'dark' ? <img
+            onClick={() => changeTheme()}
             className='switch-theme'
-            src={require('../img/sun.svg').default}></img>
+            src={require('../img/moon.svg').default}></img> : <img
+              onClick={() => changeTheme()}
+              className='switch-theme'
+              src={require('../img/sun.svg').default}></img>}
+
           <section id='home' class='home'>
             <Home />
           </section>
