@@ -1,0 +1,59 @@
+@import "./variables.scss";
+
+.profile-container {
+  .profile-heading {
+    color: $text-color-lighter;
+    text-align: left;
+    font-size: 7rem !important;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+  }
+
+  .profile-info {
+    display: flex;
+
+    .profile-info-text {
+      border-right: 2px solid $text-color-lighter;
+      width: 60%;
+      text-align: left;
+      font-size: 2rem;
+      line-height: 28px;
+      padding: 2rem;
+    }
+
+    .profile-overview-text {
+      width: 40%;
+      padding: 2rem;
+
+      .work-experience {
+        padding: 1rem;
+        font-size: 1.4rem;
+        text-align: left;
+      }
+    }
+
+    span {
+      color: rgb(180, 166, 37);
+      display: inline-block;
+      position: relative;
+    }
+
+    span:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: royalblue;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    span:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}

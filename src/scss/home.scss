@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.home-container {
+  width: 100%;
+  text-align: left;
+
+  .hello-text {
+    font-size: 6rem;
+    font-weight: 400;
+    color: $text-color-lighter;
+    margin: 0.5rem;
+  }
+
+  .name-text {
+    font-size: 8rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    color: $text-color-dark;
+  }
+
+  .def-text {
+    font-size: 6rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    color: $text-color-light;
+  }
+}

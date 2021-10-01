@@ -1,0 +1,13 @@
+@import "../scss/variables.scss";
+
+.reachout-container {
+  width: 100%;
+
+  .reachout-heading {
+    display: flex;
+    color: $text-color-lighter;
+    text-align: left;
+    font-size: 7rem !important;
+    font-weight: 600;
+  }
+}
