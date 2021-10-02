@@ -17,22 +17,21 @@ const ReachOut = () => {
                 <div class="email-socials">
                     <div class="email-text">📧 Email</div>
                     <div class="email">
-                        vidarshanadithya3@gmail.com
-                        <img height='30' src={require('../img/copy.svg').default} alt="" />
-                        <img height='30' src={require('../img/email.svg').default} alt="" />
+                        <a href="mailto:webmaster@example.com"> vidarshanadithya3@gmail.com</a>
                     </div>
                     <div class="socials">
                         <div class="social-text">👻 Socials</div>
                         <div class="social-icons">
 
                             <div class="social">
-                                <img height='40' src={require('../img/twitter.svg').default} alt="" />
+                                <a href="https://twitter.com/VidarshanR" rel="noreferrer" target="_blank"><img height='40' src={require('../img/twitter.svg').default} alt="" /></a>
                             </div>
                             <div class="social">
-                                <img height='40' src={require('../img/github.svg').default} alt="" />
+                                <a href="https://github.com/vidarshanadithya" rel="noreferrer" target="_blank"><img height='40' src={require('../img/github.svg').default} alt="" /></a>
                             </div>
                             <div class="social">
-                                <img height='40' src={require('../img/linkedin-logo.svg').default} alt="" />
+
+                                <a href="https://www.linkedin.com/in/vidarshan-rathnayake/" rel="noreferrer" target="_blank"><img height='40' src={require('../img/linkedin-logo.svg').default} alt="" /></a>
                             </div>
                         </div>
                     </div>

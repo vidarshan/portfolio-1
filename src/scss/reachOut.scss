@@ -57,11 +57,20 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
         border-bottom: 2px solid $text-color-lighter;
-
+        cursor: pointer;
         img {
           padding: 0 0.6rem;
+        }
+
+        a {
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $text-color-lighter;
         }
       }
 

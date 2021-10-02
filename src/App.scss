@@ -66,6 +66,27 @@
     }
   }
 
+  .email {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    border-bottom: 2px solid $text-color-lighter;
+    cursor: pointer;
+    img {
+      padding: 0 0.6rem;
+    }
+
+    a {
+      color: white !important;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $text-color-lighter !important;
+    }
+  }
+
   .home-container {
     .hello-text {
       color: $dark-text-color-lighter;

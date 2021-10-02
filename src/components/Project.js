@@ -15,7 +15,7 @@ const Project = () => {
                         <div class="name-links">
                             <div class="name">📁 Portfolio</div>
                             <div class="link">
-                                <img height='26' src={require('../img/github.svg').default} alt='github' />
+                                <a href='https://github.com/vidarshanadithya/portfolio-react' rel="noreferrer" target="_blank"><img height='26' src={require('../img/github.svg').default} alt='github' /></a>
                             </div>
                         </div>
                         <div class="desc">My own portfolio site which your are browsing right now!</div>
@@ -38,8 +38,8 @@ const Project = () => {
                         <div class="name-links">
                             <div class="name">📁 Countries.io</div>
                             <div class="link">
-                                <img height='26' src={require('../img/github.svg').default} alt='github' />
-                                <img height='26' src={require('../img/link.svg').default} alt='link' />
+                                <a href='https://github.com/vidarshanadithya/countries-io' rel="noreferrer" target="_blank"><img height='26' src={require('../img/github.svg').default} alt='github' /></a>
+                                <a href='https://countries-io.herokuapp.com/' rel="noreferrer" target="_blank"><img height='26' src={require('../img/link.svg').default} alt='link' /></a>
                             </div>
                         </div>
                         <div class="desc">Find informtion on any country with a simple search!</div>
@@ -63,8 +63,8 @@ const Project = () => {
                         <div class="name-links">
                             <div class="name">📁 Carmax API</div>
                             <div class="link">
-                                <img height='26' src={require('../img/github.svg').default} alt='github' />
-                                <img height='26' src={require('../img/link.svg').default} alt='link' />
+                                <a href='https://documenter.getpostman.com/view/12226878/UUy39SEX' rel="noreferrer" target="_blank"> <img height='26' src={require('../img/github.svg').default} alt='github' /></a>
+                                <a href='https://documenter.getpostman.com/view/12226878/UUy39SEX' rel="noreferrer" target="_blank"> <img height='26' src={require('../img/link.svg').default} alt='link' /></a>
                             </div>
                         </div>
                         <div class="desc">Node JS API for an ERP system of a car service station</div>
