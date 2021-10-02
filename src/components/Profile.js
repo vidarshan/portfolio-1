@@ -20,7 +20,7 @@ const Profile = () => {
     }, [])
 
     return (
-        <Fade bottom>
+        <Fade bottom duration={2000}>
 
             <div className='profile-container'>
                 <div class="profile-heading">👨‍💻 Profile.</div>
