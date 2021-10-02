@@ -28,7 +28,7 @@ const Home = () => {
         }, 2000)
 
         showInfo();
-
+        // eslint-disable-next-line
     }, [])
 
 

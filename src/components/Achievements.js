@@ -7,19 +7,14 @@ import '../scss/achievements.scss';
 const Achievements = () => {
 
     const [show, setShow] = useState(true);
-    const [start, setStart] = useState(false);
 
     const showContent = () => {
         setShow(!show)
     }
 
-
-    function onChange(isVisible) {
-        console.log('Element is now %s', isVisible ? 'visible' : 'hidden');
-    }
-
     useLayoutEffect(() => {
         showContent();
+        // eslint-disable-next-line
     }, [])
 
     return (
