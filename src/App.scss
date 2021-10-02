@@ -39,6 +39,33 @@
   background-color: black;
   color: white;
 
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: left;
+    margin-top: 2rem;
+
+    .project {
+      text-align: left;
+      background-color: rgb(44, 44, 44) !important;
+
+      .name-links {
+        .link {
+          img {
+            margin-left: 1rem;
+            border: 2px solid transparent;
+            transition: 0.3s;
+            cursor: pointer;
+          }
+
+          img:hover {
+            border-bottom: 2px solid rgb(172, 172, 172) !important;
+          }
+        }
+      }
+    }
+  }
+
   .home-container {
     .hello-text {
       color: $dark-text-color-lighter;
@@ -86,6 +113,6 @@
   }
 
   .isCurrent svg {
-    fill: rgb(18, 144, 182) !important;
+    fill: rgb(183, 185, 27) !important;
   }
 }
