@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Bounce from 'react-reveal/Bounce';
 
 import { getStackOverflowDetails } from '../actions/actions';
@@ -14,10 +14,6 @@ const All = () => {
 
   const dispatch = useDispatch();
   const [theme, setTheme] = useState();
-
-  const stackoverflowinfo = useSelector((state) => state.stackoverflow);
-
-  const { stackoverflow, loading, error } = stackoverflowinfo;
 
   const changeTheme = () => {
     var element = document.body;
@@ -52,9 +48,11 @@ const All = () => {
           {theme === 'dark' ? <Bounce top><img
             onClick={() => changeTheme()}
             className='switch-theme'
+            alt='dark'
             src={require('../img/moon.svg').default}></img></Bounce> : <Bounce top><img
               onClick={() => changeTheme()}
               className='switch-theme'
+              alt='light'
               src={require('../img/sun.svg').default}></img></Bounce>}
 
           <section id='home' class='home'>
