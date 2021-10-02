@@ -17,37 +17,103 @@ const Project = () => {
 
             <div className='project-container'>
                 <div className="project-heading">🚀  Projects.</div>
-                <div class="button" onClick={() => showSlide()}>Button</div>
-                <div class="project">
-                    <Fade right when={show}>
-
-                        <>
-
-                            <div class="item">
-                                <div class="image">
-                                    <img className='project-image' src={'https://image-placeholder.com/images/actual-size/1920x1080.png'} alt="" />
-                                </div>
-                                <div class="project-info">
-                                    <div class="name-links">
-                                        <div class="name">📁 Carmax ERP</div>
-                                        <div class="links">
-                                            <img src={require('../img/github.svg').default} alt="" class="link" />
-                                            <img src={require('../img/link.svg').default} alt="" className="link" />
-                                        </div>
-                                    </div>
-                                    <div class="desc">An Enterprise Resource Planning System designed for Carmax Pvt. Ltd in Sri Lanka, for make their Car Service Center's workflow convinient. Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />Laudantium nostrum ratione totam amet fugit quam maxime perspiciatis excepturi quia magnam.</div>
-                                    <div class="tech">Technologies Used &#8594;
-                                        <img src={require('../img/006-react.svg').default} alt="" />
-                                        <img src={require('../img/006-react.svg').default} alt="" />
-                                    </div>
-                                    <div class="contribution-launched">
-                                        <div class="contribution">Contribution <br />👨‍💻 Full-stack Engineer</div>
-                                        <div class="release">Launched <br />📅 October 2021</div>
-                                    </div>
+                <div class="projects-grid">
+                    <div class="project">
+                        <div class="name-links">
+                            <div class="name">📁 Portfolio</div>
+                            <div class="link">
+                                <img height='26' src={require('../img/github.svg').default} />
+                            </div>
+                        </div>
+                        <div class="desc">My own portfolio site which your are browsing right now!</div>
+                        <div class="techs">
+                            <div class="tech">
+                                <div class="tech-text">Technologies &#8594;</div>
+                                <div class="tech-icons">
+                                    <img height='30' src={require('../img/006-react.svg').default} alt="" />
+                                    <img height='30' src={require('../img/026-sass.svg').default} alt="" />
+                                    <img height='30' src={require('../img/029-javascript.svg').default} alt="" />
                                 </div>
                             </div>
-                        </>
-                    </Fade>
+                        </div>
+                        <div class="date-role">
+                            <div class="date">📅 10-10-2021</div>
+                            <div class="role">👨‍💻 Full-Stack</div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="name-links">
+                            <div class="name">📁 Countries.io</div>
+                            <div class="link">
+                                <img height='26' src={require('../img/github.svg').default} />
+                                <img height='26' src={require('../img/link.svg').default} />
+                            </div>
+                        </div>
+                        <div class="desc">Find informtion on any country with a simple search!</div>
+                        <div class="techs">
+                            <div class="tech">
+                                <div class="tech-text">Technologies &#8594;</div>
+                                <div class="tech-icons">
+                                    <img height='30' src={require('../img/006-react.svg').default} alt="" />
+                                    <img height='30' src={require('../img/026-sass.svg').default} alt="" />
+                                    <img height='30' src={require('../img/029-javascript.svg').default} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date-role">
+                            <div class="date">📅 10-10-2021</div>
+                            <div class="role">👨‍💻 Frontend</div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="name-links">
+                            <div class="name">📁 Carmax API</div>
+                            <div class="link">
+                                <img height='26' src={require('../img/github.svg').default} />
+                                <img height='26' src={require('../img/link.svg').default} />
+                            </div>
+                        </div>
+                        <div class="desc">Node JS API for an ERP system of a car service station</div>
+                        <div class="techs">
+                            <div class="tech">
+                                <div class="tech-text">Technologies &#8594;</div>
+                                <div class="tech-icons">
+                                    <img height='30' src={require('../img/006-react.svg').default} alt="" />
+                                    <img height='30' src={require('../img/026-sass.svg').default} alt="" />
+                                    <img height='30' src={require('../img/029-javascript.svg').default} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date-role">
+                            <div class="date">📅 10-10-2021</div>
+                            <div class="role">👨‍💻 Backend</div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="name-links">
+                            <div class="name">📁 Carmax ERP</div>
+                            <div class="link">
+                                <img height='26' src={require('../img/github.svg').default} />
+                                <img height='26' src={require('../img/link.svg').default} />
+                            </div>
+                        </div>
+                        <div class="desc">React JS frontend for the ERP system based on Carmax API</div>
+                        <div class="techs">
+                            <div class="tech">
+                                <div class="tech-text">Technologies &#8594;</div>
+                                <div class="tech-icons">
+                                    <img height='30' src={require('../img/006-react.svg').default} alt="" />
+                                    <img height='30' src={require('../img/026-sass.svg').default} alt="" />
+                                    <img height='30' src={require('../img/029-javascript.svg').default} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="date-role">
+                            <div class="date">📅 10-10-2021</div>
+                            <div class="role">👨‍💻 Frontend</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </Fade>

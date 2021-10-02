@@ -24,10 +24,6 @@ const Achievements = () => {
 
     return (
         <Fade bottom duration={2000}>
-
-
-
-
             <div className='stats-container'>
                 <div class="stats-heading">📊 Stats.</div>
                 <div class="github-text">Github</div>
