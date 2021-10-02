@@ -11,10 +11,6 @@ const Profile = () => {
         setShow(!show)
     }
 
-    // useEffect(() => {
-    //     showContent();
-    // }, [])
-
     useLayoutEffect(() => {
         showContent();
     }, [])

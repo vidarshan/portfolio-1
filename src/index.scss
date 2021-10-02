@@ -19,6 +19,10 @@ $character-card-border-radius: 0.8rem;
   src: url(fonts/calibre/CalibreSemibold.otf);
 }
 
+// .module {
+//   cursor: url('path-to-image.png'), auto;
+// }
+
 html {
   font-size: 62.5%;
   font-family: "Calibre", sans-serif;
@@ -68,6 +72,13 @@ html {
 }
 
 .contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 15%;
+}
+
+.achievements {
   height: 100vh;
   display: flex;
   align-items: center;

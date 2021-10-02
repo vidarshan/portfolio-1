@@ -8,6 +8,7 @@ import ReachOut from '../components/ReachOut';
 import Profile from '../components/Profile';
 import Project from '../components/Project';
 import Home from '../components/Home';
+import Achievements from '../components/Achievements';
 
 const All = () => {
 
@@ -66,7 +67,7 @@ const All = () => {
             <Project />
           </section>
           <section id='achievements' className='achievements'>
-
+            <Achievements />
           </section>
           <section id='contact' className='contact'>
             <ReachOut />
@@ -75,8 +76,6 @@ const All = () => {
         </div>
 
         <header className='header'>
-
-
           <Scrollspy
             className="scrollspy" items={['home', 'profile', 'projects', 'achievements', 'contact']}
             currentClassName="isCurrent">
