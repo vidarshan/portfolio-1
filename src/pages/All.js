@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import Scrollspy from 'react-scrollspy'
-import CountUp from 'react-countup';
-
 import { useDispatch, useSelector } from 'react-redux';
-import TextField from '@material-ui/core/TextField';
-import ProjectCard from '../components/ProjectCard';
+import Bounce from 'react-reveal/Bounce';
+
 import { getStackOverflowDetails } from '../actions/actions';
-import Home from '../components/Home';
+import Scrollspy from 'react-scrollspy'
+import ReachOut from '../components/ReachOut';
 import Profile from '../components/Profile';
 import Project from '../components/Project';
-import ReachOut from '../components/ReachOut';
+import Home from '../components/Home';
 
 const All = () => {
 
@@ -50,13 +48,13 @@ const All = () => {
 
       <div className="App">
         <div>
-          {theme === 'dark' ? <img
+          {theme === 'dark' ? <Bounce top><img
             onClick={() => changeTheme()}
             className='switch-theme'
-            src={require('../img/moon.svg').default}></img> : <img
+            src={require('../img/moon.svg').default}></img></Bounce> : <Bounce top><img
               onClick={() => changeTheme()}
               className='switch-theme'
-              src={require('../img/sun.svg').default}></img>}
+              src={require('../img/sun.svg').default}></img></Bounce>}
 
           <section id='home' class='home'>
             <Home />

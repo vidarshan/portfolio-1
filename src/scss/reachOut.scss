@@ -10,4 +10,83 @@
     font-size: 7rem !important;
     font-weight: 600;
   }
+
+  .form-socials {
+    display: flex;
+
+    .reachout-form {
+      display: flex;
+      flex-direction: column;
+      padding: 0 3rem 0 0;
+      width: 100%;
+      border-right: 2px solid $text-color-lighter;
+
+      input {
+        margin: 3rem 1rem;
+        font-size: 2rem !important;
+        font: inherit;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 2px solid white;
+      }
+
+      :focus {
+        outline: none !important;
+      }
+
+      button {
+        height: 4rem;
+        margin: 1rem;
+        background-color: rgb(235, 225, 135);
+        border: none;
+      }
+    }
+
+    .email-socials {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .email-text {
+        font-size: 2rem;
+      }
+      .email {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 4rem;
+        border-bottom: 2px solid $text-color-lighter;
+
+        img {
+          padding: 0 0.6rem;
+        }
+      }
+
+      .socials {
+        padding-top: 1rem;
+
+        .social-text {
+          font-size: 2rem;
+        }
+
+        .social-icons {
+          display: flex;
+          flex-direction: row;
+          .social {
+            transition: transform 0.2s;
+            padding: 1rem;
+          }
+        }
+
+        .social:hover {
+          -ms-transform: scale(1.5); /* IE 9 */
+          -webkit-transform: scale(1.5); /* Safari 3-8 */
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
 }
