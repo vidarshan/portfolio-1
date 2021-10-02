@@ -1,0 +1,54 @@
+@import "../scss/variables.scss";
+
+.stats-container {
+  .stats-heading {
+    display: flex;
+    color: $text-color-lighter;
+    text-align: left;
+    font-size: 7rem !important;
+    font-weight: 600;
+  }
+
+  .github-text {
+    text-align: left;
+    font-size: 4rem;
+    margin: 2rem;
+  }
+
+  .github {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    width: 100%;
+    margin: 2rem 0;
+    border-bottom: 2px solid $text-color-lighter;
+
+    .contributions,
+    .stars,
+    .repos,
+    .prs {
+      padding: 2rem 4rem;
+    }
+  }
+
+  .stack-text {
+    text-align: left;
+    font-size: 4rem;
+    margin: 2rem;
+  }
+
+  .stack {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    width: 100%;
+
+    .reputation,
+    .gold,
+    .silver,
+    .bronze {
+      padding: 2rem 4rem;
+    }
+  }
+}
