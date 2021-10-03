@@ -9,6 +9,7 @@
     text-align: left;
     font-size: 7rem !important;
     font-weight: 600;
+    transition: 0.3s;
   }
 
   .form-socials {
@@ -29,6 +30,7 @@
         color: white;
         border: none;
         border-bottom: 2px solid white;
+        transition: 0.3s;
       }
 
       :focus {
@@ -52,6 +54,7 @@
 
       .email-text {
         font-size: 2rem;
+        transition: 0.3s;
       }
       .email {
         display: flex;
@@ -60,6 +63,7 @@
         font-size: 3rem;
         border-bottom: 2px solid $text-color-lighter;
         cursor: pointer;
+
         img {
           padding: 0 0.6rem;
         }
@@ -67,6 +71,7 @@
         a {
           color: rgb(0, 0, 0);
           text-decoration: none;
+          transition: 0.3s;
         }
 
         a:hover {
@@ -79,6 +84,7 @@
 
         .social-text {
           font-size: 2rem;
+          transition: 0.3s;
         }
 
         .social-icons {
@@ -96,6 +102,35 @@
           transform: scale(1.5);
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .form-socials {
+    display: flex;
+    flex-direction: column;
+
+    .reachout-form {
+      padding: 0 !important;
+      border-right: none !important;
+      border-bottom: 2px solid $text-color-lighter;
+      padding-bottom: 1rem !important;
+    }
+
+    .email-text {
+      padding-bottom: 1rem;
+    }
+    .email-socials {
+      padding-top: 2rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .reachout-container {
+    .reachout-heading {
+      font-size: 4rem !important;
     }
   }
 }

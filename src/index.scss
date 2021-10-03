@@ -14,9 +14,15 @@ $color-light-card-bg: #f3f3f3;
 $text-color-disable: #525252;
 $character-card-border-radius: 0.8rem;
 
+//responsive breakpoints
+$bp-largest: 75em; //1200/16
+$bp-large: 62.5em; //1000/16
+$bp-medium: 50em; //800/16
+$bp-small: 37.5em; //600/16
+
 @font-face {
   font-family: "Calibre";
-  src: url(fonts/calibre/CalibreSemibold.otf);
+  src: url(fonts/calibre/CalibreRegular.otf);
 }
 
 // .module {
@@ -27,16 +33,6 @@ html {
   font-size: 62.5%;
   font-family: "Calibre", sans-serif;
   scroll-behavior: smooth;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #000000;
-  width: 7rem;
-  position: fixed;
 }
 
 .switch-theme {
@@ -84,4 +80,32 @@ html {
   display: flex;
   align-items: center;
   margin: 0 15%;
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .home {
+    height: 100vh;
+    margin: 0 15%;
+  }
+
+  .profile {
+    height: 100vh;
+    margin: 0 15%;
+  }
+
+  .projects {
+    height: 100vh;
+    margin: 0 15%;
+  }
+
+  .achievements {
+    height: 100vh;
+    margin: 0 15%;
+  }
 }

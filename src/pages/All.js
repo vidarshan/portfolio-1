@@ -141,6 +141,8 @@ const All = () => {
             </a></li>
           </Scrollspy>
         </header>
+
+        <footer className='footer'>&copy; 2021 Vidarshan</footer>
       </div>
 
 
