@@ -161,3 +161,17 @@
     }
   }
 }
+
+@media screen and (max-width: 376px) {
+  .profile-container {
+    .profile-heading {
+      padding: 0 1rem !important;
+    }
+
+    .profile-info {
+      .profile-info-text {
+        padding: 1rem !important;
+      }
+    }
+  }
+}

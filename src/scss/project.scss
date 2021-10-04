@@ -239,3 +239,13 @@
     }
   }
 }
+
+@media screen and (max-width: 376px) {
+  .project-container {
+    margin-top: 11rem;
+
+    .project-heading {
+      padding: 0 1rem !important;
+    }
+  }
+}

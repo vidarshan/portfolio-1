@@ -109,3 +109,41 @@ html {
     margin: 0 15%;
   }
 }
+
+@media screen and (max-width: 376px) {
+  .home {
+    display: flex !important;
+    justify-content: center !important;
+    height: 100vh !important;
+    margin: 0 4% !important;
+    margin-top: 7rem !important;
+    margin-right: 0 !important;
+  }
+
+  .profile {
+    height: 100vh !important;
+    margin: 0 4% !important;
+    margin-top: 7rem !important;
+    margin-right: 0 !important;
+  }
+
+  .projects {
+    display: flex;
+    margin: 0 4%;
+    margin-top: 10rem !important;
+  }
+
+  .achievements {
+    display: flex !important;
+    height: 100vh !important;
+    margin: 0 4% !important;
+    margin-top: 10rem !important;
+  }
+
+  .contact {
+    display: flex !important;
+    height: 100vh !important;
+    margin: 0 4% !important;
+    margin-top: 10rem !important;
+  }
+}

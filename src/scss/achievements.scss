@@ -101,3 +101,27 @@
     }
   }
 }
+
+@media screen and (max-width: 376px) {
+  .stats-container {
+    .stats-heading {
+      padding: 0 1rem !important;
+    }
+  }
+  .github {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+
+    .contributions,
+    .stars,
+    .repos,
+    .prs {
+      padding: 2rem 0rem !important;
+    }
+  }
+
+  .stack {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
