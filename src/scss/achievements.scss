@@ -1,0 +1,127 @@
+@import "../scss/variables.scss";
+
+.stats-container {
+  .stats-heading {
+    display: flex;
+    color: $text-color-lighter;
+    text-align: left;
+    font-size: 7rem !important;
+    font-weight: 600;
+  }
+
+  .github-text {
+    text-align: left;
+    font-size: 4rem;
+    margin: 2rem;
+    transition: 0.3s;
+  }
+
+  .github {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    width: 100%;
+    margin: 2rem 0;
+    border-bottom: 2px solid $text-color-lighter;
+    transition: 0.3s;
+
+    .contributions,
+    .stars,
+    .repos,
+    .prs {
+      padding: 2rem 4rem;
+    }
+  }
+
+  .stack-text {
+    text-align: left;
+    font-size: 4rem;
+    margin: 2rem;
+    transition: 0.3s;
+  }
+
+  .stack {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    width: 100%;
+    transition: 0.3s;
+
+    .reputation,
+    .gold,
+    .silver,
+    .bronze {
+      padding: 2rem 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .github,
+  .stack {
+    font-size: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .github-text,
+  .stack-text {
+    font-size: 2.2rem !important;
+  }
+
+  .github,
+  .stack {
+    font-size: 2.2rem !important;
+  }
+
+  .contributions,
+  .stars,
+  .repos,
+  .prs {
+    padding: 0.15rem 2.5rem !important;
+  }
+
+  .stats-container {
+    .stats-heading {
+      font-size: 4rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .github-text,
+  .stack-text {
+    font-size: 2.2rem !important;
+  }
+
+  .stats-container {
+    .stats-heading {
+      font-size: 4rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .stats-container {
+    .stats-heading {
+      padding: 0 1rem !important;
+    }
+  }
+  .github {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+
+    .contributions,
+    .stars,
+    .repos,
+    .prs {
+      padding: 2rem 0rem !important;
+    }
+  }
+
+  .stack {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

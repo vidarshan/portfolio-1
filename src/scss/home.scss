@@ -1,0 +1,50 @@
+@import "variables.scss";
+
+.home-container {
+  width: 100%;
+  text-align: left;
+
+  .hello-text {
+    font-weight: 400;
+    color: $text-color-lighter;
+    font-size: 6rem;
+    margin: 0.5rem;
+    transition: 0.3s;
+  }
+
+  .name-text {
+    font-size: 8rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    color: $text-color-dark;
+    transition: 0.3s;
+  }
+
+  .def-text {
+    font-size: 6rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    color: $text-color-light;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home-container {
+    .hello-text,
+    .name-text,
+    .def-text {
+      font-size: 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .home-container {
+    .hello-text,
+    .name-text,
+    .def-text {
+      font-size: 4rem;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+@import "./variables.scss";
+
+.profile-container {
+  .profile-heading {
+    color: $text-color-lighter;
+    text-align: left;
+    font-size: 7rem !important;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    transition: 0.3s;
+  }
+
+  .profile-info {
+    display: flex;
+
+    .profile-info-text {
+      border-right: 2px solid $text-color-lighter;
+      width: 60%;
+      text-align: left;
+      font-size: 2rem;
+      line-height: 28px;
+      padding: 2rem;
+      transition: 0.3s;
+    }
+
+    .profile-overview-text {
+      width: 40%;
+      padding: 2rem;
+      transition: 0.3s;
+
+      .work-experience {
+        padding: 1rem;
+        font-size: 1.4rem;
+        text-align: left;
+      }
+
+      .technologies-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .technology {
+          padding: 0.5rem;
+        }
+      }
+
+      .photo {
+        .my-photo {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    span {
+      color: rgb(180, 166, 37);
+      display: inline-block;
+      position: relative;
+    }
+
+    span:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    span:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+
+    .profile-info-text {
+      border-right: none !important;
+      width: 100% !important;
+      text-align: left;
+      font-size: 1 !important;
+      line-height: 28px;
+      padding: 2rem;
+      transition: 0.3s;
+    }
+
+    .profile-overview-text {
+      order: -1 !important;
+      width: 100% !important;
+      padding: 2rem;
+      transition: 0.3s;
+
+      .work-experience {
+        padding: 1rem;
+        font-size: 1.4rem;
+        text-align: left;
+        display: none;
+      }
+
+      .technologies-grid {
+        display: none !important;
+      }
+
+      .photo {
+        .my-photo {
+          border-radius: 50%;
+        }
+      }
+    }
+
+    span {
+      color: rgb(180, 166, 37);
+      display: inline-block;
+      position: relative;
+    }
+
+    span:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: royalblue;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    span:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+
+    .profile-info-text {
+      width: 100% !important;
+      border-right: none !important;
+    }
+
+    .profile-overview-text {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .profile-container {
+    .profile-heading {
+      font-size: 4rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .profile-container {
+    .profile-heading {
+      padding: 0 1rem !important;
+    }
+
+    .profile-info {
+      .profile-info-text {
+        padding: 1rem !important;
+      }
+    }
+  }
+}

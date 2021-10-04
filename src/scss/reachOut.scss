@@ -1,0 +1,182 @@
+@import "../scss/variables.scss";
+
+.reachout-container {
+  width: 100%;
+
+  .reachout-heading {
+    display: flex;
+    color: $text-color-lighter;
+    text-align: left;
+    font-size: 7rem !important;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .form-socials {
+    display: flex;
+
+    .reachout-form {
+      display: flex;
+      flex-direction: column;
+      padding: 0 3rem 0 0;
+      width: 100%;
+      border-right: 2px solid $text-color-lighter;
+
+      input {
+        margin: 3rem 1rem;
+        font-size: 2rem !important;
+        font: inherit;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        transition: 0.3s;
+      }
+
+      :focus {
+        outline: none !important;
+      }
+
+      button {
+        height: 4rem;
+        margin: 1rem;
+        background-color: rgb(3, 139, 87);
+        color: white;
+        border: none;
+      }
+    }
+
+    .email-socials {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .email-text {
+        font-size: 2rem;
+        transition: 0.3s;
+      }
+      .email {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 3rem;
+        border-bottom: 2px solid $text-color-lighter;
+        cursor: pointer;
+
+        img {
+          padding: 0 0.6rem;
+        }
+
+        a {
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+          transition: 0.3s;
+        }
+
+        a:hover {
+          color: $text-color-lighter;
+        }
+      }
+
+      .socials {
+        padding-top: 1rem;
+
+        .social-text {
+          font-size: 2rem;
+          transition: 0.3s;
+        }
+
+        .social-icons {
+          display: flex;
+          flex-direction: row;
+          .social {
+            transition: transform 0.2s;
+            padding: 1rem;
+          }
+        }
+
+        .social:hover {
+          -ms-transform: scale(1.5); /* IE 9 */
+          -webkit-transform: scale(1.5); /* Safari 3-8 */
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .form-socials {
+    display: flex;
+    flex-direction: column;
+
+    .reachout-form {
+      padding: 0 !important;
+      border-right: none !important;
+      border-bottom: 2px solid $text-color-lighter;
+      padding-bottom: 1rem !important;
+    }
+
+    .email-text {
+      padding-bottom: 1rem;
+    }
+    .email-socials {
+      padding-top: 2rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .reachout-container {
+    .reachout-heading {
+      font-size: 4rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .reachout-container {
+    .reachout-heading {
+      padding: 0 1rem !important;
+    }
+
+    .form-socials {
+      .email-socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .email-text {
+          font-size: 2.2rem !important;
+        }
+
+        .email {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          font-size: 2.2rem;
+          border-bottom: 2px solid $text-color-lighter;
+          cursor: pointer;
+
+          img {
+            padding: 0 0.6rem;
+          }
+
+          a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            transition: 0.3s;
+          }
+
+          a:hover {
+            color: $text-color-lighter;
+          }
+        }
+      }
+    }
+  }
+}
