@@ -11,7 +11,7 @@ This is my portfolio website. This website will be improved in the years to come
 ## 📌 Reuse
 
 - Reusing this codebase is fine, as long as some attribution to this repository is made. Copying is not good, and since the repository is public,
-  it is impossible to avoid copying, but I appreciate if the adequate credits is given to the author of this repository.
+  it is impossible to avoid copying, but I appreciate if the adequate credit is given to the author of this repository.
 
 ## 🏃‍♂️ To Run
 
