@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from 'react-redux';
 import Bounce from 'react-reveal/Bounce';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
@@ -13,7 +12,6 @@ import Achievements from '../components/Achievements';
 
 const All = () => {
 
-  const dispatch = useDispatch();
   const [theme, setTheme] = useState();
 
   const changeTheme = () => {
@@ -39,7 +37,7 @@ const All = () => {
     }
 
 
-  }, [dispatch])
+  }, [])
 
   return (
     <>
