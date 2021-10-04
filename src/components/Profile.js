@@ -33,10 +33,14 @@ const Profile = () => {
                         <br />
                         <br />
                         Not only Programming is my Job, but it’s also my hobby, since <span className='underlined-text'>I enjoy every minute of me writing code,</span> and seeing things being built with each an every line of code I write.
+
                     </div>
                     <div class="profile-overview-text">
+                        <div class="photo">
+                            <img className='my-photo' width='150' src={require('../img/myself.jpeg').default} alt="" />
+                        </div>
                         <div class="work-experience">
-                            Currently working with &#8594; Beta Launch, Colombo Sri Lanka.🇱🇰
+                            Currently working with &#8594; Beta Launch, Sri Lanka.🇱🇰
                         </div>
                         <div class="work-experience">
                             Designation &#8594; Trainee Software Engineer.
@@ -46,6 +50,29 @@ const Profile = () => {
                         </div>
                         <div class="work-experience">
                             Technologies &#8594; Full Stack Javascript [React JS/ Node JS].
+                        </div>
+                        <div class="technologies-grid">
+                            <div class="technology">
+                                <img height='40' src={require('../img/006-react.svg').default} alt="" />
+                            </div>
+                            <div class="technology">
+                                <img height='40' src={require('../img/021-mysql.svg').default} alt="" />
+                            </div>
+                            <div class="technology">
+                                <img height='40' src={require('../img/025-typescript.svg').default} alt="" />
+                            </div>
+                            <div class="technology">
+                                <img height='40' src={require('../img/029-javascript.svg').default} alt="" />
+                            </div>
+                            <div class="technology">
+                                <img height='40' src={require('../img/032-nodejs.svg').default} alt="" />
+                            </div>
+                            <div class="technology">
+                                <img height='40' src={require('../img/026-sass.svg').default} alt="" />
+                            </div>
+                            <div class="technology">
+                                <img height='40' src={require('../img/001-python.svg').default} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

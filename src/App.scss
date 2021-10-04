@@ -137,3 +137,47 @@
     fill: rgb(183, 185, 27) !important;
   }
 }
+
+.footer {
+  font-size: 2rem;
+  transition: 0.3s;
+  color: $text-color-lighter;
+}
+
+@media screen and (max-width: 376px) {
+  .switch-theme {
+    display: none;
+  }
+
+  .scrollspy {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 7rem;
+    width: 100vh !important;
+    position: fixed !important;
+    margin-left: 30rem !important;
+    background-color: $color-light-black;
+
+    ul {
+      background-color: red !important;
+    }
+    li {
+      list-style: none !important;
+      margin: 1rem;
+      svg {
+        fill: white !important;
+        height: 2.7rem !important;
+      }
+    }
+
+    .isCurrent {
+      font-weight: bold;
+    }
+
+    .isCurrent svg {
+      fill: rgb(183, 185, 27) !important;
+    }
+  }
+}

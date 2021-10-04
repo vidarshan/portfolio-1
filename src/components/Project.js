@@ -42,7 +42,7 @@ const Project = () => {
                                 <a href='https://countries-io.herokuapp.com/' rel="noreferrer" target="_blank"><img height='26' src={require('../img/link.svg').default} alt='link' /></a>
                             </div>
                         </div>
-                        <div class="desc">Find informtion on any country with a simple search!</div>
+                        <div class="desc">Find information on any country with a simple search!</div>
                         <div class="techs">
                             <div class="tech">
                                 <div class="tech-text">Technologies &#8594;</div>
