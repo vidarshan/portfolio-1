@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.Toastify__toast-body {
+  font-family: "Calibre" !important;
+  font-size: 2rem !important;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -100,6 +105,12 @@
       color: $dark-text-color-light;
     }
   }
+
+  .reachout-form {
+    input {
+      border-bottom: 2px solid white !important;
+    }
+  }
 }
 
 .scrollspy {
@@ -134,7 +145,7 @@
   }
 
   .isCurrent svg {
-    fill: rgb(183, 185, 27) !important;
+    fill: rgb(3, 139, 87) !important;
   }
 }
 
@@ -146,7 +157,13 @@
 
 @media screen and (max-width: 376px) {
   .switch-theme {
-    display: none;
+    position: relative;
+    float: right;
+    width: 2rem;
+    height: 2rem;
+    top: 2rem;
+    right: 0;
+    cursor: pointer;
   }
 
   .scrollspy {
@@ -157,7 +174,7 @@
     height: 7rem;
     width: 100vh !important;
     position: fixed !important;
-    margin-left: 30rem !important;
+
     background-color: $color-light-black;
 
     ul {
@@ -165,11 +182,23 @@
     }
     li {
       list-style: none !important;
-      margin: 1rem;
+      width: fit-content !important;
       svg {
         fill: white !important;
         height: 2.7rem !important;
       }
+    }
+
+    li:nth-child(1) {
+      margin-left: 32rem !important;
+    }
+
+    li:nth-child(4) {
+      padding: 0 2rem;
+    }
+
+    li:nth-child(5) {
+      padding: 0 0 0 1.2rem;
     }
 
     .isCurrent {
@@ -177,7 +206,7 @@
     }
 
     .isCurrent svg {
-      fill: rgb(183, 185, 27) !important;
+      fill: rgb(3, 139, 87) !important;
     }
   }
 }

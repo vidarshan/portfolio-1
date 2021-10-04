@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import Bounce from 'react-reveal/Bounce';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
-import { getStackOverflowDetails } from '../actions/actions';
 import Scrollspy from 'react-scrollspy'
 import ReachOut from '../components/ReachOut';
 import Profile from '../components/Profile';
@@ -37,7 +38,7 @@ const All = () => {
       setTheme('dark')
     }
 
-    dispatch(getStackOverflowDetails())
+
   }, [dispatch])
 
   return (
@@ -145,7 +146,16 @@ const All = () => {
         <footer className='footer'>&copy; 2021 Vidarshan</footer>
       </div>
 
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
 
+      />
 
     </>
   );
