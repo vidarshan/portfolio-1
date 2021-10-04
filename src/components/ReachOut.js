@@ -1,21 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import Shake from 'react-reveal/Shake';
+import { toast } from 'react-toastify';
 import '../scss/reachOut.scss';
 
 const ReachOut = () => {
+
+    let success = true;
+
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+
+    const sendEmail = () => {
+
+
+        if (success) {
+            toast.success('🙂 Email sent successfully!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        } else {
+            toast.success('😥 Sending Failed. Try again!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+    }
+
+
+
     return (
         <Fade bottom duration={2000}>
 
             <div className='reachout-container'>
-                <div class="reachout-heading">🧭 Reach Out.</div>
+                <div class="reachout-heading">👉 Reach Out.</div>
                 <div class="form-socials">
                     <div class="reachout-form">
-                        <Shake>
-                            <input type="text" placeholder="Your Email" />
-                        </Shake>
-                        <input type="text" placeholder="Message to me" />
-                        <button>Send</button>
+
+                        <input type="text" value={email} placeholder="Your Email" onChange={(e) => setEmail(e.target.value)} />
+
+                        <input type="text" value={message} placeholder="Message to me" onChange={(e) => setMessage(e.target.value)} />
+                        <button onClick={() => sendEmail()}>Send</button>
                     </div>
                     <div class="email-socials">
                         <div class="email-text">📧 Email</div>
@@ -41,6 +76,7 @@ const ReachOut = () => {
                     </div>
 
                 </div>
+
             </div>
         </Fade>
     )

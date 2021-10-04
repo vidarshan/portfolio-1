@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.Toastify__toast-body {
+  font-family: "Calibre" !important;
+  font-size: 2rem !important;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -98,6 +103,12 @@
 
     .def-text {
       color: $dark-text-color-light;
+    }
+  }
+
+  .reachout-form {
+    input {
+      border-bottom: 2px solid white !important;
     }
   }
 }
