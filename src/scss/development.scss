@@ -1,0 +1,10 @@
+@import "./variables.scss";
+
+.under-dev {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 7rem;
+}
