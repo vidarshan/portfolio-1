@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Bounce from 'react-reveal/Bounce';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
-
+import map from 'lodash.map';
 import Scrollspy from 'react-scrollspy'
 import ReachOut from '../components/ReachOut';
 import Profile from '../components/Profile';
@@ -36,6 +36,8 @@ const All = () => {
       element.classList.toggle('dark-mode');
       setTheme('dark')
     }
+
+
 
 
   }, [])

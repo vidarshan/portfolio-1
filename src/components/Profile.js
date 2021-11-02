@@ -33,7 +33,6 @@ const Profile = () => {
                         <br />
                         <br />
                         Not only Programming is my Job, but it’s also my hobby, since <span className='underlined-text'>I enjoy every minute of me writing code,</span> and seeing things being built with each an every line of code I write.
-
                     </div>
                     <div class="profile-overview-text">
                         <div class="photo">
@@ -51,32 +50,36 @@ const Profile = () => {
                         <div class="work-experience">
                             Technologies &#8594; Full Stack Javascript [React JS/ Node JS].
                         </div>
-                        <div class="technologies-grid">
-                            <div class="technology">
-                                <img height='40' src={require('../img/006-react.svg').default} alt="" />
-                            </div>
-                            <div class="technology">
-                                <img height='40' src={require('../img/021-mysql.svg').default} alt="" />
-                            </div>
-                            <div class="technology">
-                                <img height='40' src={require('../img/025-typescript.svg').default} alt="" />
-                            </div>
-                            <div class="technology">
-                                <img height='40' src={require('../img/029-javascript.svg').default} alt="" />
-                            </div>
-                            <div class="technology">
-                                <img height='40' src={require('../img/032-nodejs.svg').default} alt="" />
-                            </div>
-                            <div class="technology">
-                                <img height='40' src={require('../img/026-sass.svg').default} alt="" />
-                            </div>
-                            <div class="technology">
-                                <img height='40' src={require('../img/001-python.svg').default} alt="" />
-                            </div>
-                        </div>
+
+                    </div>
+
+                </div>
+                <div class="technologies-grid">
+                    <div class="technology">
+                        <img height='40' src={require('../img/js.png').default} alt="" />
+                    </div>
+                    <div class="technology">
+                        <img height='40' src={require('../img/react.png').default} alt="" />
+                    </div>
+                    <div class="technology">
+                        <img height='40' src={require('../img/ts.png').default} alt="" />
+                    </div>
+                    <div class="technology">
+                        <img height='40' src={require('../img/mongo.png').default} alt="" />
+                    </div>
+                    <div class="technology">
+                        <img height='40' src={require('../img/node.png').default} alt="" />
+                    </div>
+                    <div class="technology">
+                        <img height='40' src={require('../img/sass.png').default} alt="" />
+                    </div>
+                    <div class="technology">
+                        <img height='40' src={require('../img/redux.png').default} alt="" />
+                    </div>
+                    <div class="technology">
+                        <img height='40' src={require('../img/sql.png').default} alt="" />
                     </div>
                 </div>
-
             </div>
         </Fade>
     )

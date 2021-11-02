@@ -9,6 +9,7 @@
     margin-bottom: 2rem;
     padding: 0 2rem;
     transition: 0.3s;
+    font-family: "San Francisco";
   }
 
   .profile-info {
@@ -22,6 +23,7 @@
       line-height: 28px;
       padding: 2rem;
       transition: 0.3s;
+      font-family: "San Francisco";
     }
 
     .profile-overview-text {
@@ -36,9 +38,11 @@
       }
 
       .technologies-grid {
+        background-color: aqua !important;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         .technology {
+          background-color: aquamarine !important;
           padding: 0.5rem;
         }
       }
@@ -173,5 +177,20 @@
         padding: 1rem !important;
       }
     }
+  }
+}
+
+.technologies-grid {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  .technology {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem !important;
+    border-radius: 50%;
+    width: fit-content;
+    background-color: rgb(56, 56, 56);
   }
 }
