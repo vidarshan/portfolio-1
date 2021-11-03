@@ -14,11 +14,54 @@
     font-family: "San Francisco";
   }
 
+  .accordion {
+    font-family: "San Francisco" !important;
+  }
+
   .accordion-button {
     font-size: 2rem !important;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+  }
+
+  .accordion-item {
+    background-color: rgb(71, 71, 71);
   }
 
   .accordion-body {
     text-align: left;
+    font-size: 1.8rem;
+
+    .icon-date {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid grey;
+      .icon {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+      .date {
+        color: grey;
+      }
+
+      .site {
+        margin-left: 1rem;
+        color: rgb(45, 109, 131);
+        cursor: pointer;
+      }
+    }
+
+    .desc {
+      text-align: justify;
+      padding: 1rem 0;
+    }
   }
 }
