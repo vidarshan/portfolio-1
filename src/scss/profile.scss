@@ -4,7 +4,7 @@
   .profile-heading {
     color: $text-color-lighter;
     text-align: left;
-    font-size: 7rem !important;
+    font-size: 5rem !important;
     font-weight: 600;
     margin-bottom: 2rem;
     padding: 0 2rem;
@@ -13,37 +13,45 @@
   }
 
   .profile-info {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
 
     .profile-info-text {
-      border-right: 2px solid $text-color-lighter;
-      width: 60%;
       text-align: left;
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: 28px;
-      padding: 2rem;
       transition: 0.3s;
       font-family: "San Francisco";
+      padding: 1.5rem 2rem;
     }
 
     .profile-overview-text {
-      width: 40%;
-      padding: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       transition: 0.3s;
+      height: fit-content;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid grey;
 
-      .work-experience {
-        padding: 1rem;
-        font-size: 1.4rem;
+      // .photo {
+      //   background-color: aqua;
+      // }
+      .overview {
+        padding-left: 1rem;
         text-align: left;
-      }
+        color: grey;
 
-      .technologies-grid {
-        background-color: aqua !important;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        .technology {
-          background-color: aquamarine !important;
-          padding: 0.5rem;
+        .name {
+          font-size: 2.6rem;
+        }
+
+        .designation {
+          font-size: 2.4rem;
+        }
+
+        .current {
+          font-size: 2rem;
         }
       }
 

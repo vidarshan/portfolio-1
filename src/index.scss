@@ -61,6 +61,14 @@ html {
   margin: 0 15%;
 }
 
+.work {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15%;
+}
+
 .projects {
   height: 100vh;
   display: flex;
@@ -104,6 +112,11 @@ html {
   }
 
   .profile {
+    height: 100vh;
+    margin: 0 15%;
+  }
+
+  .work {
     height: 100vh;
     margin: 0 15%;
   }
