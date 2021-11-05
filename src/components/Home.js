@@ -5,7 +5,7 @@ import '../scss/home.scss';
 const Home = () => {
 
     const [show, setShow] = useState(true);
-    const [things, setThings] = useState(['I\'m a Software Engineer. 👨‍💻']);
+    const [things, setThings] = useState(['I\'m a Software Engineer 👨‍💻']);
 
     const showInfo = () => {
         setShow(!show);
@@ -14,7 +14,7 @@ const Home = () => {
     useEffect(() => {
 
         let optionNo = 0;
-        const stuff = ['I create stuff for the Web 🌎', 'I create stuff for Mobile 📱', 'I create stuff for Desktop 🖥️', 'I\'m a Software Engineer. 👨‍💻',];
+        const stuff = ['I create stuff for the Web 🌎', 'I create stuff for Mobile 📱', 'I create stuff for Desktop 🖥️', 'I\'m a Software Engineer 👨‍💻',];
 
         setInterval(() => {
             if (optionNo < 4) {

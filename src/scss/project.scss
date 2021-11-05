@@ -14,6 +14,111 @@
     font-weight: 600;
   }
 
+  .accordion {
+    font-family: "San Francisco" !important;
+  }
+
+  .accordion-button {
+    font-size: 2rem !important;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+  }
+
+  .accordion-item {
+    background-color: rgb(71, 71, 71);
+  }
+
+  .accordion-body {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+
+  .badge-green {
+    background-color: greenyellow;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    padding: 0.1rem 1rem;
+    color: black;
+    border-radius: 1rem;
+  }
+
+  .desc-photo {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+
+    .photo {
+      width: 50%;
+      padding: 1rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .desc {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding: 2rem;
+
+      .date-type {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .type,
+        .date {
+          padding: 1rem 0;
+
+          svg {
+            margin-right: 0.5rem;
+          }
+        }
+      }
+
+      .techs {
+        display: flex;
+        flex-direction: row;
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        margin: 1rem 0;
+
+        .text {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .tech {
+          background-color: grey;
+          border-radius: 50%;
+          margin: 1rem;
+          img {
+            margin: 1rem;
+          }
+        }
+      }
+
+      .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: grey;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          margin: 0.5rem;
+        }
+      }
+    }
+  }
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
