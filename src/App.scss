@@ -21,6 +21,21 @@
   font-size: 2rem !important;
 }
 
+.tooltip {
+  margin-left: 1rem !important;
+}
+
+#tooltip-right > .tooltip-inner {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #062e56;
+  font-size: 1.2rem;
+}
+
+#button-tooltip {
+  font-size: 2rem !important;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -64,6 +79,20 @@
     .technology {
       background-color: rgb(44, 44, 44) !important;
     }
+  }
+
+  .accordion {
+    color: $text-color-lighter !important;
+  }
+
+  .accordion-item {
+    color: white;
+    background-color: rgb(44, 44, 44) !important;
+  }
+
+  .accordion-button {
+    color: white !important;
+    background-color: rgb(66, 66, 66) !important;
   }
 
   .projects-grid {
