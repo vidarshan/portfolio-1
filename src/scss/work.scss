@@ -20,12 +20,13 @@
 
   .accordion-button {
     font-size: 2rem !important;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
+    background-color: rgb(180, 180, 180);
+    color: black;
   }
 
   .accordion-item {
-    background-color: rgb(71, 71, 71);
+    border: none;
+    background-color: rgb(241, 241, 241);
   }
 
   .accordion-body {
@@ -50,18 +51,22 @@
       }
       .date {
         color: grey;
+        svg {
+          margin-right: 0.5rem;
+        }
       }
 
       .site {
         margin-left: 1rem;
-        color: rgb(45, 109, 131);
+        color: rgb(0, 155, 207);
         cursor: pointer;
+        text-decoration: underline;
       }
     }
 
     .desc {
       text-align: justify;
-      padding: 1rem 0;
+      padding: 1rem;
     }
   }
 }

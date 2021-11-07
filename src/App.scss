@@ -66,6 +66,17 @@
     }
   }
 
+  .accordion-button {
+    font-size: 2rem !important;
+    background-color: $text-color-lighter !important;
+    color: rgb(243, 243, 243) !important;
+  }
+
+  .accordion-item {
+    border: none;
+    background-color: rgb(44, 44, 44) !important;
+  }
+
   .underlined-text {
     color: white !important;
     position: relative;
