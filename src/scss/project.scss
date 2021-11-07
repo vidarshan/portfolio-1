@@ -360,5 +360,19 @@
     .project-heading {
       padding: 0 1rem !important;
     }
+
+    .desc-photo {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+
+      .photo {
+        width: 100%;
+      }
+
+      .desc {
+        width: 100%;
+      }
+    }
   }
 }

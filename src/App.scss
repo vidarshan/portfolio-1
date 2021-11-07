@@ -66,6 +66,24 @@
     }
   }
 
+  .reachout-form {
+    label {
+      width: 100%;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+    input {
+      background-color: transparent !important;
+      border: 2px solid rgb(104, 104, 104) !important;
+      color: white !important;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+    }
+  }
+
   .badge-green {
     display: flex;
     align-items: center;
@@ -89,7 +107,7 @@
 
   .accordion-button {
     font-size: 2rem !important;
-    background-color: $text-color-lighter !important;
+    background-color: rgb(82, 82, 82) !important;
     color: rgb(243, 243, 243) !important;
   }
 
@@ -163,12 +181,6 @@
 
     .def-text {
       color: $dark-text-color-light;
-    }
-  }
-
-  .reachout-form {
-    input {
-      border-bottom: 2px solid white !important;
     }
   }
 }
