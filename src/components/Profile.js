@@ -16,9 +16,6 @@ const Profile = () => {
 
     const renderTooltip = (text) => (
         <Tooltip placement="top" className="in" id="tooltip-top">{text}</Tooltip>
-        // <Tooltip id="button-tooltip">
-        //     {text}
-        // </Tooltip>
     );
 
     useLayoutEffect(() => {

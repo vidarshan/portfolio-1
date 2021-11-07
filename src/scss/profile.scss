@@ -26,10 +26,11 @@
       padding: 2rem 2rem;
 
       .underlined-text {
-        color: rgb(32, 123, 226) !important;
+        color: black;
         position: relative;
         text-decoration: none;
         display: inline-block;
+        border-bottom: 1px solid $highlight-color;
       }
 
       .underlined-text:after {
