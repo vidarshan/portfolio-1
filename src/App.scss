@@ -66,6 +66,13 @@
     }
   }
 
+  .underlined-text {
+    color: rgb(32, 181, 226) !important;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

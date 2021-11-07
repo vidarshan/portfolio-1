@@ -1,4 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react';
+import { SiReact, SiJavascript, SiTypescript, SiMongodb, SiNodedotjs, SiRedux, SiMysql, SiExpress, SiCypress } from 'react-icons/si';
+import { FaSass } from 'react-icons/fa';
+import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import '../scss/profile.scss';
 
@@ -10,6 +13,13 @@ const Profile = () => {
     const showContent = () => {
         setShow(!show)
     }
+
+    const renderTooltip = (text) => (
+        <Tooltip placement="top" className="in" id="tooltip-top">{text}</Tooltip>
+        // <Tooltip id="button-tooltip">
+        //     {text}
+        // </Tooltip>
+    );
 
     useLayoutEffect(() => {
         showContent();
@@ -46,30 +56,87 @@ const Profile = () => {
 
                 </div>
                 <div class="technologies-grid">
-                    <div class="technology">
-                        <img height='40' src={require('../img/js.png').default} alt="" />
-                    </div>
-                    <div class="technology">
-                        <img height='40' src={require('../img/react.png').default} alt="" />
-                    </div>
-                    <div class="technology">
-                        <img height='40' src={require('../img/ts.png').default} alt="" />
-                    </div>
-                    <div class="technology">
-                        <img height='40' src={require('../img/mongo.png').default} alt="" />
-                    </div>
-                    <div class="technology">
-                        <img height='40' src={require('../img/node.png').default} alt="" />
-                    </div>
-                    <div class="technology">
-                        <img height='40' src={require('../img/sass.png').default} alt="" />
-                    </div>
-                    <div class="technology">
-                        <img height='40' src={require('../img/redux.png').default} alt="" />
-                    </div>
-                    <div class="technology">
-                        <img height='40' src={require('../img/sql.png').default} alt="" />
-                    </div>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('React JS')}
+                    >
+                        <div class="technology">
+                            <SiReact size='30' color='rgb(0, 209, 236)' />
+                        </div></OverlayTrigger>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('Javascript')}
+                    >
+                        <div class="technology">
+                            < SiJavascript size='30' color='rgb(255 184 6)' />
+                        </div>
+                    </OverlayTrigger>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('Typescript')}
+                    >
+                        <div class="technology">
+                            <SiTypescript size='30' color='rgb(19, 114, 202)' />
+                        </div></OverlayTrigger>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('Mongo DB')}
+                    >
+                        <div class="technology">
+                            <SiMongodb size='30' color='rgb(48, 138, 67)' />
+                        </div></OverlayTrigger>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('Node JS')}
+                    >
+                        <div class="technology">
+                            <SiNodedotjs size='30' color='rgb(48, 138, 67)' />
+                        </div></OverlayTrigger>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('Sass')}
+                    >
+                        <div class="technology">
+                            <FaSass size='30' color='rgb(214, 0, 143)' />
+                        </div></OverlayTrigger>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('Redux')}
+                    >
+                        <div class="technology">
+                            <SiRedux size='30' color='rgb(178, 0, 214)' />
+                        </div></OverlayTrigger>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('MySQL')}
+                    >
+                        <div class="technology">
+                            <SiMysql size='30' color='rgb(0, 146, 214)∂' />
+                        </div></OverlayTrigger>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('Express JS')}
+                    >
+                        <div class="technology">
+                            <SiExpress size='30' color='rgb(141 134 134)' />
+                        </div></OverlayTrigger>
+                    <OverlayTrigger
+                        placement="bottom"
+                        delay={{ show: 250, hide: 400 }}
+                        overlay={renderTooltip('Cypress')}
+                    >
+                        <div class="technology">
+                            <SiCypress size='30' color='rgb(146, 146, 146)' />
+                        </div></OverlayTrigger>
                 </div>
             </div>
         </Fade>
