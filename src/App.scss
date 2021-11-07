@@ -66,6 +66,27 @@
     }
   }
 
+  .badge-green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .tech {
+    margin: 1rem 0;
+    border-radius: 50%;
+    background-color: rgb(104, 104, 104);
+    margin: 0.5rem;
+    svg {
+      margin: 0.5rem;
+    }
+  }
+
   .accordion-button {
     font-size: 2rem !important;
     background-color: $text-color-lighter !important;
@@ -73,7 +94,6 @@
   }
 
   .accordion-item {
-    border: none;
     background-color: rgb(44, 44, 44) !important;
   }
 
@@ -197,7 +217,8 @@ ul {
 }
 
 .footer {
-  font-size: 2rem;
+  font-size: 1rem;
+  padding: 1rem;
   transition: 0.3s;
   color: $text-color-lighter;
 }

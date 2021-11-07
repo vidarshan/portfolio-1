@@ -5,7 +5,9 @@ import '../scss/project.scss';
 import { Accordion } from 'react-bootstrap';
 import { RiComputerFill } from 'react-icons/ri';
 import { BsFillCalendarDateFill } from 'react-icons/bs';
-import { FaLink, FaGithub } from 'react-icons/fa';
+import { FcCalendar, FcFolder } from 'react-icons/fc';
+import { SiReact } from 'react-icons/si';
+import { FaLink, FaGithub, FaSass } from 'react-icons/fa';
 const Project = () => {
 
 
@@ -15,7 +17,7 @@ const Project = () => {
                 <div className="project-heading">🚀  Projects.</div>
                 <Accordion defaultActiveKey="2">
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header>📁 Githuber <div className='badge-green'>Latest</div></Accordion.Header>
+                        <Accordion.Header><FcFolder />Githuber</Accordion.Header>
                         <Accordion.Body>
                             <div class="desc-photo">
                                 <div class="photo">
@@ -24,10 +26,10 @@ const Project = () => {
                                 <div class="desc">
                                     <div class="links">
                                         <div class="link">
-                                            <FaLink />
+                                            <FaLink size='20' />
                                         </div>
                                         <div class="link">
-                                            <FaGithub />
+                                            <FaGithub size='20' />
                                         </div>
                                     </div>
                                     <div class="text">
@@ -38,10 +40,10 @@ const Project = () => {
                                             Tech Stack &#8594;
                                         </div>
                                         <div class="tech">
-                                            <img width='25' src={require('../img/react.png').default} alt="" />
+                                            <SiReact size='30' color='rgb(0, 209, 236)' />
                                         </div>
                                         <div class="tech">
-                                            <img width='25' src={require('../img/sass.png').default} alt="" />
+                                            <FaSass size='30' color='rgb(214, 0, 143)' />
                                         </div>
 
                                     </div>
@@ -50,66 +52,142 @@ const Project = () => {
                                             <RiComputerFill /> Frontend Project
                                         </div>
                                         <div class="date">
-                                            <BsFillCalendarDateFill /> 09-2021
+                                            <FcCalendar /> 09-2021
                                         </div>
                                     </div>
-
                                 </div>
-
-
                             </div>
 
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
-                        <Accordion.Header>📁 Countries.io</Accordion.Header>
+                        <Accordion.Header><FcFolder /> Countries.io</Accordion.Header>
                         <Accordion.Body>
-                            <div class="icon-date">
-                                <div class="icon">
-                                    <img width='30' src={require('../img/cropped-favicon.png').default} alt="" srcset="" /> <div class="site">www.betalaunch.io</div>
+                            <div class="desc-photo">
+                                <div class="photo">
+                                    <img src='https://image-placeholder.com/images/actual-size/1920x1080.png' alt="" />
                                 </div>
-                                <div class="date">
-                                    📅 2021/04 - 2021/10
+                                <div class="desc">
+                                    <div class="links">
+                                        <div class="link">
+                                            <FaLink size='20' />
+                                        </div>
+                                        <div class="link">
+                                            <FaGithub size='20' />
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Github Search Made Simple! Taking the proper use of the Github API, search Github users, get the information you need with only having to click very few times.
+                                    </div>
+                                    <div class="techs">
+                                        <div class="text">
+                                            Tech Stack &#8594;
+                                        </div>
+                                        <div class="tech">
+                                            <SiReact size='30' color='rgb(0, 209, 236)' />
+                                        </div>
+                                        <div class="tech">
+                                            <FaSass size='30' color='rgb(214, 0, 143)' />
+                                        </div>
+
+                                    </div>
+                                    <div class="date-type">
+                                        <div class="type">
+                                            <RiComputerFill /> Frontend Project
+                                        </div>
+                                        <div class="date">
+                                            <FcCalendar /> 09-2021
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="desc">
-                                Contributed to applications which are based on the web, as a frontend Javascript developer.Mainly worked with React JS along with frontend technologies such as Semantic UI for user interfaces.
                             </div>
 
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="2">
-                        <Accordion.Header>📁 Carmax ERP</Accordion.Header>
+                        <Accordion.Header><FcFolder /> Carmax ERP</Accordion.Header>
                         <Accordion.Body>
-                            <div class="icon-date">
-                                <div class="icon">
-                                    <img width='30' src={require('../img/cropped-favicon.png').default} alt="" srcset="" /> <div class="site">www.betalaunch.io</div>
+                            <div class="desc-photo">
+                                <div class="photo">
+                                    <img src='https://image-placeholder.com/images/actual-size/1920x1080.png' alt="" />
                                 </div>
-                                <div class="date">
-                                    📅 2021/04 - 2021/10
-                                </div>
-                            </div>
-                            <div class="desc">
-                                Contributed to applications which are based on the web, as a frontend Javascript developer.Mainly worked with React JS along with frontend technologies such as Semantic UI for user interfaces.
-                            </div>
+                                <div class="desc">
+                                    <div class="links">
+                                        <div class="link">
+                                            <FaLink size='20' />
+                                        </div>
+                                        <div class="link">
+                                            <FaGithub size='20' />
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Github Search Made Simple! Taking the proper use of the Github API, search Github users, get the information you need with only having to click very few times.
+                                    </div>
+                                    <div class="techs">
+                                        <div class="text">
+                                            Tech Stack &#8594;
+                                        </div>
+                                        <div class="tech">
+                                            <SiReact size='30' color='rgb(0, 209, 236)' />
+                                        </div>
+                                        <div class="tech">
+                                            <FaSass size='30' color='rgb(214, 0, 143)' />
+                                        </div>
 
+                                    </div>
+                                    <div class="date-type">
+                                        <div class="type">
+                                            <RiComputerFill /> Frontend Project
+                                        </div>
+                                        <div class="date">
+                                            <FcCalendar /> 09-2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="3">
-                        <Accordion.Header>📁 Portfolio</Accordion.Header>
+                        <Accordion.Header><FcFolder /> Portfolio</Accordion.Header>
                         <Accordion.Body>
-                            <div class="icon-date">
-                                <div class="icon">
-                                    <img width='30' src={require('../img/cropped-favicon.png').default} alt="" srcset="" /> <div class="site">www.betalaunch.io</div>
+                            <div class="desc-photo">
+                                <div class="photo">
+                                    <img src='https://image-placeholder.com/images/actual-size/1920x1080.png' alt="" />
                                 </div>
-                                <div class="date">
-                                    📅 2021/04 - 2021/10
-                                </div>
-                            </div>
-                            <div class="desc">
-                                Contributed to applications which are based on the web, as a frontend Javascript developer.Mainly worked with React JS along with frontend technologies such as Semantic UI for user interfaces.
-                            </div>
+                                <div class="desc">
+                                    <div class="links">
+                                        <div class="link">
+                                            <FaLink size='20' />
+                                        </div>
+                                        <div class="link">
+                                            <FaGithub size='20' />
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Github Search Made Simple! Taking the proper use of the Github API, search Github users, get the information you need with only having to click very few times.
+                                    </div>
+                                    <div class="techs">
+                                        <div class="text">
+                                            Tech Stack &#8594;
+                                        </div>
+                                        <div class="tech">
+                                            <SiReact size='30' color='rgb(0, 209, 236)' />
+                                        </div>
+                                        <div class="tech">
+                                            <FaSass size='30' color='rgb(214, 0, 143)' />
+                                        </div>
 
+                                    </div>
+                                    <div class="date-type">
+                                        <div class="type">
+                                            <RiComputerFill /> Frontend Project
+                                        </div>
+                                        <div class="date">
+                                            <FcCalendar /> 09-2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>
