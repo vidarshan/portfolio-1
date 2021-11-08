@@ -4,7 +4,6 @@ import Fade from 'react-reveal/Fade';
 import '../scss/project.scss';
 import { Accordion } from 'react-bootstrap';
 import { RiComputerFill } from 'react-icons/ri';
-import { BsFillCalendarDateFill } from 'react-icons/bs';
 import { FcCalendar, FcFolder } from 'react-icons/fc';
 import { SiReact } from 'react-icons/si';
 import { FaLink, FaGithub, FaSass } from 'react-icons/fa';

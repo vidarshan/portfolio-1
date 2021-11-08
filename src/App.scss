@@ -235,55 +235,114 @@ ul {
   color: $text-color-lighter;
 }
 
-@media screen and (max-width: 376px) {
-  .switch-theme {
-    position: relative;
-    float: right;
-    width: 2rem;
-    height: 2rem;
-    top: 2rem;
-    right: 0;
-    cursor: pointer;
-  }
-
+@media screen and (max-width: 550px) {
   .scrollspy {
     display: flex;
-    flex-direction: row !important;
-    justify-content: center !important;
     align-items: center !important;
-    height: 7rem;
-    width: 100vh !important;
-    position: fixed !important;
+    justify-content: center !important;
+    flex-direction: row;
+    height: 9rem;
+    width: 100%;
 
-    background-color: $color-light-black;
+    ul {
+      width: 100% !important;
+    }
 
     li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       list-style: none !important;
-      width: fit-content !important;
+      width: 100%;
+
       svg {
-        fill: white !important;
-        height: 2.7rem !important;
+        fill: rgb(134, 134, 134) !important;
+        height: 2rem !important;
       }
     }
-
-    li:nth-child(1) {
-      margin-left: 32rem !important;
-    }
-
-    li:nth-child(4) {
-      padding: 0 2rem;
-    }
-
-    li:nth-child(5) {
-      padding: 0 0 0 1.2rem;
-    }
-
-    .isCurrent {
-      font-weight: bold;
-    }
-
-    .isCurrent svg {
-      fill: rgb(3, 139, 87) !important;
-    }
   }
+
+  .switch-theme {
+    position: absolute !important;
+    margin-top: 8rem !important;
+    margin-right: 1rem !important;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .home {
+    margin-top: 7rem;
+    margin-left: 6%;
+    margin-right: 6%;
+    height: 100vh !important;
+  }
+
+  .profile,
+  .work,
+  .contact,
+  .projects {
+    margin: 40% 6% !important;
+    height: 100vh;
+  }
+
+  .accordion-button {
+    font-size: 1rem !important;
+    background-color: rgb(82, 82, 82) !important;
+    color: rgb(243, 243, 243) !important;
+  }
+
+  .accordion-item {
+    background-color: rgb(44, 44, 44) !important;
+  }
+
+  // .switch-theme {
+  //   position: relative;
+  //   float: right;
+  //   width: 2rem;
+  //   height: 2rem;
+  //   top: 2rem;
+  //   right: 0;
+  //   cursor: pointer;
+  // }
+
+  // .scrollspy {
+  //   display: flex;
+  //   flex-direction: row !important;
+  //   justify-content: center !important;
+  //   align-items: center !important;
+  //   height: 7rem;
+  //   width: 100vh !important;
+  //   position: fixed !important;
+
+  //   background-color: $color-light-black;
+
+  //   li {
+  //     list-style: none !important;
+  //     width: fit-content !important;
+  //     svg {
+  //       fill: white !important;
+  //       height: 2.7rem !important;
+  //     }
+  //   }
+
+  //   li:nth-child(1) {
+  //     margin-left: 32rem !important;
+  //   }
+
+  //   li:nth-child(4) {
+  //     padding: 0 2rem;
+  //   }
+
+  //   li:nth-child(5) {
+  //     padding: 0 0 0 1.2rem;
+  //   }
+
+  //   .isCurrent {
+  //     font-weight: bold;
+  //   }
+
+  //   .isCurrent svg {
+  //     fill: rgb(0, 177, 201) !important;
+  //   }
+  // }
 }

@@ -133,23 +133,13 @@ html {
 }
 
 @media screen and (max-width: 376px) {
-  .switch-theme {
-    display: none;
+  .profile {
+    height: 100vh !important;
+    margin: 0 4% !important;
+    margin-top: 7rem !important;
+    margin-right: 0 !important;
+    background-color: darkgoldenrod;
   }
-
-  .home {
-    margin: 0 6%;
-  }
-
-  .work {
-    margin: 0 6%;
-  }
-  // .profile {
-  //   height: 100vh !important;
-  //   margin: 0 4% !important;
-  //   margin-top: 7rem !important;
-  //   margin-right: 0 !important;
-  // }
 
   .projects {
     display: flex;

@@ -70,5 +70,26 @@
   }
 }
 
+@media screen and (max-width: 960px) {
+  .work-container {
+    .work-heading {
+      font-size: 4rem !important;
+    }
+  }
+}
+
 @media screen and (max-width: 376px) {
+  .icon-date {
+    display: flex;
+    flex-direction: column !important;
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+
+    .date {
+      margin-top: 1rem !important;
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
 }

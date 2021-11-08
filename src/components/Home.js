@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { BsGithub, BsStackOverflow } from 'react-icons/bs';
-import VisibilitySensor from 'react-visibility-sensor';
 import CountUp from 'react-countup';
 import { BiGitBranch, BiStar, BiMedal, BiUpArrow } from 'react-icons/bi';
 import '../scss/home.scss';

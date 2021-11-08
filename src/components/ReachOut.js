@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { toast } from 'react-toastify';
 import '../scss/reachOut.scss';
@@ -8,9 +8,6 @@ import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 const ReachOut = () => {
 
     let success = true;
-
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
 
 
     const sendEmail = () => {
