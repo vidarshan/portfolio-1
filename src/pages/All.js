@@ -45,12 +45,6 @@ const All = () => {
 
   }, [])
 
-  const renderToolTip = (text, position) => {
-    // return <Tooltip placement={position} className="in" id="tooltip-right">{text}</Tooltip>
-    return <Tooltip placement={position} id="tooltip-right">
-      {text}
-    </Tooltip>
-  }
 
   return (
     <>
