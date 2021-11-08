@@ -251,12 +251,16 @@ ul {
 }
 
 @media screen and (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+
   .scrollspy {
     display: flex;
     align-items: center !important;
     justify-content: center !important;
     flex-direction: row;
-    height: 9rem;
+    height: 6rem;
     width: 100%;
 
     ul {
@@ -286,17 +290,71 @@ ul {
   }
 
   .home {
-    margin-top: 7rem;
-    margin-left: 6%;
-    margin-right: 6%;
+    margin-top: 6rem;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
     height: 100vh !important;
   }
 
+  .work {
+    display: block;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+    height: fit-content;
+    padding: 6rem 0rem 10rem 0rem !important;
+  }
+
+  .projects {
+    display: block;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+    height: fit-content;
+    padding: 6rem 0rem 10rem 0rem !important;
+  }
+
+  .contact {
+    display: block;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+    padding: 6rem 0rem 10rem 0rem !important;
+  }
+
+  .profile {
+    display: block;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+    margin-top: 100rem !important;
+    height: fit-content !important;
+    padding: 6rem 0rem 10rem 0rem !important;
+    .profile-container {
+      .profile-overview-text {
+        margin-bottom: 1rem;
+      }
+
+      .technologies-grid {
+        display: none;
+        grid-template-columns: repeat(2, 1fr);
+
+        .technology {
+          display: flex;
+          padding: 0 !important;
+          border-radius: 50%;
+          width: fit-content;
+          background-color: rgb(230, 230, 230);
+        }
+      }
+    }
+  }
+
+  // .work {
+  //   display: none;
+  //   background-color: darkgreen;
+  // }
+
   .profile,
-  .work,
   .contact,
   .projects {
-    margin: 40% 6% !important;
+    margin: 0 6% !important;
     height: 100vh;
   }
 
