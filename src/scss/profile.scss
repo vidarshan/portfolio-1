@@ -22,7 +22,29 @@
       line-height: 28px;
       transition: 0.3s;
       font-family: "San Francisco";
-      padding: 1.5rem 2rem;
+      line-height: 35px;
+      padding: 2rem 2rem;
+
+      .underlined-text {
+        color: black;
+        position: relative;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 1px solid $highlight-color;
+      }
+
+      .underlined-text:after {
+        display: block;
+        content: "";
+        border-bottom: solid 1px $highlight-color;
+        transform: scaleX(0);
+        transition: transform 0.5s ease-in-out;
+        transform-origin: 100% 50%;
+      }
+      .underlined-text:hover:after {
+        transform: scaleX(1);
+        transform-origin: 0 50%;
+      }
     }
 
     .profile-overview-text {
@@ -40,15 +62,15 @@
         color: grey;
 
         .name {
-          font-size: 2.6rem;
+          font-size: 2rem;
         }
 
         .designation {
-          font-size: 2.4rem;
+          font-size: 1.6rem;
         }
 
         .current {
-          font-size: 2rem;
+          font-size: 1.6rem;
         }
       }
 
@@ -57,12 +79,6 @@
           border-radius: 50%;
         }
       }
-    }
-
-    span {
-      color: rgb(180, 166, 37);
-      display: inline-block;
-      position: relative;
     }
 
     span:after {
@@ -81,99 +97,155 @@
       left: 0;
     }
   }
-}
 
-@media screen and (max-width: 980px) {
-  .profile-info {
-    display: flex;
-    flex-direction: column;
+  .technologies-grid {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr) !important;
 
-    .profile-info-text {
-      border-right: none !important;
-      width: 100% !important;
-      text-align: left;
-      font-size: 1 !important;
-      line-height: 28px;
-      padding: 2rem;
+    .technology {
+      display: flex;
+      margin: 1rem;
+      padding: 1.5rem !important;
+      border-radius: 50%;
+      background-color: rgb(233, 233, 233);
+      width: fit-content;
       transition: 0.3s;
-    }
-
-    .profile-overview-text {
-      order: -1 !important;
-      width: 100% !important;
-      padding: 2rem;
-      transition: 0.3s;
-
-      .technologies-grid {
-        display: none !important;
-      }
-
-      .photo {
-        .my-photo {
-          border-radius: 50%;
-        }
-      }
-    }
-
-    span {
-      color: rgb(180, 166, 37);
-      display: inline-block;
-      position: relative;
-    }
-
-    span:after {
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      position: absolute;
-      background: royalblue;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
-    }
-    span:hover:after {
-      width: 100%;
-      left: 0;
+      cursor: pointer;
     }
   }
 }
 
-@media screen and (max-width: 712px) {
-  .profile-info {
-    display: flex;
-    flex-direction: column;
+// @media screen and (max-width: 980px) {
+//   .profile-info {
+//     display: flex;
+//     flex-direction: column;
 
-    .profile-info-text {
-      width: 100% !important;
-      border-right: none !important;
-    }
+//     .profile-info-text {
+//       border-right: none !important;
+//       width: 100% !important;
+//       text-align: left;
+//       font-size: 1 !important;
+//       line-height: 28px;
+//       padding: 2rem;
+//       transition: 0.3s;
+//     }
 
-    .profile-overview-text {
-      display: none;
-    }
-  }
-}
+//     .profile-overview-text {
+//       order: -1 !important;
+//       width: 100% !important;
+//       padding: 2rem;
+//       transition: 0.3s;
 
-@media screen and (max-width: 960px) {
+//       .technologies-grid {
+//         display: none !important;
+//       }
+
+//       .photo {
+//         .my-photo {
+//           border-radius: 50%;
+//         }
+//       }
+//     }
+
+//     span {
+//       color: rgb(180, 166, 37);
+//       display: inline-block;
+//       position: relative;
+//     }
+
+//     span:after {
+//       background: none repeat scroll 0 0 transparent;
+//       bottom: 0;
+//       content: "";
+//       display: block;
+//       height: 2px;
+//       left: 50%;
+//       position: absolute;
+//       background: royalblue;
+//       transition: width 0.3s ease 0s, left 0.3s ease 0s;
+//       width: 0;
+//     }
+//     span:hover:after {
+//       width: 100%;
+//       left: 0;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 712px) {
+//   .profile-info {
+//     display: flex;
+//     flex-direction: column;
+
+//     .profile-info-text {
+//       width: 100% !important;
+//       border-right: none !important;
+//     }
+
+//     .profile-overview-text {
+//       display: none;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 960px) {
+//   .profile-container {
+//     .profile-heading {
+//       font-size: 4rem !important;
+//     }
+//   }
+// }
+
+@media screen and (max-width: 768px) {
   .profile-container {
-    .profile-heading {
-      font-size: 4rem !important;
+    .technologies-grid {
+      padding: 1rem;
+      display: grid !important;
+      grid-template-columns: repeat(5, 1fr) !important;
+      grid-gap: 2rem;
+    }
+  }
+  .project-container {
+    .desc-photo {
+      display: flex;
+      flex-direction: column !important;
+      padding: 1rem;
+
+      .photo {
+        width: 100% !important;
+      }
+
+      .desc {
+        width: 100% !important;
+      }
     }
   }
 }
 
 @media screen and (max-width: 376px) {
   .profile-container {
-    .profile-heading {
-      padding: 0 1rem !important;
+    .technologies-grid {
+      padding: 1rem;
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      grid-gap: 2rem;
+
+      .technology {
+        display: flex;
+        margin: 1rem;
+        padding: 1.5rem !important;
+        border-radius: 50%;
+        background-color: rgb(233, 233, 233);
+        width: fit-content;
+        transition: 0.3s;
+        cursor: pointer;
+      }
     }
 
     .profile-info {
-      .profile-info-text {
-        padding: 1rem !important;
-      }
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -191,4 +263,14 @@
     width: fit-content;
     background-color: rgb(230, 230, 230);
   }
+}
+#tooltip-top > .tooltip-inner {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 1px solid #062e56;
+}
+
+#tooltip-top > .tooltip-arrow {
+  color: red !important;
 }

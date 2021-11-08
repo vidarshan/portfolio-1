@@ -32,6 +32,13 @@
 
   .accordion-item {
     background-color: rgb(250, 250, 250);
+    font-size: 2rem !important;
+    background-color: rgb(180, 180, 180);
+    color: black;
+  }
+
+  .accordion-item {
+    background-color: rgb(241, 241, 241);
   }
 
   .accordion-body {
@@ -57,18 +64,46 @@
       }
       .date {
         color: grey;
+        svg {
+          margin-right: 0.5rem;
+        }
       }
 
       .site {
         margin-left: 1rem;
-        color: $links-color;
+        color: rgb(0, 155, 207);
         cursor: pointer;
+        text-decoration: underline;
       }
     }
 
     .desc {
       text-align: justify;
-      padding: 1rem 0;
+      padding: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .work-container {
+    .work-heading {
+      font-size: 4rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .icon-date {
+    display: flex;
+    flex-direction: column !important;
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+
+    .date {
+      margin-top: 1rem !important;
+      svg {
+        margin-right: 0.5rem;
+      }
     }
   }
 }

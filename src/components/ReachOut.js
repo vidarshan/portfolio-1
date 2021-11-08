@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Fade from 'react-reveal/Fade';
 import { toast } from 'react-toastify';
 import '../scss/reachOut.scss';
+import { Button, Form } from 'react-bootstrap';
+import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 
 const ReachOut = () => {
 
     let success = true;
-
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
 
 
     const sendEmail = () => {
@@ -46,11 +45,20 @@ const ReachOut = () => {
                 <div class="reachout-heading">👉 Reach Out.</div>
                 <div class="form-socials">
                     <div class="reachout-form">
+                        <Form>
+                            <Form.Group className="mb-5" controlId="formBasicEmail">
+                                <Form.Label>Email</Form.Label>
+                                <Form.Control type="email" placeholder="Enter email" />
+                            </Form.Group>
 
-                        <input type="text" value={email} placeholder="Your Email" onChange={(e) => setEmail(e.target.value)} />
-
-                        <input type="text" value={message} placeholder="Message to me" onChange={(e) => setMessage(e.target.value)} />
-                        <button onClick={() => sendEmail()}>Send</button>
+                            <Form.Group className="mb-5" controlId="formBasicMessage">
+                                <Form.Label>Message</Form.Label>
+                                <Form.Control type="text" placeholder="Message" />
+                            </Form.Group>
+                            <Button className='btn-lg btn-block' variant="success" onClick={() => sendEmail()}>
+                                Submit
+                            </Button>
+                        </Form>
                     </div>
                     <div class="email-socials">
                         <div class="email-text">📧 Email</div>
@@ -62,14 +70,13 @@ const ReachOut = () => {
                             <div class="social-icons">
 
                                 <div class="social">
-                                    <a href="https://twitter.com/VidarshanR" rel="noreferrer" target="_blank"><img height='40' src={require('../img/twitter.svg').default} alt="" /></a>
+                                    <a href="https://twitter.com/VidarshanR" rel="noreferrer" target="_blank"><BsTwitter size='30' /></a>
                                 </div>
                                 <div class="social">
-                                    <a href="https://github.com/vidarshanadithya" rel="noreferrer" target="_blank"><img height='40' src={require('../img/github.svg').default} alt="" /></a>
+                                    <a href="https://github.com/vidarshanadithya" rel="noreferrer" target="_blank"><BsGithub size='30' /></a>
                                 </div>
                                 <div class="social">
-
-                                    <a href="https://www.linkedin.com/in/vidarshan-rathnayake/" rel="noreferrer" target="_blank"><img height='40' src={require('../img/linkedin-logo.svg').default} alt="" /></a>
+                                    <a href="https://www.linkedin.com/in/vidarshan-rathnayake/" rel="noreferrer" target="_blank"><BsLinkedin size='30' /></a>
                                 </div>
                             </div>
                         </div>

@@ -4,12 +4,14 @@
   width: 100%;
 
   .reachout-heading {
-    display: flex;
     color: $text-color-lighter;
     text-align: left;
-    font-size: 7rem !important;
+    font-size: 5rem !important;
     font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
     transition: 0.3s;
+    font-family: "San Francisco";
   }
 
   .form-socials {
@@ -22,27 +24,18 @@
       width: 100%;
       border-right: 2px solid $text-color-lighter;
 
-      input {
-        margin: 3rem 1rem;
-        font-size: 2rem !important;
-        font: inherit;
-        background-color: transparent;
-        color: white;
-        border: none;
-        border-bottom: 2px solid rgb(0, 0, 0);
-        transition: 0.3s;
+      label {
+        width: 100%;
+        text-align: left;
+        font-size: 1.5rem;
       }
-
-      :focus {
-        outline: none !important;
+      input {
+        font-size: 2rem;
       }
 
       button {
-        height: 4rem;
-        margin: 1rem;
-        background-color: rgb(3, 139, 87);
-        color: white;
-        border: none;
+        display: block;
+        width: 100%;
       }
     }
 
@@ -61,7 +54,7 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         border-bottom: 2px solid $text-color-lighter;
         cursor: pointer;
 

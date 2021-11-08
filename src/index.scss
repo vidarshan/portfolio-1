@@ -133,20 +133,12 @@ html {
 }
 
 @media screen and (max-width: 376px) {
-  .home {
-    display: flex !important;
-    justify-content: center !important;
-    height: 100vh !important;
-    margin: 0 4% !important;
-    margin-top: 7rem !important;
-    margin-right: 0 !important;
-  }
-
   .profile {
     height: 100vh !important;
     margin: 0 4% !important;
     margin-top: 7rem !important;
     margin-right: 0 !important;
+    background-color: darkgoldenrod;
   }
 
   .projects {

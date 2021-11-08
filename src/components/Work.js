@@ -1,10 +1,7 @@
 import '../scss/work.scss'
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import { RiBuilding4Line } from 'react-icons/ri'
-import { BiUser } from 'react-icons/bi'
-import { FiClock } from 'react-icons/fi';
-import { CgCalendarDates } from 'react-icons/cg'
+import { FcCalendar } from 'react-icons/fc';
 import { Accordion } from 'react-bootstrap';
 
 const Work = () => {
@@ -18,10 +15,10 @@ const Work = () => {
                         <Accordion.Body>
                             <div class="icon-date">
                                 <div class="icon">
-                                    <img width='30' src={require('../img/cropped-favicon.png').default} alt="" srcset="" /> <div class="site">www.betalaunch.io</div>
+                                    <img width='30' src={require('../img/cropped-favicon.png').default} alt="" srcset="" /> <a class="site" href='https://www.betalaunch.io/' rel='noreferrer' target='_blank'>www.betalaunch.io</a>
                                 </div>
                                 <div class="date">
-                                    📅 2021/04 - 2021/10
+                                    <FcCalendar />2021/04 - 2021/10
                                 </div>
                             </div>
                             <div class="desc">
@@ -35,10 +32,10 @@ const Work = () => {
                         <Accordion.Body>
                             <div class="icon-date">
                                 <div class="icon">
-                                    <img width='30' src={require('../img/88934613.jpeg').default} alt="" srcset="" /> <div class="site">github.com/excalibur-erp</div>
+                                    <img width='30' src={require('../img/88934613.jpeg').default} alt="" srcset="" /> <a class="site" href='https://github.com/excalibur-erp' rel='noreferrer' target='_blank'>github.com/excalibur-erp</a>
                                 </div>
                                 <div class="date">
-                                    📅 2021/04 - 2021/10
+                                    <FcCalendar />2021/04 - 2021/10
                                 </div>
                             </div>
                             <div class="desc">
@@ -52,10 +49,10 @@ const Work = () => {
                         <Accordion.Body>
                             <div class="icon-date">
                                 <div class="icon">
-                                    <img width='30' src={require('../img/cropped-favicon.png').default} alt="" srcset="" /> <div class="site">www.betalaunch.io</div>
+                                    <img width='30' src={require('../img/cropped-favicon.png').default} alt="" srcset="" /> <a class="site" href='https://www.betalaunch.io/' rel='noreferrer' target='_blank'>www.betalaunch.io</a>
                                 </div>
                                 <div class="date">
-                                    📅 2021/04 - 2021/10
+                                    <FcCalendar />2021/04 - 2021/10
                                 </div>
                             </div>
                             <div class="desc">
