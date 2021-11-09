@@ -255,6 +255,18 @@ ul {
     font-size: 45%;
   }
 
+  .work-container {
+    .accordion-button {
+      font-size: 0.8rem !important;
+      background-color: rgb(82, 82, 82) !important;
+      color: rgb(243, 243, 243) !important;
+    }
+
+    .accordion-item {
+      background-color: rgb(44, 44, 44) !important;
+    }
+  }
+
   .scrollspy {
     display: flex;
     align-items: center !important;
