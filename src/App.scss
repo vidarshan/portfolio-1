@@ -81,6 +81,11 @@
     }
   }
 
+  .experience {
+    background-color: rgb(26, 26, 26) !important;
+    border: 2px solid rgb(44, 44, 44) !important;
+    color: rgb(219, 219, 219) !important;
+  }
   .reachout-form {
     label {
       width: 100%;
@@ -253,6 +258,30 @@ ul {
 @media screen and (max-width: 550px) {
   html {
     font-size: 45%;
+  }
+
+  .experience {
+    .date-link {
+      display: flex;
+      flex-direction: column-reverse;
+      order: 0;
+    }
+
+    .place {
+      line-height: 28px !important;
+    }
+
+    .site {
+      margin-bottom: 2rem;
+    }
+
+    .link {
+      margin-bottom: 2rem;
+    }
+
+    .date {
+      font-size: 1.5rem;
+    }
   }
 
   .work-container {

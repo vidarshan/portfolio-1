@@ -14,6 +14,52 @@
     font-family: "San Francisco";
   }
 
+  .current {
+    border: 2px solid rgb(122, 122, 122) !important;
+  }
+
+  .experience {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: rgb(231, 231, 231);
+    text-align: left !important;
+    border: 2px solid rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+
+    .place {
+      font-size: 2rem;
+      margin: 1rem;
+      border-bottom: 2px solid grey;
+      line-height: 40px;
+    }
+
+    .desc {
+      font-size: 1.8rem;
+      margin: 1rem;
+    }
+
+    .date-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      padding: 1rem;
+
+      img {
+        border-radius: 50% !important;
+        margin-right: 1rem;
+      }
+
+      .date {
+        font-size: 1.5rem;
+      }
+      .site {
+        color: rgb(20, 135, 211) !important;
+      }
+    }
+  }
+
   .accordion {
     font-family: "San Francisco" !important;
     color: black !important;
