@@ -37,14 +37,15 @@
       display: grid;
       order: 3;
       grid-template-columns: repeat(2, 1fr);
-      border: 2px solid rgb(231, 231, 231);
+      line-height: 35px;
+      border: 1px solid rgb(231, 231, 231);
 
       .image {
         display: flex;
         flex-direction: row;
         align-items: center;
         border-radius: 1rem;
-        padding: 1rem !important;
+        background-color: rgb(214, 214, 214);
         img {
           width: 100% !important;
         }
@@ -56,18 +57,38 @@
         justify-content: flex-end;
         font-size: 2rem;
         .demo {
+          a {
+            color: rgb(0, 0, 0);
+          }
+
           padding: 1rem;
         }
 
+        .demo:hover {
+          a {
+            color: grey !important;
+          }
+        }
+
         .git {
+          a {
+            color: rgb(0, 0, 0);
+          }
           padding: 1rem;
+        }
+
+        .git:hover {
+          a {
+            color: rgb(128, 128, 128) !important;
+          }
         }
       }
 
       .desc {
         display: flex;
         flex-direction: column;
-        padding: 1rem;
+        padding: 2rem;
+        line-height: 40px;
         .heading {
           font-size: 2rem;
           margin-bottom: 1rem;
@@ -75,23 +96,19 @@
 
         .text {
           text-align: justify;
-          font-size: 1.5rem;
+          font-size: 1.8rem;
         }
 
         .techs {
           display: flex;
           flex-direction: row;
-          border-top: 2px solid grey;
+          border-top: 1px solid rgb(128, 128, 128);
           margin-top: 1rem;
-          border-bottom: 2px solid grey;
+          border-bottom: 1px solid grey;
           margin-bottom: 1rem;
 
-          .tech {
-            width: fit-content;
-            margin: 1rem;
-            padding: 0.5rem;
-            border-radius: 50%;
-            background-color: rgb(0, 0, 0);
+          svg {
+            margin: 1rem 1rem;
           }
         }
 
@@ -99,7 +116,11 @@
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          font-size: 1.5rem;
+          font-size: 1.8rem;
+
+          svg {
+            margin-right: 1rem !important;
+          }
         }
       }
     }
@@ -146,60 +167,6 @@
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
-
-// @media screen and (max-width: 960px) {
-//   .project-container {
-//     .project-heading {
-//       font-size: 4rem !important;
-//     }
-
-//     .projects-grid {
-//       display: grid;
-//       grid-template-columns: repeat(1, 1fr) !important;
-
-//       .project {
-//         margin: 0.5rem !important;
-//         .name-links {
-//           .name {
-//             font-size: 1.7rem !important;
-//           }
-//           .link {
-//             img {
-//               margin-left: 1rem;
-//               border: 2px solid transparent;
-//               transition: 0.3s;
-//               cursor: pointer;
-//             }
-
-//             img:hover {
-//               border-bottom: 2px solid $text-color-lighter;
-//             }
-//           }
-//         }
-
-//         .desc {
-//           font-size: 1.7rem !important;
-//           margin-bottom: 1rem;
-//         }
-
-//         .date-role {
-//           display: flex;
-//           flex-direction: row;
-//           justify-content: space-between;
-//           margin-top: 1rem !important;
-
-//           .date {
-//             font-size: 1.7rem !important;
-//           }
-
-//           .role {
-//             font-size: 1.7rem !important;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 
 @media screen and (max-width: 376px) {
   .project-container {
