@@ -65,7 +65,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        background-color: rgb(201, 201, 201) !important;
         border-radius: 1rem;
         padding: 2rem !important;
         img {
@@ -215,59 +214,59 @@
   }
 }
 
-@media screen and (max-width: 960px) {
-  .project-container {
-    .project-heading {
-      font-size: 4rem !important;
-    }
+// @media screen and (max-width: 960px) {
+//   .project-container {
+//     .project-heading {
+//       font-size: 4rem !important;
+//     }
 
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr) !important;
+//     .projects-grid {
+//       display: grid;
+//       grid-template-columns: repeat(1, 1fr) !important;
 
-      .project {
-        margin: 0.5rem !important;
-        .name-links {
-          .name {
-            font-size: 1.7rem !important;
-          }
-          .link {
-            img {
-              margin-left: 1rem;
-              border: 2px solid transparent;
-              transition: 0.3s;
-              cursor: pointer;
-            }
+//       .project {
+//         margin: 0.5rem !important;
+//         .name-links {
+//           .name {
+//             font-size: 1.7rem !important;
+//           }
+//           .link {
+//             img {
+//               margin-left: 1rem;
+//               border: 2px solid transparent;
+//               transition: 0.3s;
+//               cursor: pointer;
+//             }
 
-            img:hover {
-              border-bottom: 2px solid $text-color-lighter;
-            }
-          }
-        }
+//             img:hover {
+//               border-bottom: 2px solid $text-color-lighter;
+//             }
+//           }
+//         }
 
-        .desc {
-          font-size: 1.7rem !important;
-          margin-bottom: 1rem;
-        }
+//         .desc {
+//           font-size: 1.7rem !important;
+//           margin-bottom: 1rem;
+//         }
 
-        .date-role {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          margin-top: 1rem !important;
+//         .date-role {
+//           display: flex;
+//           flex-direction: row;
+//           justify-content: space-between;
+//           margin-top: 1rem !important;
 
-          .date {
-            font-size: 1.7rem !important;
-          }
+//           .date {
+//             font-size: 1.7rem !important;
+//           }
 
-          .role {
-            font-size: 1.7rem !important;
-          }
-        }
-      }
-    }
-  }
-}
+//           .role {
+//             font-size: 1.7rem !important;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media screen and (max-width: 376px) {
   .project-container {
