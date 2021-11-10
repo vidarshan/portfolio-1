@@ -1,7 +1,7 @@
 import "../scss/work.scss";
 import React from "react";
 import Fade from "react-reveal/Fade";
-import { FcCalendar } from "react-icons/fc";
+import { BsFillCalendarDateFill } from "react-icons/bs";
 
 const Work = () => {
   return (
@@ -19,7 +19,7 @@ const Work = () => {
           </div>
           <div class="date-link">
             <div class="date">
-              <FcCalendar />
+              <BsFillCalendarDateFill />
               2021-04 / 2021-09
             </div>
             <div class="link">
@@ -51,7 +51,7 @@ const Work = () => {
           </div>
           <div class="date-link">
             <div class="date">
-              <FcCalendar />
+              <BsFillCalendarDateFill />
               2021-07 / 2021-12
             </div>
             <div class="link">
@@ -84,7 +84,7 @@ const Work = () => {
           </div>
           <div class="date-link">
             <div class="date">
-              <FcCalendar />
+              <BsFillCalendarDateFill />
               2021-09 / Present
             </div>
             <div class="link">

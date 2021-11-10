@@ -53,6 +53,10 @@
 
       .date {
         font-size: 1.5rem;
+
+        svg {
+          margin-right: 1rem;
+        }
       }
       .site {
         color: rgb(20, 135, 211) !important;
@@ -126,14 +130,6 @@
     .desc {
       text-align: justify;
       padding: 1rem;
-    }
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .work-container {
-    .work-heading {
-      font-size: 4rem !important;
     }
   }
 }
