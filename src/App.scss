@@ -222,6 +222,28 @@ ul {
   color: $text-color-lighter;
 }
 
+@media screen and (min-width: 801px) {
+  .profile {
+    height: max-content;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+
+  .work {
+    display: flex;
+    align-items: center;
+  }
+
+  .project-grid {
+    .project {
+      padding: 5rem !important;
+    }
+  }
+}
+
 @media screen and (max-width: 550px) {
   html {
     font-size: 45%;
@@ -324,6 +346,12 @@ ul {
     margin-right: 6% !important;
     height: fit-content;
     padding: 0rem 0rem 10rem 0rem !important;
+
+    .project-grid {
+      .project {
+        padding: 3rem !important;
+      }
+    }
   }
 
   .contact {

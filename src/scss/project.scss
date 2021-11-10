@@ -33,7 +33,7 @@
     .project {
       background-color: rgb(231, 231, 231);
       padding: 1rem;
-      margin-top: 5rem;
+      margin-top: 3rem;
       display: grid;
       order: 3;
       grid-template-columns: repeat(2, 1fr);
@@ -44,7 +44,7 @@
         flex-direction: row;
         align-items: center;
         border-radius: 1rem;
-        padding: 2rem !important;
+        padding: 1rem !important;
         img {
           width: 100% !important;
         }
@@ -65,7 +65,9 @@
       }
 
       .desc {
-        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
         .heading {
           font-size: 2rem;
           margin-bottom: 1rem;
