@@ -1,11 +1,10 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "../scss/project.scss";
-import { Accordion } from "react-bootstrap";
 import { RiComputerFill } from "react-icons/ri";
-import { FcCalendar, FcFolder } from "react-icons/fc";
+import { FcFolder } from "react-icons/fc";
 import { SiReact } from "react-icons/si";
-import { FaLink, FaGithub, FaSass } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
 import { BsGithub, BsFillCalendarDateFill } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 const Project = () => {
