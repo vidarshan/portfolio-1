@@ -17,29 +17,6 @@
     font-family: "San Francisco";
   }
 
-  .accordion {
-    font-family: "San Francisco" !important;
-  }
-
-  .accordion-button {
-    font-size: 2rem !important;
-    background-color: rgb(180, 180, 180);
-    color: black;
-
-    svg {
-      margin-right: 0.5rem;
-    }
-  }
-
-  .accordion-item {
-    background-color: rgb(241, 241, 241);
-  }
-
-  .accordion-body {
-    text-align: left;
-    font-size: 1.8rem;
-  }
-
   .badge-green {
     display: flex;
     align-items: center;
@@ -55,18 +32,19 @@
   .project-grid {
     .project {
       background-color: rgb(231, 231, 231);
-      padding: 2rem;
+      padding: 1rem;
       margin-top: 5rem;
       display: grid;
       order: 3;
       grid-template-columns: repeat(2, 1fr);
+      border: 2px solid rgb(231, 231, 231);
 
       .image {
         display: flex;
         flex-direction: row;
         align-items: center;
         border-radius: 1rem;
-        padding: 2rem !important;
+        padding: 4rem !important;
         img {
           width: 100% !important;
         }
@@ -164,53 +142,6 @@
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media screen and (max-width: 712px) {
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) !important;
-
-    .project {
-      .name-links {
-        .name {
-          font-size: 2rem !important;
-        }
-        .link {
-          img {
-            margin-left: 1rem;
-            border: 2px solid transparent;
-            transition: 0.3s;
-            cursor: pointer;
-          }
-
-          img:hover {
-            border-bottom: 2px solid $text-color-lighter;
-          }
-        }
-      }
-
-      .desc {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-      }
-
-      .date-role {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 1rem !important;
-
-        .date {
-          font-size: 2rem;
-        }
-
-        .role {
-          font-size: 2rem;
-        }
-      }
-    }
   }
 }
 

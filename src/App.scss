@@ -12,6 +12,12 @@
 
 @font-face {
   font-family: "San Francisco";
+  font-weight: 600;
+  src: url("./fonts/sf/SFNSText-RegularG3.otf");
+}
+
+@font-face {
+  font-family: "San Francisco";
   font-weight: 500;
   src: url("./fonts/sf/SFNSDisplay-Regular.otf");
 }
@@ -124,11 +130,8 @@
   .project-container {
     .project-grid {
       .project {
+        border: 2px solid rgb(44, 44, 44) !important;
         background-color: rgb(26, 26, 26) !important;
-
-        .image {
-          background-color: rgb(71, 71, 71) !important;
-        }
       }
     }
   }
@@ -219,7 +222,7 @@ ul {
   color: $text-color-lighter;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
   html {
     font-size: 45%;
   }

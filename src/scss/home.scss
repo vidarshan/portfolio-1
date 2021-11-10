@@ -16,8 +16,9 @@
   .stats {
     margin: 2rem 0.5rem;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 600 !important;
     color: $text-color-lighter;
+    word-wrap: break-word;
     font-family: "San Francisco";
   }
 
