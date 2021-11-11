@@ -1,13 +1,13 @@
 import './App.scss';
-// import All from './pages/All';
-import UnderDevelopment from './pages/UnderDevelopment';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import All from './pages/All';
 
 function App() {
   return (
-    <>
-      {/* <All></All> */}
-      <UnderDevelopment />
-    </>
+
+    <All></All>
+
   );
 }
 

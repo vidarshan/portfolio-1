@@ -4,8 +4,41 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("./fonts/sf/SFNSDisplay-Light.otf");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("./fonts/sf/SFNSText-RegularG3.otf");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("./fonts/sf/SFNSDisplay-Regular.otf");
+}
+
 .Toastify__toast-body {
   font-family: "Calibre" !important;
+  font-size: 2rem !important;
+}
+
+.tooltip {
+  margin-left: 1rem !important;
+}
+
+#tooltip-right > .tooltip-inner {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #062e56;
+  font-size: 1.2rem;
+}
+
+#button-tooltip {
   font-size: 2rem !important;
 }
 
@@ -44,28 +77,101 @@
   background-color: black;
   color: white;
 
-  .projects-grid {
+  .technologies-grid {
+    padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: left;
-    margin-top: 2rem;
+    grid-template-columns: repeat(8, 1fr);
 
-    .project {
-      text-align: left;
+    .technology {
       background-color: rgb(44, 44, 44) !important;
+    }
+  }
+  .experience {
+    background-color: rgb(26, 26, 26) !important;
+    border: 2px solid rgb(44, 44, 44) !important;
+    color: rgb(219, 219, 219) !important;
+  }
+  .reachout-form {
+    label {
+      width: 100%;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+    input {
+      background-color: transparent !important;
+      border: 2px solid rgb(104, 104, 104) !important;
+      color: white !important;
+    }
 
-      .name-links {
-        .link {
-          img {
-            margin-left: 1rem;
-            border: 2px solid transparent;
-            transition: 0.3s;
-            cursor: pointer;
-          }
+    button {
+      display: block;
+      width: 100%;
+    }
+  }
 
-          img:hover {
-            border-bottom: 2px solid rgb(172, 172, 172) !important;
-          }
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 2rem;
+    .demo {
+      a {
+        color: white !important;
+      }
+
+      padding: 1rem;
+    }
+
+    .demo:hover {
+      a {
+        color: grey !important;
+      }
+    }
+
+    .git {
+      a {
+        color: white !important;
+      }
+      padding: 1rem;
+    }
+
+    .git:hover {
+      a {
+        color: grey !important;
+      }
+    }
+  }
+
+  .badge-green {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .underlined-text {
+    color: white !important;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .project-container {
+    .project-grid {
+      .project {
+        border: 2px solid rgb(44, 44, 44) !important;
+        background-color: rgb(26, 26, 26) !important;
+
+        .highlight {
+          color: rgb(4, 221, 221) !important;
+        }
+
+        .image {
+          background-color: rgb(77, 77, 77) !important;
         }
       }
     }
@@ -105,17 +211,16 @@
       color: $dark-text-color-light;
     }
   }
+}
 
-  .reachout-form {
-    input {
-      border-bottom: 2px solid white !important;
-    }
-  }
+ul {
+  padding-left: 0 !important;
 }
 
 .scrollspy {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: $color-light-black;
   height: 100vh;
@@ -124,6 +229,7 @@
   top: 0;
 
   ul {
+    margin-bottom: 0 !important;
     list-style: none !important;
   }
 
@@ -134,8 +240,9 @@
   li {
     list-style: none !important;
     margin: 2.5rem 0;
+
     svg {
-      fill: white !important;
+      fill: rgb(134, 134, 134) !important;
       height: 2.7rem !important;
     }
   }
@@ -145,68 +252,201 @@
   }
 
   .isCurrent svg {
-    fill: rgb(3, 139, 87) !important;
+    fill: rgb(255, 255, 255) !important;
   }
 }
 
 .footer {
-  font-size: 2rem;
+  font-size: 1rem;
+  padding: 1rem;
   transition: 0.3s;
   color: $text-color-lighter;
 }
 
-@media screen and (max-width: 376px) {
-  .switch-theme {
-    position: relative;
-    float: right;
-    width: 2rem;
-    height: 2rem;
-    top: 2rem;
-    right: 0;
-    cursor: pointer;
+.underlined-text {
+  color: black;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid $highlight-color;
+}
+
+.underlined-text:after {
+  display: block;
+  content: "";
+  border-bottom: solid 1px $highlight-color;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: 100% 50%;
+}
+.underlined-text:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0 50%;
+}
+
+.highlight {
+  color: rgb(10, 104, 167) !important;
+}
+
+@media screen and (min-width: 801px) {
+  .profile {
+    height: max-content;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+  }
+
+  .work {
+    display: flex;
+    align-items: center;
+  }
+
+  .project-grid {
+    .project {
+      padding: 5rem !important;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 42.6%;
+  }
+
+  .experience {
+    .date-link {
+      display: flex;
+      flex-direction: column-reverse;
+      order: 0;
+    }
+
+    .place {
+      line-height: 28px !important;
+    }
+
+    .site {
+      margin-bottom: 2rem;
+    }
+
+    .link {
+      margin-bottom: 2rem;
+    }
+
+    .date {
+      font-size: 1.5rem;
+    }
+  }
+
+  .work-container {
+    .accordion-button {
+      font-size: 0.8rem !important;
+      background-color: rgb(82, 82, 82) !important;
+      color: rgb(243, 243, 243) !important;
+    }
+
+    .accordion-item {
+      background-color: rgb(44, 44, 44) !important;
+    }
   }
 
   .scrollspy {
     display: flex;
-    flex-direction: row !important;
-    justify-content: center !important;
     align-items: center !important;
-    height: 7rem;
-    width: 100vh !important;
-    position: fixed !important;
-
-    background-color: $color-light-black;
+    justify-content: center !important;
+    flex-direction: row;
+    height: 6rem;
+    width: 100%;
 
     ul {
-      background-color: red !important;
+      width: 100% !important;
     }
+
     li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       list-style: none !important;
-      width: fit-content !important;
+      width: 100%;
+
       svg {
-        fill: white !important;
-        height: 2.7rem !important;
+        fill: rgb(134, 134, 134) !important;
+        height: 2rem !important;
       }
     }
+  }
 
-    li:nth-child(1) {
-      margin-left: 32rem !important;
+  .switch-theme {
+    position: absolute !important;
+    margin-top: 8rem !important;
+    margin-right: 1rem !important;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .home {
+    margin-top: 6rem;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+    height: 100vh !important;
+  }
+
+  .work {
+    display: block;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+    height: fit-content;
+    padding: 6rem 0rem 10rem 0rem !important;
+  }
+
+  .projects {
+    display: block;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+    height: fit-content;
+    padding: 0rem 0rem 10rem 0rem !important;
+
+    .project-grid {
+      .project {
+        padding: 3rem !important;
+      }
     }
+  }
 
-    li:nth-child(4) {
-      padding: 0 2rem;
-    }
+  .contact {
+    display: flex;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+    padding: 6rem 0rem 10rem 0rem !important;
+  }
 
-    li:nth-child(5) {
-      padding: 0 0 0 1.2rem;
-    }
+  .profile {
+    display: block;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+    height: fit-content !important;
+    padding: 6rem 0rem 10rem 0rem !important;
+    .profile-container {
+      .profile-overview-text {
+        margin-bottom: 1rem;
+      }
 
-    .isCurrent {
-      font-weight: bold;
-    }
-
-    .isCurrent svg {
-      fill: rgb(3, 139, 87) !important;
+      .technologies-grid {
+        .technology {
+          display: flex;
+          padding: 0 !important;
+          border-radius: 50%;
+          width: fit-content;
+          background-color: rgb(230, 230, 230);
+        }
+      }
     }
   }
 }

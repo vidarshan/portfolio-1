@@ -4,42 +4,52 @@
   .profile-heading {
     color: $text-color-lighter;
     text-align: left;
-    font-size: 7rem !important;
+    font-size: 5rem !important;
     font-weight: 600;
     margin-bottom: 2rem;
     padding: 0 2rem;
     transition: 0.3s;
+    font-family: "San Francisco";
   }
 
   .profile-info {
-    display: flex;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
 
     .profile-info-text {
-      border-right: 2px solid $text-color-lighter;
-      width: 60%;
       text-align: left;
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: 28px;
-      padding: 2rem;
       transition: 0.3s;
+      font-family: "San Francisco";
+      line-height: 35px;
+      padding: 2rem 2rem;
     }
 
     .profile-overview-text {
-      width: 40%;
-      padding: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       transition: 0.3s;
+      height: fit-content;
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid grey;
 
-      .work-experience {
-        padding: 1rem;
-        font-size: 1.4rem;
+      .overview {
+        padding-left: 1rem;
         text-align: left;
-      }
+        color: grey;
 
-      .technologies-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        .technology {
-          padding: 0.5rem;
+        .name {
+          font-size: 2rem;
+        }
+
+        .designation {
+          font-size: 1.6rem;
+        }
+
+        .current {
+          font-size: 1.6rem;
         }
       }
 
@@ -48,130 +58,58 @@
           border-radius: 50%;
         }
       }
-    }
-
-    span {
-      color: rgb(180, 166, 37);
-      display: inline-block;
-      position: relative;
-    }
-
-    span:after {
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      position: absolute;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
-    }
-    span:hover:after {
-      width: 100%;
-      left: 0;
-    }
-  }
-}
-
-@media screen and (max-width: 980px) {
-  .profile-info {
-    display: flex;
-    flex-direction: column;
-
-    .profile-info-text {
-      border-right: none !important;
-      width: 100% !important;
-      text-align: left;
-      font-size: 1 !important;
-      line-height: 28px;
-      padding: 2rem;
-      transition: 0.3s;
-    }
-
-    .profile-overview-text {
-      order: -1 !important;
-      width: 100% !important;
-      padding: 2rem;
-      transition: 0.3s;
-
-      .work-experience {
-        padding: 1rem;
-        font-size: 1.4rem;
-        text-align: left;
-        display: none;
-      }
-
-      .technologies-grid {
-        display: none !important;
-      }
-
-      .photo {
-        .my-photo {
-          border-radius: 50%;
-        }
-      }
-    }
-
-    span {
-      color: rgb(180, 166, 37);
-      display: inline-block;
-      position: relative;
-    }
-
-    span:after {
-      background: none repeat scroll 0 0 transparent;
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 2px;
-      left: 50%;
-      position: absolute;
-      background: royalblue;
-      transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
-    }
-    span:hover:after {
-      width: 100%;
-      left: 0;
-    }
-  }
-}
-
-@media screen and (max-width: 712px) {
-  .profile-info {
-    display: flex;
-    flex-direction: column;
-
-    .profile-info-text {
-      width: 100% !important;
-      border-right: none !important;
-    }
-
-    .profile-overview-text {
-      display: none;
-    }
-  }
-}
-
-@media screen and (max-width: 960px) {
-  .profile-container {
-    .profile-heading {
-      font-size: 4rem !important;
     }
   }
 }
 
 @media screen and (max-width: 376px) {
   .profile-container {
-    .profile-heading {
-      padding: 0 1rem !important;
+    .technologies-grid {
+      padding: 1rem;
+      display: grid !important;
+      grid-template-columns: repeat(4, 1fr) !important;
+      grid-gap: 2rem;
+
+      .technology {
+        display: flex;
+        margin: 1rem;
+        padding: 1.5rem !important;
+        border-radius: 50%;
+        background-color: rgb(233, 233, 233);
+        width: fit-content;
+        transition: 0.3s;
+        cursor: pointer;
+      }
     }
 
     .profile-info {
-      .profile-info-text {
-        padding: 1rem !important;
-      }
+      display: flex;
+      flex-direction: column;
     }
   }
+}
+
+.technologies-grid {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  .technology {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem !important;
+    border-radius: 50%;
+    width: fit-content;
+    background-color: rgb(230, 230, 230);
+  }
+}
+#tooltip-top > .tooltip-inner {
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  border: 1px solid #062e56;
+}
+
+#tooltip-top > .tooltip-arrow {
+  color: red !important;
 }

@@ -1,0 +1,151 @@
+@import "./variables.scss";
+
+.work-container {
+  width: 100%;
+  font-size: 2rem;
+  .work-heading {
+    color: $text-color-lighter;
+    text-align: left;
+    font-size: 5rem !important;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    transition: 0.3s;
+    font-family: "San Francisco";
+  }
+
+  .current {
+    border: 2px solid rgb(122, 122, 122) !important;
+  }
+
+  .experience {
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: rgb(231, 231, 231);
+    text-align: left !important;
+    border: 2px solid rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+
+    .place {
+      font-size: 2rem;
+      margin: 1rem;
+      border-bottom: 2px solid grey;
+      line-height: 40px;
+    }
+
+    .desc {
+      font-size: 1.8rem;
+      margin: 1rem;
+    }
+
+    .date-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      padding: 1rem;
+
+      img {
+        border-radius: 50% !important;
+        margin-right: 1rem;
+      }
+
+      .date {
+        font-size: 1.5rem;
+
+        svg {
+          margin-right: 1rem;
+        }
+      }
+      .site {
+        color: rgb(20, 135, 211) !important;
+      }
+    }
+  }
+
+  .accordion {
+    font-family: "San Francisco" !important;
+    color: black !important;
+  }
+
+  .accordion-button {
+    font-size: 1.8rem !important;
+    background-color: rgb(207, 207, 207);
+    color: black;
+  }
+
+  .accordion-button:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .accordion-item {
+    background-color: rgb(250, 250, 250);
+    font-size: 2rem !important;
+    background-color: rgb(180, 180, 180);
+    color: black;
+  }
+
+  .accordion-item {
+    background-color: rgb(241, 241, 241);
+  }
+
+  .accordion-body {
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.8rem;
+
+    .icon-date {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid grey;
+      .icon {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+      .date {
+        color: grey;
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+
+      .site {
+        margin-left: 1rem;
+        color: rgb(0, 155, 207);
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    .desc {
+      text-align: justify;
+      padding: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .icon-date {
+    display: flex;
+    flex-direction: column !important;
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+
+    .date {
+      margin-top: 1rem !important;
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

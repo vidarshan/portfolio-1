@@ -5,26 +5,38 @@
   text-align: left;
 
   .hello-text {
-    font-weight: 400;
+    font-weight: 300;
     color: $text-color-lighter;
+    font-family: "San Francisco";
     font-size: 6rem;
     margin: 0.5rem;
     transition: 0.3s;
   }
 
+  .stats {
+    margin: 2rem 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600 !important;
+    color: $text-color-lighter;
+    word-wrap: break-word;
+    font-family: "San Francisco";
+  }
+
   .name-text {
     font-size: 8rem;
-    font-weight: 600;
+    font-weight: 400;
     margin: 0.5rem;
+    font-family: "San Francisco";
     color: $text-color-dark;
     transition: 0.3s;
   }
 
   .def-text {
     font-size: 6rem;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0.5rem;
     color: $text-color-light;
+    font-family: "San Francisco";
     transition: 0.3s;
   }
 }
@@ -45,6 +57,20 @@
     .name-text,
     .def-text {
       font-size: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .home-container {
+    .hello-text,
+    .name-text,
+    .def-text {
+      font-size: 4rem;
+    }
+
+    .stats {
+      font-size: 1.2rem;
     }
   }
 }

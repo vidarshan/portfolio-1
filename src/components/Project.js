@@ -1,117 +1,340 @@
-
-import React from 'react'
-import Fade from 'react-reveal/Fade';
-import '../scss/project.scss';
-
+import React from "react";
+import Fade from "react-reveal/Fade";
+import "../scss/project.scss";
+import { RiComputerFill } from "react-icons/ri";
+import { FcFolder } from "react-icons/fc";
+import { SiReact, SiGithub, SiMysql } from "react-icons/si";
+import { FaSass, FaNodeJs } from "react-icons/fa";
+import { BsGithub, BsFillCalendarDateFill } from "react-icons/bs";
+import { Tooltip, OverlayTrigger } from "react-bootstrap";
+import { FiExternalLink } from "react-icons/fi";
 const Project = () => {
+  const renderTooltip = (text) => (
+    <Tooltip placement="top" className="in" id="tooltip-top">
+      {text}
+    </Tooltip>
+  );
 
-
-    return (
-        <Fade bottom duration={2000}>
-            <div className='project-container'>
-                <div className="project-heading">🚀  Projects.</div>
-                <div class="projects-grid">
-                    <div class="project">
-                        <div class="name-links">
-                            <div class="name">📁 Portfolio</div>
-                            <div class="link">
-                                <a href='https://github.com/vidarshanadithya/portfolio-react' rel="noreferrer" target="_blank"><img height='26' src={require('../img/github.svg').default} alt='github' /></a>
-                            </div>
-                        </div>
-                        <div class="desc">My own portfolio site which your are browsing right now!</div>
-                        <div class="techs">
-                            <div class="tech">
-                                <div class="tech-text">Technologies &#8594;</div>
-                                <div class="tech-icons">
-                                    <img height='30' src={require('../img/006-react.svg').default} alt="" />
-                                    <img height='30' src={require('../img/026-sass.svg').default} alt="" />
-                                    <img height='30' src={require('../img/029-javascript.svg').default} alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="date-role">
-                            <div class="date">📅 10-10-2021</div>
-                            <div class="role">👨‍💻 Full-Stack</div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="name-links">
-                            <div class="name">📁 Countries.io</div>
-                            <div class="link">
-                                <a href='https://github.com/vidarshanadithya/countries-io' rel="noreferrer" target="_blank"><img height='26' src={require('../img/github.svg').default} alt='github' /></a>
-                                <a href='https://countries-io.herokuapp.com/' rel="noreferrer" target="_blank"><img height='26' src={require('../img/link.svg').default} alt='link' /></a>
-                            </div>
-                        </div>
-                        <div class="desc">Find information on any country with a simple search!</div>
-                        <div class="techs">
-                            <div class="tech">
-                                <div class="tech-text">Technologies &#8594;</div>
-                                <div class="tech-icons">
-                                    <img height='30' src={require('../img/006-react.svg').default} alt="" />
-                                    <img height='30' src={require('../img/026-sass.svg').default} alt="" />
-                                    <img height='30' src={require('../img/029-javascript.svg').default} alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="date-role">
-                            <div class="date">📅 10-10-2021</div>
-                            <div class="role">👨‍💻 Frontend</div>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="name-links">
-                            <div class="name">📁 Carmax API</div>
-                            <div class="link">
-                                <a href='https://documenter.getpostman.com/view/12226878/UUy39SEX' rel="noreferrer" target="_blank"> <img height='26' src={require('../img/github.svg').default} alt='github' /></a>
-                                <a href='https://documenter.getpostman.com/view/12226878/UUy39SEX' rel="noreferrer" target="_blank"> <img height='26' src={require('../img/link.svg').default} alt='link' /></a>
-                            </div>
-                        </div>
-                        <div class="desc">Node JS API for an ERP system of a car service station</div>
-                        <div class="techs">
-                            <div class="tech">
-                                <div class="tech-text">Technologies &#8594;</div>
-                                <div class="tech-icons">
-                                    <img height='30' src={require('../img/006-react.svg').default} alt="" />
-                                    <img height='30' src={require('../img/026-sass.svg').default} alt="" />
-                                    <img height='30' src={require('../img/029-javascript.svg').default} alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="date-role">
-                            <div class="date">📅 10-10-2021</div>
-                            <div class="role">👨‍💻 Backend</div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="name-links">
-                            <div class="name">📁 Carmax ERP</div>
-                            <div class="link">
-                                <img height='26' src={require('../img/github.svg').default} alt='github' />
-                                <img height='26' src={require('../img/link.svg').default} alt='link' />
-                            </div>
-                        </div>
-                        <div class="desc">React JS frontend for the ERP system based on Carmax API</div>
-                        <div class="techs">
-                            <div class="tech">
-                                <div class="tech-text">Technologies &#8594;</div>
-                                <div class="tech-icons">
-                                    <img height='30' src={require('../img/006-react.svg').default} alt="" />
-                                    <img height='30' src={require('../img/026-sass.svg').default} alt="" />
-                                    <img height='30' src={require('../img/029-javascript.svg').default} alt="" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="date-role">
-                            <div class="date">📅 10-10-2021</div>
-                            <div class="role">👨‍💻 Frontend</div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <Fade bottom duration={2000}>
+      <div className="project-container">
+        <div className="project-heading">🚀 Projects.</div>
+        <div class="project-grid">
+          <div class="project">
+            <div class="image">
+              <img src={require("../img/portfolio.png").default} alt="" />
             </div>
-        </Fade>
+            <div class="desc">
+              <div class="links">
+                <div class="demo">
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Demo")}
+                  >
+                    <a
+                      href="https://vidarshan.dev"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FiExternalLink />
+                    </a>
+                  </OverlayTrigger>
+                </div>
+                <div class="git">
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Code")}
+                  >
+                    <a
+                      href="https://github.com/vidarshanadithya/portfolio"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BsGithub />
+                    </a>
+                  </OverlayTrigger>
+                </div>
+              </div>
+              <div class="heading">
+                <FcFolder /> Portfolio
+              </div>
+              <div class="text">
+                My portfolio website which intends to show my work and my path
+                within the field. Created with{" "}
+                <span className="underlined-text highlight">ReactJS</span> and{" "}
+                <span className="underlined-text highlight">SCSS</span> with
+                some <span className="underlined-text highlight">npm</span>{" "}
+                packages such as react-reveal and Count-up.
+              </div>
+              <div class="techs">
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("React JS")}
+                >
+                  <div class="tech">
+                    <SiReact size="30" color="rgb(0, 209, 236)" />
+                  </div>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Sass")}
+                >
+                  <div class="tech">
+                    <FaSass size="30" color="rgb(214, 0, 143)" />
+                  </div>
+                </OverlayTrigger>
+              </div>
+              <div class="role-date">
+                <div class="role">
+                  <RiComputerFill />
+                  Frontend Project
+                </div>
+                <div class="date">
+                  <BsFillCalendarDateFill />
+                  11-2021
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="image">
+              <img src={require("../img/githuber.png").default} alt="" />
+            </div>
+            <div class="desc">
+              <div class="links">
+                <div class="demo">
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Demo")}
+                  >
+                    <a
+                      href="https://boring-mclean-972fb4.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FiExternalLink />
+                    </a>
+                  </OverlayTrigger>
+                </div>
+                <div class="git">
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Code")}
+                  >
+                    <a
+                      href="https://github.com/vidarshanadithya/githuber"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BsGithub />
+                    </a>
+                  </OverlayTrigger>
+                </div>
+              </div>
+              <div class="heading">
+                <FcFolder /> Githuber
+              </div>
+              <div class="text">
+                Github search made simple! Search any user on Github with ease
+                and find their repositories and profile information. Created
+                with <span className="underlined-text highlight">React JS</span>
+                , <span className="underlined-text highlight">SCSS</span> and{" "}
+                <span className="underlined-text highlight">Github API</span>
+              </div>
+              <div class="techs">
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("React JS")}
+                >
+                  <div class="tech">
+                    <SiReact size="25" color="rgb(0, 209, 236)" />
+                  </div>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Scss")}
+                >
+                  <div class="tech">
+                    <FaSass size="25" color="rgb(214, 0, 143)" />
+                  </div>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Github API")}
+                >
+                  <div class="tech">
+                    <SiGithub size="25" />
+                  </div>
+                </OverlayTrigger>
+              </div>
+              <div class="role-date">
+                <div class="role">
+                  <RiComputerFill />
+                  Frontend Project
+                </div>
+                <div class="date">
+                  <BsFillCalendarDateFill />
+                  10-2021
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="image">
+              <img src={require("../img/carmax.png").default} alt="" />
+            </div>
+            <div class="desc">
+              <div class="links">
+                <div class="demo">
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Documentation")}
+                  >
+                    <a
+                      href="https://documenter.getpostman.com/view/12226878/UUy39SEX"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FiExternalLink />
+                    </a>
+                  </OverlayTrigger>
+                </div>
+              </div>
+              <div class="heading">
+                <FcFolder /> Carmax ERP API
+              </div>
+              <div class="text">
+                A <span className="underlined-text highlight">Node JS</span> API
+                with an <span className="underlined-text highlight">MySQL</span>{" "}
+                DB for the Enterprise Management System of a Car Service Station
+                to manage jobs, inventory and suppliers.
+              </div>
+              <div class="techs">
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Node JS")}
+                >
+                  <div class="tech">
+                    <FaNodeJs size="30" color="rgb(54, 165, 91) " />
+                  </div>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("MySQL")}
+                >
+                  <div class="tech">
+                    <SiMysql size="30" color="rgb(45, 163, 231)" />
+                  </div>
+                </OverlayTrigger>
+              </div>
+              <div class="role-date">
+                <div class="role">
+                  <RiComputerFill />
+                  Backend Project
+                </div>
+                <div class="date">
+                  <BsFillCalendarDateFill />
+                  08-2021
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="image">
+              <img src={require("../img/countries.png").default} alt="" />
+            </div>
+            <div class="desc">
+              <div class="links">
+                {/* <div class="demo">
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Demo")}
+                  >
+                    <a
+                      href="https://countries-io.herokuapp.com/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FiExternalLink />
+                    </a>
+                  </OverlayTrigger>
+                </div> */}
+                <div class="git">
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Code")}
+                  >
+                    <a
+                      href="https://github.com/vidarshanadithya/countries-io"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BsGithub />
+                    </a>
+                  </OverlayTrigger>
+                </div>
+              </div>
+              <div class="heading">
+                <FcFolder /> Countries.io [Launching Soon]
+              </div>
+              <div class="text">
+                Making use of a 3rd party API which provides simple information
+                to the most advanced information on any given country. Mde with
+                <span className="underlined-text highlight">
+                  React JS
+                </span> and{" "}
+                <span className="underlined-text highlight">SCSS</span>
+              </div>
+              <div class="techs">
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("React JS")}
+                >
+                  <div class="tech">
+                    <SiReact size="30" color="rgb(0, 209, 236)" />
+                  </div>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Scss")}
+                >
+                  <div class="tech">
+                    <FaSass size="30" color="rgb(214, 0, 143)" />
+                  </div>
+                </OverlayTrigger>
+              </div>
+              <div class="role-date">
+                <div class="role">
+                  <RiComputerFill />
+                  Frontend Project
+                </div>
+                <div class="date">
+                  <BsFillCalendarDateFill />
+                  07-2021
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Fade>
+  );
+};
 
-    )
-}
-
-export default Project
+export default Project;
