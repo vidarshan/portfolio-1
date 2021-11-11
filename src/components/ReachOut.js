@@ -1,43 +1,15 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-import { toast } from "react-toastify";
 import "../scss/reachOut.scss";
-import { Button, Form } from "react-bootstrap";
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 
 const ReachOut = () => {
-  let success = true;
-
-  const sendEmail = () => {
-    if (success) {
-      toast.success("🙂 Email sent successfully!", {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    } else {
-      toast.success("😥 Sending Failed. Try again!", {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    }
-  };
-
   return (
     <Fade bottom duration={2000}>
       <div className="reachout-container">
         <div class="reachout-heading">👉 Reach Out.</div>
         <div class="form-socials">
-          <div class="reachout-form">
+          {/* <div class="reachout-form">
             <Form>
               <Form.Group className="mb-5" controlId="formBasicEmail">
                 <Form.Label>Email</Form.Label>
@@ -56,7 +28,7 @@ const ReachOut = () => {
                 Submit
               </Button>
             </Form>
-          </div>
+          </div> */}
           <div class="email-socials">
             <div class="email-text">📧 Email</div>
             <div class="email">

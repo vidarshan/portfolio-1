@@ -257,7 +257,7 @@ const Project = () => {
             </div>
             <div class="desc">
               <div class="links">
-                <div class="demo">
+                {/* <div class="demo">
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
@@ -271,7 +271,7 @@ const Project = () => {
                       <FiExternalLink />
                     </a>
                   </OverlayTrigger>
-                </div>
+                </div> */}
                 <div class="git">
                   <OverlayTrigger
                     placement="bottom"
@@ -289,7 +289,7 @@ const Project = () => {
                 </div>
               </div>
               <div class="heading">
-                <FcFolder /> Countries.io
+                <FcFolder /> Countries.io [Launching Soon]
               </div>
               <div class="text">
                 Making use of a 3rd party API which provides simple information

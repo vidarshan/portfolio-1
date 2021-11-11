@@ -44,6 +44,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-top: 10rem;
       width: 100%;
 
       .email-text {
@@ -54,7 +55,8 @@
         display: flex;
         justify-content: center;
         text-align: center;
-        font-size: 2rem;
+        font-size: 3rem;
+        margin-top: 3rem;
         border-bottom: 2px solid $text-color-lighter;
         cursor: pointer;
 
@@ -74,7 +76,7 @@
       }
 
       .socials {
-        padding-top: 1rem;
+        padding-top: 4rem;
 
         .social-text {
           font-size: 2rem;
@@ -86,6 +88,7 @@
           flex-direction: row;
           .social {
             transition: transform 0.2s;
+            margin-top: 4rem;
             padding: 1rem;
           }
         }
