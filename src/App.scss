@@ -171,7 +171,9 @@
         }
 
         .image {
-          background-color: rgb(77, 77, 77) !important;
+          img {
+            border: 2px solid #2c2c2c !important;
+          }
         }
       }
     }
