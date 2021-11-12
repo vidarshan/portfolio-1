@@ -6,12 +6,12 @@ This is my portfolio website. This website will be improved in the years to come
 ## 💁 Site Details
 
 - This web app is made with ReactJS and hosted on Netlify.
-- No UI frameworks were used, and everything is CSS.
+- Everything is CSS and tooltips are from react-bootstrap.
 
 ## 📌 Reuse
 
-- Reusing this codebase is fine, as long as some attribution to this repository is made. Copying is not good, and since the repository is public,
-  it is impossible to avoid copying, but I appreciate if the adequate credit is given to the author of this repository.
+- Reusing this codebase is fine, as long as some attribution to this repository is made. Since the repository is public,
+  it is impossible to avoid duplication, but I appreciate if the adequate credit is given to the author of this repository.
 
 ## 🏃‍♂️ To Run
 
