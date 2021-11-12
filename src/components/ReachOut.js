@@ -7,9 +7,9 @@ const ReachOut = () => {
   return (
     <Fade bottom duration={2000}>
       <div className="reachout-container">
-        <div class="reachout-heading">👉 Reach Out.</div>
-        <div class="form-socials">
-          {/* <div class="reachout-form">
+        <div className="reachout-heading">👉 Reach Out.</div>
+        <div className="form-socials">
+          {/* <div className="reachout-form">
             <Form>
               <Form.Group className="mb-5" controlId="formBasicEmail">
                 <Form.Label>Email</Form.Label>
@@ -29,18 +29,18 @@ const ReachOut = () => {
               </Button>
             </Form>
           </div> */}
-          <div class="email-socials">
-            <div class="email-text">📧 Email</div>
-            <div class="email">
+          <div className="email-socials">
+            <div className="email-text">📧 Email</div>
+            <div className="email">
               <a href="mailto:webmaster@example.com">
                 {" "}
                 vidarshanadithya3@gmail.com
               </a>
             </div>
-            <div class="socials">
-              <div class="social-text">👻 Socials</div>
-              <div class="social-icons">
-                <div class="social">
+            <div className="socials">
+              <div className="social-text">👻 Socials</div>
+              <div className="social-icons">
+                <div className="social">
                   <a
                     href="https://twitter.com/VidarshanR"
                     rel="noreferrer"
@@ -49,7 +49,7 @@ const ReachOut = () => {
                     <BsTwitter size="30" />
                   </a>
                 </div>
-                <div class="social">
+                <div className="social">
                   <a
                     href="https://github.com/vidarshanadithya"
                     rel="noreferrer"
@@ -58,7 +58,7 @@ const ReachOut = () => {
                     <BsGithub size="30" />
                   </a>
                 </div>
-                <div class="social">
+                <div className="social">
                   <a
                     href="https://www.linkedin.com/in/vidarshan-rathnayake/"
                     rel="noreferrer"

@@ -46,15 +46,15 @@ const Home = () => {
   return (
     <Fade duration={2000} bottom>
       <div className="home-container">
-        <div class="hello-text">Hello.</div>
-        <div class="name-text">I'm Vidarshan.</div>
-        <div class="def-text">{things}</div>
+        <div className="hello-text">Hello.</div>
+        <div className="name-text">I'm Vidarshan.</div>
+        <div className="def-text">{things}</div>
         <OverlayTrigger
           delay={{ show: 250, hide: 400 }}
           overlay={renderTooltip("Github / Stackoverflow")}
           placement="bottom-start"
         >
-          <div class="stats">
+          <div className="stats">
             <BsGithub /> &#8594; <BiGitBranch />
             <CountUp
               start={0}

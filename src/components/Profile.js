@@ -37,10 +37,10 @@ const Profile = () => {
   return (
     <Fade bottom duration={2000}>
       <div className="profile-container">
-        <div class="profile-heading">👨‍💻 Profile.</div>
-        <div class="profile-info">
-          <div class="profile-overview-text">
-            <div class="photo">
+        <div className="profile-heading">👨‍💻 Profile.</div>
+        <div className="profile-info">
+          <div className="profile-overview-text">
+            <div className="photo">
               <img
                 className="my-photo"
                 width="90"
@@ -48,15 +48,15 @@ const Profile = () => {
                 alt=""
               />
             </div>
-            <div class="overview">
-              <div class="name">Vidarshan Adithya</div>
-              <div class="designation">Associate Software Engineer</div>
-              <div class="current">
+            <div className="overview">
+              <div className="name">Vidarshan Adithya</div>
+              <div className="designation">Associate Software Engineer</div>
+              <div className="current">
                 <BiCurrentLocation /> Colombo, Sri Lanka 🇱🇰
               </div>
             </div>
           </div>
-          <div class="profile-info-text">
+          <div className="profile-info-text">
             Greetings! I’m Vidarshan and I am a{" "}
             <span className="underlined-text">
               Passionate Software Engineer{" "}
@@ -89,7 +89,8 @@ const Profile = () => {
             >
               <span className="underlined-text"> BetaLaunch </span>
             </a>{" "}
-            for almost 7 months working with React JS + Node JS.
+            for almost 7 months working with{" "}
+            <span className="underlined-text"> React JS + Node JS. </span>
             <br />
             <br />
             Not only Programming is my Job, but it’s also my hobby, since{" "}
@@ -100,13 +101,13 @@ const Profile = () => {
             write.
           </div>
         </div>
-        <div class="technologies-grid">
+        <div className="technologies-grid">
           <OverlayTrigger
             placement="bottom"
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("React JS")}
           >
-            <div class="technology">
+            <div className="technology">
               <SiReact size="30" color="rgb(0, 209, 236)" />
             </div>
           </OverlayTrigger>
@@ -115,7 +116,7 @@ const Profile = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("Javascript")}
           >
-            <div class="technology">
+            <div className="technology">
               <SiJavascript size="30" color="rgb(255 184 6)" />
             </div>
           </OverlayTrigger>
@@ -124,7 +125,7 @@ const Profile = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("Typescript")}
           >
-            <div class="technology">
+            <div className="technology">
               <SiTypescript size="30" color="rgb(19, 114, 202)" />
             </div>
           </OverlayTrigger>
@@ -133,7 +134,7 @@ const Profile = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("Mongo DB")}
           >
-            <div class="technology">
+            <div className="technology">
               <SiMongodb size="30" color="rgb(48, 138, 67)" />
             </div>
           </OverlayTrigger>
@@ -142,7 +143,7 @@ const Profile = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("Node JS")}
           >
-            <div class="technology">
+            <div className="technology">
               <SiNodedotjs size="30" color="rgb(48, 138, 67)" />
             </div>
           </OverlayTrigger>
@@ -151,7 +152,7 @@ const Profile = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("Sass")}
           >
-            <div class="technology">
+            <div className="technology">
               <FaSass size="30" color="rgb(214, 0, 143)" />
             </div>
           </OverlayTrigger>
@@ -160,7 +161,7 @@ const Profile = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("Redux")}
           >
-            <div class="technology">
+            <div className="technology">
               <SiRedux size="30" color="rgb(178, 0, 214)" />
             </div>
           </OverlayTrigger>
@@ -169,7 +170,7 @@ const Profile = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("MySQL")}
           >
-            <div class="technology">
+            <div className="technology">
               <SiMysql size="30" color="rgb(0, 146, 214)∂" />
             </div>
           </OverlayTrigger>
@@ -178,7 +179,7 @@ const Profile = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("Express JS")}
           >
-            <div class="technology">
+            <div className="technology">
               <SiExpress size="30" color="rgb(141 134 134)" />
             </div>
           </OverlayTrigger>
@@ -187,7 +188,7 @@ const Profile = () => {
             delay={{ show: 250, hide: 400 }}
             overlay={renderTooltip("Cypress")}
           >
-            <div class="technology">
+            <div className="technology">
               <SiCypress size="30" color="rgb(146, 146, 146)" />
             </div>
           </OverlayTrigger>
