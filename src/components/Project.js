@@ -317,10 +317,8 @@ const Project = () => {
               </div>
               <div className="text">
                 Making use of a 3rd party API which provides simple information
-                to the most advanced information on any given country. Mde with
-                <span className="underlined-text highlight">
-                  React JS
-                </span> and{" "}
+                to the most advanced information on any given country. Made with{" "}
+                <span className="underlined-text highlight">React JS</span> and{" "}
                 <span className="underlined-text highlight">SCSS</span>
               </div>
               <div className="techs">
