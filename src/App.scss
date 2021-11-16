@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+body {
+  transition: 0.5s;
+}
+
 @font-face {
   font-family: "San Francisco";
   font-weight: 200;
@@ -76,6 +80,11 @@
 .dark-mode {
   background-color: black;
   color: white;
+  transition: 0.5s;
+
+  .stats {
+    color: #c5c5c5 !important;
+  }
 
   .technologies-grid {
     padding: 1rem;
@@ -291,10 +300,6 @@ ul {
 }
 
 @media screen and (min-width: 801px) {
-  .profile {
-    height: max-content;
-  }
-
   .contact {
     display: flex;
     align-items: center;

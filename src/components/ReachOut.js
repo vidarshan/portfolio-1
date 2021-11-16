@@ -1,34 +1,68 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import emailjs from "emailjs-com";
 import "../scss/reachOut.scss";
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
+import { ToastContainer, toast } from "react-toastify";
 
 const ReachOut = () => {
+  const sendEmail = (e) => {
+    console.log(e);
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_vvicyeu",
+        "template_pm2vhnb",
+        e.target,
+        "user_TDKJTDFImWGTBA9FZ1YAB"
+      )
+      .then(
+        (result) => {
+          toast.success("Email sent! 🙂", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        },
+        (error) => {
+          toast.error("Email not sent! 😥", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <Fade bottom duration={2000}>
+      <ToastContainer />
       <div className="reachout-container">
         <div className="reachout-heading">👉 Reach Out.</div>
         <div className="form-socials">
-          {/* <div className="reachout-form">
-            <Form>
-              <Form.Group className="mb-5" controlId="formBasicEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
-              </Form.Group>
+          <div className="reachout-form">
+            <form onSubmit={sendEmail}>
+              <input type="text" placeholder="Name" name="name" />
 
-              <Form.Group className="mb-5" controlId="formBasicMessage">
-                <Form.Label>Message</Form.Label>
-                <Form.Control type="text" placeholder="Message" />
-              </Form.Group>
-              <Button
-                className="btn-lg btn-block"
-                variant="success"
-                onClick={() => sendEmail()}
-              >
+              <input type="email" placeholder="Email" name="email" />
+
+              <input type="text" placeholder="Message" name="message" />
+
+              <button className="btn-lg btn-block" variant="success">
                 Submit
-              </Button>
-            </Form>
-          </div> */}
+              </button>
+            </form>
+          </div>
           <div className="email-socials">
             <div className="email-text">📧 Email</div>
             <div className="email">

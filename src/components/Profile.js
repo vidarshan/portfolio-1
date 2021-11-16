@@ -9,6 +9,7 @@ import {
   SiMysql,
   SiExpress,
   SiCypress,
+  SiNextdotjs,
 } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { BiCurrentLocation } from "react-icons/bi";
@@ -190,6 +191,15 @@ const Profile = () => {
           >
             <div className="technology">
               <SiCypress size="30" color="rgb(146, 146, 146)" />
+            </div>
+          </OverlayTrigger>
+          <OverlayTrigger
+            placement="bottom"
+            delay={{ show: 250, hide: 400 }}
+            overlay={renderTooltip("Cypress")}
+          >
+            <div className="technology">
+              <SiNextdotjs size="30" color="rgb(146, 146, 146)" />
             </div>
           </OverlayTrigger>
         </div>

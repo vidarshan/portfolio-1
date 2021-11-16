@@ -7,11 +7,13 @@
 
 # testing
 /coverage
+keys.js
 
 # production
 /build
 
 # misc
+keys.js
 .DS_Store
 .env.local
 .env.development.local
