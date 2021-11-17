@@ -23,7 +23,7 @@ const ReachOut = () => {
       )
       .then(
         (result) => {
-          toast.success("Email sent! 🙂", {
+          toast.success("Message sent! 🙂", {
             position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,
@@ -34,7 +34,7 @@ const ReachOut = () => {
           });
         },
         (error) => {
-          toast.error("Email not sent! 😥", {
+          toast.error("Message not sent! 😥", {
             position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,
