@@ -2,12 +2,16 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import emailjs from "emailjs-com";
 import "../scss/reachOut.scss";
-import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
+import {
+  BsLinkedin,
+  BsGithub,
+  BsTwitter,
+  BsStackOverflow,
+} from "react-icons/bs";
 import { ToastContainer, toast } from "react-toastify";
 
 const ReachOut = () => {
   const sendEmail = (e) => {
-    console.log(e);
     e.preventDefault();
 
     emailjs
@@ -52,11 +56,17 @@ const ReachOut = () => {
         <div className="form-socials">
           <div className="reachout-form">
             <form onSubmit={sendEmail}>
-              <input type="text" placeholder="Name" name="name" />
+              <div class="text">😀 Need a hand? Let's talk.</div>
+              <input required type="text" placeholder="Name" name="name" />
 
-              <input type="email" placeholder="Email" name="email" />
+              <input required type="email" placeholder="Email" name="email" />
 
-              <input type="text" placeholder="Message" name="message" />
+              <input
+                required
+                type="text"
+                placeholder="Message"
+                name="message"
+              />
 
               <button className="btn-lg btn-block" variant="success">
                 Submit
@@ -99,6 +109,15 @@ const ReachOut = () => {
                     target="_blank"
                   >
                     <BsLinkedin size="30" />
+                  </a>
+                </div>
+                <div className="social">
+                  <a
+                    href="https://stackoverflow.com/users/15415996/vidarshan-adithya"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <BsStackOverflow size="30" />
                   </a>
                 </div>
               </div>
