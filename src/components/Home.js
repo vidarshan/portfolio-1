@@ -6,7 +6,6 @@ import CountUp from "react-countup";
 import { BiGitBranch, BiStar, BiMedal, BiUpArrow } from "react-icons/bi";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import { getGithubContributions } from "github-contributions-counter";
-import { stackoverflowkey } from "../keys";
 import "../scss/home.scss";
 
 const Home = () => {
@@ -39,7 +38,7 @@ const Home = () => {
     });
 
     fetch(
-      `https://api.stackexchange.com/2.2/users/15415996?&key=${stackoverflowkey}&site=stackoverflow`
+      `https://api.stackexchange.com/2.2/users/15415996?&key=wv0Y42ogoAL)gMdDyCqYZA((&site=stackoverflow`
     )
       .then((response) => response.json())
       .then((data) => setStackOverflow(data));

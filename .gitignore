@@ -14,6 +14,7 @@ keys.js
 
 # misc
 keys.js
+.env
 .DS_Store
 .env.local
 .env.development.local

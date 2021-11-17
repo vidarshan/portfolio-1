@@ -13,6 +13,8 @@ import Work from "../components/Work";
 const All = () => {
   const [theme, setTheme] = useState();
 
+  console.log(process.env.REACT_APP_TEST_KEY);
+
   const changeTheme = () => {
     var element = document.body;
     element.classList.toggle("dark-mode");
