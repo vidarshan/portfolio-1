@@ -16,10 +16,10 @@ const ReachOut = () => {
 
     emailjs
       .sendForm(
-        "service_vvicyeu",
-        "template_pm2vhnb",
+        process.env.REACT_APP_EMAILJS_SERVICE,
+        process.env.REACT_APP_EMAILJS_TEMPLATE,
         e.target,
-        "user_TDKJTDFImWGTBA9FZ1YAB"
+        process.env.REACT_APP_EMAILJS_USER
       )
       .then(
         (result) => {
@@ -56,7 +56,7 @@ const ReachOut = () => {
         <div className="form-socials">
           <div className="reachout-form">
             <form onSubmit={sendEmail}>
-              <div class="text">😀 Need a hand? Let's talk.</div>
+              <div className="text">😀 Need a hand? Let's talk.</div>
               <input required type="text" placeholder="Name" name="name" />
 
               <input required type="email" placeholder="Email" name="email" />
