@@ -38,7 +38,7 @@ const Home = () => {
     });
 
     fetch(
-      `https://api.stackexchange.com/2.2/users/15415996?&key=${process.env.REACT_APP_GITHUB_KEY}&site=stackoverflow`
+      `https://api.stackexchange.com/2.2/users/15415996?&key=${process.env.REACT_APP_STACKOVERFLOW_KEY}&site=stackoverflow`
     )
       .then((response) => response.json())
       .then((data) => setStackOverflow(data));
