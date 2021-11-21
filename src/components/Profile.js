@@ -196,7 +196,7 @@ const Profile = () => {
           <OverlayTrigger
             placement="bottom"
             delay={{ show: 250, hide: 400 }}
-            overlay={renderTooltip("Cypress")}
+            overlay={renderTooltip("Next JS")}
           >
             <div className="technology">
               <SiNextdotjs size="30" color="rgb(146, 146, 146)" />
