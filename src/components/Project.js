@@ -6,6 +6,7 @@ import { FcFolder } from "react-icons/fc";
 import { SiReact, SiGithub, SiMysql, SiRedux } from "react-icons/si";
 import { FaSass, FaNodeJs } from "react-icons/fa";
 import { BsGithub, BsFillCalendarDateFill } from "react-icons/bs";
+import { AiOutlineAntDesign } from "react-icons/ai";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import { FiExternalLink } from "react-icons/fi";
 const Project = () => {
@@ -113,7 +114,7 @@ const Project = () => {
                     overlay={renderTooltip("View Demo")}
                   >
                     <a
-                      href="https://boring-mclean-972fb4.netlify.app/"
+                      href="https://quirky-heisenberg-ef69be.netlify.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -138,13 +139,14 @@ const Project = () => {
                 </div>
               </div>
               <div className="heading">
-                <FcFolder /> Githuber
+                <FcFolder /> Github Search
               </div>
               <div className="text">
                 Github search made simple! Search any user on Github with ease
                 and find their repositories and profile information. Created
                 with <span className="underlined-text highlight">React JS</span>
-                , <span className="underlined-text highlight">SCSS</span> and{" "}
+                , <span className="underlined-text highlight">Ant Design</span>{" "}
+                , <span className="underlined-text highlight">Redux</span> and{" "}
                 <span className="underlined-text highlight">Github API</span>
               </div>
               <div className="techs">
@@ -160,10 +162,10 @@ const Project = () => {
                 <OverlayTrigger
                   placement="bottom"
                   delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("Scss")}
+                  overlay={renderTooltip("Ant Design")}
                 >
                   <div className="tech">
-                    <FaSass size="25" color="rgb(214, 0, 143)" />
+                    <AiOutlineAntDesign size="25" color="rgb(214, 0, 143)" />
                   </div>
                 </OverlayTrigger>
                 <OverlayTrigger
