@@ -2,9 +2,8 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import "../scss/project.scss";
 import { RiComputerFill } from "react-icons/ri";
-import { FcFolder } from "react-icons/fc";
-import { SiReact, SiGithub, SiMysql, SiRedux, SiNetlify, SiVercel, SiStrapi, SiTailwindcss, SiNextdotjs, SiHeroku, SiSequelize, SiNodedotjs, SiExpress } from "react-icons/si";
-import { FaSass, FaNodeJs, FaReact, FaFolder } from "react-icons/fa";
+import { SiMysql, SiNetlify, SiVercel, SiStrapi, SiTailwindcss, SiNextdotjs, SiHeroku, SiSequelize, SiNodedotjs, SiExpress } from "react-icons/si";
+import { FaReact, FaFolder } from "react-icons/fa";
 import { BsGithub, BsFillCalendarDateFill } from "react-icons/bs";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
@@ -26,19 +25,55 @@ const Project = () => {
           <div class="project">
             <div class="project-image">
 
-              <img className='image' src={require("../img/placeholder.jpeg").default} alt="" />
+              <img className='image' src={require("../img/findmystay.png").default} alt="" />
             </div>
             <div className='project-content'>
               <div class="title-links">
                 <div class="title"> <FaFolder /> Findmystay</div>
                 <div>
-                  <FiExternalLink className='link' />
-                  <BsGithub className='link' />
-                  <BsGithub />
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Demo")}
+                  >
+                    <a
+                      href="https://findmystay.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FiExternalLink className='link' />
+                    </a>
+                  </OverlayTrigger>
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Demo")}
+                  >
+                    <a
+                      href="https://findmystay.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BsGithub className='link' />
+                    </a>
+                  </OverlayTrigger>
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Demo")}
+                  >
+                    <a
+                      href="https://findmystay.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BsGithub />
+                    </a>
+                  </OverlayTrigger>
                 </div>
               </div>
               <div class="description">
-                A straight forward mock web app to find hotels in California. The information on the hotels are listed down using a <span className="underlined-text highlight">Strapi API</span> hosted on <span className="underlined-text highlight">Heroku</span>, and the frontend was built with <span className="underlined-text highlight">Next JS</span> for great SEO. The frontend is hosted on <span className="underlined-text highlight">Vercel</span>. The UI was done using <span className="underlined-text highlight">Tailwind CSS</span>.
+                A straight forward mock web app to find hotels in California. The information on the hotels are listed down using the headless CMS <span className="underlined-text highlight">Strapi API</span> hosted on <span className="underlined-text highlight">Heroku</span>, and the frontend was built with <span className="underlined-text highlight">Next JS</span> for great SEO. The frontend is hosted on <span className="underlined-text highlight">Vercel</span>. The UI was done using <span className="underlined-text highlight">Tailwind CSS</span>.
               </div>
               <div class="technologies">
                 <SiNextdotjs />
@@ -63,7 +98,7 @@ const Project = () => {
           <div class="project">
             <div class="project-image">
 
-              <img className='image' src={require("../img/placeholder.jpeg").default} alt="" />
+              <img className='image' src={require("../img/githuber.png").default} alt="" />
             </div>
             <div className='project-content'>
               <div class="title-links">
@@ -74,7 +109,8 @@ const Project = () => {
                 </div>
               </div>
               <div class="description">
-                Github search made simple. Search any Github user, and find their information conveniently. Powered by the <span className="underlined-text highlight">Github API</span>, with the frontend being <span className="underlined-text highlight">React JS.</span> UI done with <span className="underlined-text highlight">Ant Design</span> and deployed to <span className="underlined-text highlight">Netlify.</span>
+                Github search made simple. Search any Github user, and find their information conveniently, view and clone their repositories
+                . Powered by the <span className="underlined-text highlight">Github API</span>, with the frontend being <span className="underlined-text highlight">React JS.</span> UI done with <span className="underlined-text highlight">Ant Design</span> and deployed to <span className="underlined-text highlight">Netlify.</span>
               </div>
               <div class="technologies">
                 <FaReact />
@@ -97,7 +133,7 @@ const Project = () => {
           <div class="project">
             <div class="project-image">
 
-              <img className='image' src={require("../img/placeholder.jpeg").default} alt="" />
+              <img className='image' src={require("../img/carmax.png").default} alt="" />
             </div>
             <div className='project-content'>
               <div class="title-links">
@@ -130,22 +166,19 @@ const Project = () => {
 
             </div>
           </div>
-          <div class="project">
-            <div class="project-image">
+          <div class="project-dev">
 
-              <img className='image' src={require("../img/placeholder.jpeg").default} alt="" />
-            </div>
             <div className='project-content'>
               <div class="title-links">
-                <div class="title"> <FaFolder /> Findmystay</div>
+                <div class="title"> <FaFolder /> Lufthansa Schedules</div>
                 <div>
                   <FiExternalLink className='link' />
-                  <BsGithub className='link' />
+
                   <BsGithub />
                 </div>
               </div>
               <div class="description">
-                A straight forward mock web app to find hotels in California. The information on the hotels are listed down using a Strapi API hosted on Heroku, and the frontend was built with Next JS for great SEO. The frontend is hosted on Vercel. The UI was done using Tailwind CSS.
+                Find Lufthansa Flight Schedules and operating airports. Powered by Lufthansa API, built using React JS and Tailwind CSS.
               </div>
               <div class="technologies">
                 <SiNextdotjs />

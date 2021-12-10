@@ -33,35 +33,29 @@
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 4rem;
-    .project {
+
+    .project-dev {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       border: 2px solid rgb(231, 231, 231);
-      gap: 3rem;
-
-      .project-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .image {
-          border: 2px solid #c9c9c9;
-          width: 100%;
-          padding: 1rem;
-        }
-      }
+      padding: 2rem;
 
       .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-top: 2rem;
         padding: 0 1rem !important;
-        height: fit-content;
+
+        a {
+          color: black;
+        }
 
         .title-links {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          font-size: 2.5rem !important;
+          font-size: 2rem !important;
 
           .title {
             display: flex;
@@ -79,16 +73,16 @@
 
         .description {
           line-height: 35px !important;
-          margin-top: 4rem !important;
+          margin-top: 3rem !important;
           text-align: justify !important;
-          font-size: 1.8rem !important;
+          font-size: 1.5rem !important;
         }
 
         .technologies {
           display: flex;
           flex-direction: row;
-          margin-top: 4rem !important;
-          font-size: 3rem !important;
+          margin-top: 3rem !important;
+          font-size: 2.4rem !important;
 
           svg:nth-child(1) {
             margin-left: 0 !important;
@@ -109,7 +103,7 @@
             flex-direction: row;
             align-items: center;
             text-align: left !important;
-            font-size: 1.8rem !important;
+            font-size: 1.5rem !important;
             svg {
               margin-right: 1rem !important;
             }
@@ -118,7 +112,106 @@
             display: flex;
             align-items: center;
             text-align: left !important;
-            font-size: 1.8rem !important;
+            font-size: 1.5rem !important;
+            svg {
+              margin-right: 1rem !important;
+            }
+          }
+        }
+      }
+    }
+    .project {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border: 2px solid rgb(231, 231, 231);
+      gap: 3rem;
+
+      .project-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .image {
+          // border: 2px solid #c9c9c9;
+          width: 100%;
+          padding: 1rem;
+        }
+      }
+
+      .project-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+        padding: 0 1rem !important;
+
+        a {
+          color: black;
+        }
+
+        .title-links {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          font-size: 2rem !important;
+
+          .title {
+            display: flex;
+            align-items: center;
+
+            svg {
+              margin-right: 1rem !important;
+            }
+          }
+
+          .link {
+            margin-right: 2rem;
+          }
+        }
+
+        .description {
+          line-height: 35px !important;
+          margin-top: 3rem !important;
+          text-align: justify !important;
+          font-size: 1.5rem !important;
+        }
+
+        .technologies {
+          display: flex;
+          flex-direction: row;
+          margin-top: 3rem !important;
+          font-size: 2.4rem !important;
+
+          svg:nth-child(1) {
+            margin-left: 0 !important;
+          }
+          svg {
+            margin: 0 1rem !important;
+          }
+        }
+
+        .type-date {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 4rem;
+
+          .type {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: left !important;
+            font-size: 1.5rem !important;
+            svg {
+              margin-right: 1rem !important;
+            }
+          }
+          .date {
+            display: flex;
+            align-items: center;
+            text-align: left !important;
+            font-size: 1.5rem !important;
             svg {
               margin-right: 1rem !important;
             }

@@ -89,11 +89,7 @@ body {
   .technologies-grid {
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-
-    .technology {
-      background-color: rgb(44, 44, 44) !important;
-    }
+    grid-template-columns: repeat(12, 1fr);
   }
   .experience {
     background-color: rgb(26, 26, 26) !important;
@@ -171,14 +167,17 @@ body {
 
   .project-container {
     .project-grid {
-      .project {
+      .project,
+      .project-dev {
         border: 2px solid rgb(44, 44, 44) !important;
         background-color: rgb(26, 26, 26) !important;
 
         .highlight {
           color: rgb(4, 221, 221) !important;
         }
-
+        a {
+          color: white !important;
+        }
         .image {
           img {
             border: 2px solid #2c2c2c !important;
@@ -452,7 +451,6 @@ ul {
           padding: 0 !important;
           border-radius: 50%;
           width: fit-content;
-          background-color: rgb(230, 230, 230);
         }
       }
     }
