@@ -51,6 +51,18 @@
           color: black;
         }
 
+        .tech {
+          cursor: pointer !important;
+        }
+
+        .upcoming {
+          background-color: rgb(221, 15, 0);
+          margin: 0 2rem;
+          font-size: 1.5rem;
+          padding: 0 1rem;
+          color: white !important;
+        }
+
         .title-links {
           display: flex;
           flex-direction: row;
@@ -147,6 +159,7 @@
         padding: 0 1rem !important;
 
         a {
+          cursor: pointer;
           color: black;
         }
 
@@ -165,8 +178,9 @@
             }
           }
 
-          .link {
-            margin-right: 2rem;
+          .link-container {
+            text-align: center !important;
+            margin-right: 1rem !important;
           }
         }
 
@@ -182,6 +196,10 @@
           flex-direction: row;
           margin-top: 3rem !important;
           font-size: 2.4rem !important;
+
+          .tech {
+            cursor: pointer !important;
+          }
 
           svg:nth-child(1) {
             margin-left: 0 !important;
