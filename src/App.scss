@@ -446,6 +446,9 @@ ul {
       }
 
       .technologies-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2rem;
         .technology {
           display: flex;
           padding: 0 !important;

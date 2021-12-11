@@ -59,6 +59,20 @@
       font-size: 4rem;
     }
   }
+
+  .profile {
+    .technologies-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2rem;
+      .technology {
+        display: flex;
+        padding: 0 !important;
+        border-radius: 50%;
+        width: fit-content;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 376px) {
