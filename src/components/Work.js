@@ -51,7 +51,7 @@ const Work = () => {
           <div className="date-link">
             <div className="date">
               <BsFillCalendarDateFill />
-              2021-07 / 2021-12
+              <div>2021-07 / 2021-12</div>
             </div>
             <div className="link">
               <img

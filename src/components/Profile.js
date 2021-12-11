@@ -10,6 +10,7 @@ import {
   SiExpress,
   SiCypress,
   SiNextdotjs,
+  SiTailwindcss,
 } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { BiCurrentLocation } from "react-icons/bi";
@@ -90,7 +91,7 @@ const Profile = () => {
             >
               <span className="underlined-text"> BetaLaunch </span>
             </a>{" "}
-            for almost 7 months working with{" "}
+            for almost 10 months working with{" "}
             <span className="underlined-text"> React JS + Node JS. </span>
             <br />
             <br />
@@ -109,7 +110,7 @@ const Profile = () => {
             overlay={renderTooltip("React JS")}
           >
             <div className="technology">
-              <SiReact size="30" color="rgb(0, 209, 236)" />
+              <SiReact size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -118,7 +119,7 @@ const Profile = () => {
             overlay={renderTooltip("Javascript")}
           >
             <div className="technology">
-              <SiJavascript size="30" color="rgb(255 184 6)" />
+              <SiJavascript size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -127,7 +128,7 @@ const Profile = () => {
             overlay={renderTooltip("Typescript")}
           >
             <div className="technology">
-              <SiTypescript size="30" color="rgb(19, 114, 202)" />
+              <SiTypescript size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -136,7 +137,7 @@ const Profile = () => {
             overlay={renderTooltip("Mongo DB")}
           >
             <div className="technology">
-              <SiMongodb size="30" color="rgb(48, 138, 67)" />
+              <SiMongodb size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -145,7 +146,7 @@ const Profile = () => {
             overlay={renderTooltip("Node JS")}
           >
             <div className="technology">
-              <SiNodedotjs size="30" color="rgb(48, 138, 67)" />
+              <SiNodedotjs size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -154,7 +155,7 @@ const Profile = () => {
             overlay={renderTooltip("Sass")}
           >
             <div className="technology">
-              <FaSass size="30" color="rgb(214, 0, 143)" />
+              <FaSass size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -163,7 +164,7 @@ const Profile = () => {
             overlay={renderTooltip("Redux")}
           >
             <div className="technology">
-              <SiRedux size="30" color="rgb(178, 0, 214)" />
+              <SiRedux size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -172,7 +173,7 @@ const Profile = () => {
             overlay={renderTooltip("MySQL")}
           >
             <div className="technology">
-              <SiMysql size="30" color="rgb(0, 146, 214)∂" />
+              <SiMysql size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -181,7 +182,7 @@ const Profile = () => {
             overlay={renderTooltip("Express JS")}
           >
             <div className="technology">
-              <SiExpress size="30" color="rgb(141 134 134)" />
+              <SiExpress size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -190,7 +191,7 @@ const Profile = () => {
             overlay={renderTooltip("Cypress")}
           >
             <div className="technology">
-              <SiCypress size="30" color="rgb(146, 146, 146)" />
+              <SiCypress size="30" />
             </div>
           </OverlayTrigger>
           <OverlayTrigger
@@ -199,9 +200,19 @@ const Profile = () => {
             overlay={renderTooltip("Next JS")}
           >
             <div className="technology">
-              <SiNextdotjs size="30" color="rgb(146, 146, 146)" />
+              <SiNextdotjs size="30" />
             </div>
           </OverlayTrigger>
+          <OverlayTrigger
+            placement="bottom"
+            delay={{ show: 250, hide: 400 }}
+            overlay={renderTooltip("Tailwind")}
+          >
+            <div className="technology">
+              <SiTailwindcss size="30" />
+            </div>
+          </OverlayTrigger>
+
         </div>
       </div>
     </Fade>
