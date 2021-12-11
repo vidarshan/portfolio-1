@@ -35,8 +35,8 @@ const Project = () => {
       <div className="project-container">
         <div className="project-heading">🚀 Projects.</div>
         <div className="project-grid">
-          <div class="project">
-            <div class="project-image">
+          <div className="project">
+            <div className="project-image">
               <img
                 className="image"
                 src={require("../img/findmystay.png").default}
@@ -44,8 +44,8 @@ const Project = () => {
               />
             </div>
             <div className="project-content">
-              <div class="title-links">
-                <div class="title">
+              <div className="title-links">
+                <div className="title">
                   {" "}
                   <FaFolder /> Findmystay <span className='new'>New</span>
                 </div>
@@ -93,7 +93,7 @@ const Project = () => {
                   </OverlayTrigger>
                 </div>
               </div>
-              <div class="description">
+              <div className="description">
                 A straight forward mock web app to find hotels in California.
                 The information on the hotels are listed down using the headless
                 CMS{" "}
@@ -107,7 +107,7 @@ const Project = () => {
                 UI was done using{" "}
                 <span className="underlined-text highlight">Tailwind CSS</span>.
               </div>
-              <div class="technologies">
+              <div className="technologies">
                 <OverlayTrigger
                   placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
@@ -154,28 +154,28 @@ const Project = () => {
                   </span>
                 </OverlayTrigger>
               </div>
-              <div class="type-date">
-                <div class="type">
+              <div className="type-date">
+                <div className="type">
                   <RiComputerFill /> Full-stack
                 </div>
-                <div class="date">
+                <div className="date">
                   <BsFillCalendarDateFill /> 09-12-2021
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="project">
-            <div class="project-image">
+          <div className="project">
+            <div className="project-image">
               <img
                 className="image"
-                src={require("../img/githuber.png").default}
+                src={require("../img/githubsearch.png").default}
                 alt=""
               />
             </div>
             <div className="project-content">
-              <div class="title-links">
-                <div class="title">
+              <div className="title-links">
+                <div className="title">
                   {" "}
                   <FaFolder /> Github Search
                 </div>
@@ -210,7 +210,7 @@ const Project = () => {
                   </OverlayTrigger>
                 </div>
               </div>
-              <div class="description">
+              <div className="description">
                 Github search made simple. Search any Github user, and find
                 their information conveniently, view and clone their
                 repositories . Powered by the{" "}
@@ -222,7 +222,7 @@ const Project = () => {
                 and deployed to{" "}
                 <span className="underlined-text highlight">Netlify.</span>
               </div>
-              <div class="technologies">
+              <div className="technologies">
                 <OverlayTrigger
                   placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
@@ -269,18 +269,18 @@ const Project = () => {
                   </span>
                 </OverlayTrigger>
               </div>
-              <div class="type-date">
-                <div class="type">
+              <div className="type-date">
+                <div className="type">
                   <RiComputerFill /> Frontend
                 </div>
-                <div class="date">
+                <div className="date">
                   <BsFillCalendarDateFill /> 09-10-2021
                 </div>
               </div>
             </div>
           </div>
-          <div class="project">
-            <div class="project-image">
+          <div className="project">
+            <div className="project-image">
               <img
                 className="image"
                 src={require("../img/carmax.png").default}
@@ -288,8 +288,8 @@ const Project = () => {
               />
             </div>
             <div className="project-content">
-              <div class="title-links">
-                <div class="title">
+              <div className="title-links">
+                <div className="title">
                   {" "}
                   <FaFolder /> Carmax ERP API
                 </div>
@@ -324,7 +324,7 @@ const Project = () => {
                   </OverlayTrigger>
                 </div>
               </div>
-              <div class="description">
+              <div className="description">
                 A <span className="underlined-text highlight">Node JS</span> API
                 with a <span className="underlined-text highlight"> MySQL</span>{" "}
                 DB with{" "}
@@ -333,7 +333,7 @@ const Project = () => {
                 manage jobs, inventory and suppliers. Built for a private
                 customer.
               </div>
-              <div class="technologies">
+              <div className="technologies">
                 <OverlayTrigger
                   placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
@@ -371,20 +371,20 @@ const Project = () => {
                   </span>
                 </OverlayTrigger>
               </div>
-              <div class="type-date">
-                <div class="type">
+              <div className="type-date">
+                <div className="type">
                   <RiComputerFill /> Backend
                 </div>
-                <div class="date">
+                <div className="date">
                   <BsFillCalendarDateFill /> 20-08-2021
                 </div>
               </div>
             </div>
           </div>
-          <div class="project-dev">
+          <div className="project-dev">
             <div className="project-content">
-              <div class="title-links">
-                <div class="title">
+              <div className="title-links">
+                <div className="title">
                   {" "}
                   <FaFolder /> Lufthansa Schedules{" "}
                   <span className="upcoming">Upcoming</span>
@@ -407,7 +407,7 @@ const Project = () => {
                   </OverlayTrigger>
                 </div>
               </div>
-              <div class="description">
+              <div className="description">
                 Find Lufthansa Flight Schedules and operating airports. Powered
                 by{" "}
                 <span className="underlined-text highlight">
@@ -417,7 +417,7 @@ const Project = () => {
                 <span className="underlined-text highlight">React JS</span> and{" "}
                 <span className="underlined-text highlight">Semantic UI.</span>
               </div>
-              <div class="technologies">
+              <div className="technologies">
                 <OverlayTrigger
                   placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
@@ -455,11 +455,11 @@ const Project = () => {
                   </span>
                 </OverlayTrigger>
               </div>
-              <div class="type-date">
-                <div class="type">
+              <div className="type-date">
+                <div className="type">
                   <RiComputerFill /> Frontend
                 </div>
-                <div class="date">
+                <div className="date">
                   <BsFillCalendarDateFill /> 01-01-2022
                 </div>
               </div>
