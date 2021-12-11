@@ -47,7 +47,7 @@ const Project = () => {
               <div class="title-links">
                 <div class="title">
                   {" "}
-                  <FaFolder /> Findmystay
+                  <FaFolder /> Findmystay <span className='new'>New</span>
                 </div>
                 <div>
                   <OverlayTrigger

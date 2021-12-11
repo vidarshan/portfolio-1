@@ -138,6 +138,14 @@
       border: 2px solid rgb(231, 231, 231);
       gap: 3rem;
 
+      .new {
+        background-color: rgb(37, 150, 9);
+        margin: 0 2rem;
+        font-size: 1.5rem;
+        padding: 0 1rem;
+        color: white !important;
+      }
+
       .project-image {
         width: 100%;
         display: flex;

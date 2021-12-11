@@ -91,7 +91,7 @@ const Profile = () => {
             >
               <span className="underlined-text"> BetaLaunch </span>
             </a>{" "}
-            for almost 7 months working with{" "}
+            for almost 10 months working with{" "}
             <span className="underlined-text"> React JS + Node JS. </span>
             <br />
             <br />
