@@ -56,7 +56,7 @@ const ReachOut = () => {
         <div className="form-socials">
           <div className="reachout-form">
             <form onSubmit={sendEmail}>
-              <div className="text">😀 Need a hand? Let's talk.</div>
+              <div className="text">Let's talk.😀</div>
               <input required type="text" placeholder="Name" name="name" />
 
               <input required type="email" placeholder="Email" name="email" />

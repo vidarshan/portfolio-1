@@ -2,13 +2,27 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import "../scss/project.scss";
 import { RiComputerFill } from "react-icons/ri";
-import { FcFolder } from "react-icons/fc";
-import { SiReact, SiGithub, SiMysql, SiRedux } from "react-icons/si";
-import { FaSass, FaNodeJs } from "react-icons/fa";
+import {
+  SiMysql,
+  SiNetlify,
+  SiVercel,
+  SiStrapi,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiHeroku,
+  SiSequelize,
+  SiNodedotjs,
+  SiExpress,
+  SiReact,
+  SiRedux,
+  SiSemanticuireact,
+} from "react-icons/si";
+import { FaReact, FaFolder } from "react-icons/fa";
 import { BsGithub, BsFillCalendarDateFill } from "react-icons/bs";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import { FiExternalLink } from "react-icons/fi";
+import { HiOutlineDocumentText } from "react-icons/hi";
 const Project = () => {
   const renderTooltip = (text) => (
     <Tooltip placement="top" className="in" id="tooltip-top">
@@ -22,34 +36,55 @@ const Project = () => {
         <div className="project-heading">🚀 Projects.</div>
         <div className="project-grid">
           <div className="project">
-            <div className="image">
-              <img src={require("../img/portfolio.png").default} alt="" />
+            <div className="project-image">
+              <img
+                className="image"
+                src={require("../img/findmystay.png").default}
+                alt=""
+              />
             </div>
-            <div className="desc">
-              <div className="links">
-                <div className="demo">
+            <div className="project-content">
+              <div className="title-links">
+                <div className="title">
+                  {" "}
+                  <FaFolder /> Findmystay <span className='new'>New</span>
+                </div>
+                <div>
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
                     overlay={renderTooltip("View Demo")}
                   >
                     <a
-                      href="https://vidarshan.dev"
+                      className="link-container"
+                      href="https://findmystay.vercel.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <FiExternalLink />
                     </a>
                   </OverlayTrigger>
-                </div>
-                <div className="git">
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
-                    overlay={renderTooltip("View Code")}
+                    overlay={renderTooltip("View Backend Repo")}
                   >
                     <a
-                      href="https://github.com/vidarshanadithya/portfolio"
+                      className="link-container"
+                      href="https://github.com/vidarshanadithya/findmystaybe"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BsGithub />
+                    </a>
+                  </OverlayTrigger>
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Frontend Repo")}
+                  >
+                    <a
+                      href="https://github.com/vidarshanadithya/findmystayfe"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -58,78 +93,115 @@ const Project = () => {
                   </OverlayTrigger>
                 </div>
               </div>
-              <div className="heading">
-                <FcFolder /> Portfolio
+              <div className="description">
+                A straight forward mock web app to find hotels in California.
+                The information on the hotels are listed down using the headless
+                CMS{" "}
+                <span className="underlined-text highlight">Strapi API</span>{" "}
+                hosted on{" "}
+                <span className="underlined-text highlight">Heroku</span>, and
+                the frontend was built with{" "}
+                <span className="underlined-text highlight">Next JS</span> for
+                great SEO. The frontend is hosted on{" "}
+                <span className="underlined-text highlight">Vercel</span>. The
+                UI was done using{" "}
+                <span className="underlined-text highlight">Tailwind CSS</span>.
               </div>
-              <div className="text">
-                My portfolio website which intends to show my work and my path
-                within the field. Created with{" "}
-                <span className="underlined-text highlight">ReactJS</span> and{" "}
-                <span className="underlined-text highlight">SCSS</span> with
-                some <span className="underlined-text highlight">npm</span>{" "}
-                packages such as react-reveal and Count-up.
-              </div>
-              <div className="techs">
+              <div className="technologies">
                 <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("React JS")}
+                  overlay={renderTooltip("Next JS")}
                 >
-                  <div className="tech">
-                    <SiReact size="30" color="rgb(0, 209, 236)" />
-                  </div>
+                  <span>
+                    <SiNextdotjs className='tech' />
+                  </span>
                 </OverlayTrigger>
                 <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("Sass")}
+                  overlay={renderTooltip("Tailwind CSS")}
                 >
-                  <div className="tech">
-                    <FaSass size="30" color="rgb(214, 0, 143)" />
-                  </div>
+                  <span className='tech'>
+                    <SiTailwindcss />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Vercel")}
+                >
+                  <span>
+                    <SiVercel className='tech' />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Heroku")}
+                >
+                  <span>
+                    <SiHeroku className='tech' />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Strapi")}
+                >
+                  <span>
+                    <SiStrapi className='tech' />
+                  </span>
                 </OverlayTrigger>
               </div>
-              <div className="role-date">
-                <div className="role">
-                  <RiComputerFill />
-                  Frontend Project
+              <div className="type-date">
+                <div className="type">
+                  <RiComputerFill /> Full-stack
                 </div>
                 <div className="date">
-                  <BsFillCalendarDateFill />
-                  11-2021
+                  <BsFillCalendarDateFill /> 09-12-2021
                 </div>
               </div>
             </div>
           </div>
+
           <div className="project">
-            <div className="image">
-              <img src={require("../img/githuber.png").default} alt="" />
+            <div className="project-image">
+              <img
+                className="image"
+                src={require("../img/githubsearch.png").default}
+                alt=""
+              />
             </div>
-            <div className="desc">
-              <div className="links">
-                <div className="demo">
+            <div className="project-content">
+              <div className="title-links">
+                <div className="title">
+                  {" "}
+                  <FaFolder /> Github Search
+                </div>
+                <div>
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
                     overlay={renderTooltip("View Demo")}
                   >
                     <a
-                      href="https://quirky-heisenberg-ef69be.netlify.app/"
+                      className="link-container"
+                      href="https://61a26a6d1c6eea0007117321--quirky-heisenberg-ef69be.netlify.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <FiExternalLink />
                     </a>
                   </OverlayTrigger>
-                </div>
-                <div className="git">
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
-                    overlay={renderTooltip("View Code")}
+                    overlay={renderTooltip("View Repo")}
                   >
                     <a
-                      href="https://github.com/vidarshanadithya/githuber"
+                      className="link-container"
+                      href="https://github.com/vidarshanadithya/github-search"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -138,95 +210,111 @@ const Project = () => {
                   </OverlayTrigger>
                 </div>
               </div>
-              <div className="heading">
-                <FcFolder /> Github Search
+              <div className="description">
+                Github search made simple. Search any Github user, and find
+                their information conveniently, view and clone their
+                repositories . Powered by the{" "}
+                <span className="underlined-text highlight">Github API</span>,
+                with the frontend being{" "}
+                <span className="underlined-text highlight">React JS.</span> UI
+                done with{" "}
+                <span className="underlined-text highlight">Ant Design</span>{" "}
+                and deployed to{" "}
+                <span className="underlined-text highlight">Netlify.</span>
               </div>
-              <div className="text">
-                Github search made simple! Search any user on Github with ease
-                and find their repositories and profile information. Created
-                with <span className="underlined-text highlight">React JS</span>
-                , <span className="underlined-text highlight">Ant Design</span>{" "}
-                , <span className="underlined-text highlight">Redux</span> and{" "}
-                <span className="underlined-text highlight">Github API</span>
-              </div>
-              <div className="techs">
+              <div className="technologies">
                 <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
                   overlay={renderTooltip("React JS")}
                 >
-                  <div className="tech">
-                    <SiReact size="25" color="rgb(0, 209, 236)" />
-                  </div>
+                  <span className='tech'>
+                    <FaReact />
+                  </span>
                 </OverlayTrigger>
                 <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
                   overlay={renderTooltip("Ant Design")}
                 >
-                  <div className="tech">
-                    <AiOutlineAntDesign size="25" color="rgb(214, 0, 143)" />
-                  </div>
+                  <span className='tech'>
+                    <AiOutlineAntDesign />
+                  </span>
                 </OverlayTrigger>
                 <OverlayTrigger
-                  placement="bottom"
-                  delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("Redux")}
-                >
-                  <div className="tech">
-                    <SiRedux size="28" color="rgb(178, 0, 214)" />
-                  </div>
-                </OverlayTrigger>
-                <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
                   overlay={renderTooltip("Github API")}
                 >
-                  <div className="tech">
-                    <SiGithub size="25" />
-                  </div>
+                  <span className='tech'>
+                    <BsGithub />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Netlify")}
+                >
+                  <span className='tech'>
+                    <SiNetlify />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Redux")}
+                >
+                  <span className='tech'>
+                    <SiRedux />
+                  </span>
                 </OverlayTrigger>
               </div>
-              <div className="role-date">
-                <div className="role">
-                  <RiComputerFill />
-                  Frontend Project
+              <div className="type-date">
+                <div className="type">
+                  <RiComputerFill /> Frontend
                 </div>
                 <div className="date">
-                  <BsFillCalendarDateFill />
-                  10-2021
+                  <BsFillCalendarDateFill /> 09-10-2021
                 </div>
               </div>
             </div>
           </div>
           <div className="project">
-            <div className="image">
-              <img src={require("../img/carmax.png").default} alt="" />
+            <div className="project-image">
+              <img
+                className="image"
+                src={require("../img/carmax.png").default}
+                alt=""
+              />
             </div>
-            <div className="desc">
-              <div className="links">
-                <div className="demo">
+            <div className="project-content">
+              <div className="title-links">
+                <div className="title">
+                  {" "}
+                  <FaFolder /> Carmax ERP API
+                </div>
+                <div>
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
                     overlay={renderTooltip("View Documentation")}
                   >
                     <a
+                      className="link-container"
                       href="https://documenter.getpostman.com/view/12226878/UUy39SEX"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <FiExternalLink />
+                      <HiOutlineDocumentText />
                     </a>
                   </OverlayTrigger>
-                </div>
-                <div className="git">
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
-                    overlay={renderTooltip("View Code")}
+                    overlay={renderTooltip("View Documentation")}
                   >
                     <a
+                      className="link-container"
                       href="https://github.com/vidarshanadithya/carmax-erp-api"
                       target="_blank"
                       rel="noreferrer"
@@ -236,76 +324,81 @@ const Project = () => {
                   </OverlayTrigger>
                 </div>
               </div>
-              <div className="heading">
-                <FcFolder /> Carmax ERP API
-              </div>
-              <div className="text">
+              <div className="description">
                 A <span className="underlined-text highlight">Node JS</span> API
-                with an <span className="underlined-text highlight">MySQL</span>{" "}
-                DB for the Enterprise Management System of a Car Service Station
-                to manage jobs, inventory and suppliers.
+                with a <span className="underlined-text highlight"> MySQL</span>{" "}
+                DB with{" "}
+                <span className="underlined-text highlight">Sequelize</span> for
+                the Enterprise Management System of a Car Service Station to
+                manage jobs, inventory and suppliers. Built for a private
+                customer.
               </div>
-              <div className="techs">
+              <div className="technologies">
                 <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
                   overlay={renderTooltip("Node JS")}
                 >
-                  <div className="tech">
-                    <FaNodeJs size="30" color="rgb(54, 165, 91) " />
-                  </div>
+                  <span className='tech'>
+                    <SiNodedotjs />
+                  </span>
                 </OverlayTrigger>
                 <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("MySQL")}
+                  overlay={renderTooltip("mySQL")}
                 >
-                  <div className="tech">
-                    <SiMysql size="30" color="rgb(45, 163, 231)" />
-                  </div>
+                  <span className='tech'>
+                    <SiMysql />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Sequelize")}
+                >
+                  <span className='tech'>
+                    <SiSequelize />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Express JS")}
+                >
+                  <span className='tech'>
+                    <SiExpress />
+                  </span>
                 </OverlayTrigger>
               </div>
-              <div className="role-date">
-                <div className="role">
-                  <RiComputerFill />
-                  Backend Project
+              <div className="type-date">
+                <div className="type">
+                  <RiComputerFill /> Backend
                 </div>
                 <div className="date">
-                  <BsFillCalendarDateFill />
-                  08-2021
+                  <BsFillCalendarDateFill /> 20-08-2021
                 </div>
               </div>
             </div>
           </div>
-          <div className="project">
-            <div className="image">
-              <img src={require("../img/countries.png").default} alt="" />
-            </div>
-            <div className="desc">
-              <div className="links">
-                {/* <div className="demo">
+          <div className="project-dev">
+            <div className="project-content">
+              <div className="title-links">
+                <div className="title">
+                  {" "}
+                  <FaFolder /> Lufthansa Schedules{" "}
+                  <span className="upcoming">Upcoming</span>
+                </div>
+                <div>
+
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
-                    overlay={renderTooltip("View Demo")}
+                    overlay={renderTooltip("View Repo")}
                   >
                     <a
-                      href="https://countries-io.herokuapp.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FiExternalLink />
-                    </a>
-                  </OverlayTrigger>
-                </div> */}
-                <div className="git">
-                  <OverlayTrigger
-                    placement="bottom"
-                    delay={{ show: 250, hide: 400 }}
-                    overlay={renderTooltip("View Code")}
-                  >
-                    <a
-                      href="https://github.com/vidarshanadithya/countries-io"
+                      className="link-container"
+                      href="https://github.com/vidarshanadithya/lufthansa-flight-schedules.git"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -314,52 +407,60 @@ const Project = () => {
                   </OverlayTrigger>
                 </div>
               </div>
-              <div className="heading">
-                <FcFolder /> Countries.io [Launching Soon]
-              </div>
-              <div className="text">
-                Making use of a 3rd party API which provides simple information
-                to the most advanced information on any given country. Made with{" "}
+              <div className="description">
+                Find Lufthansa Flight Schedules and operating airports. Powered
+                by{" "}
+                <span className="underlined-text highlight">
+                  Lufthansa Open API
+                </span>
+                , built using{" "}
                 <span className="underlined-text highlight">React JS</span> and{" "}
-                <span className="underlined-text highlight">SCSS</span>
+                <span className="underlined-text highlight">Semantic UI.</span>
               </div>
-              <div className="techs">
+              <div className="technologies">
                 <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
                   overlay={renderTooltip("React JS")}
                 >
-                  <div className="tech">
-                    <SiReact size="30" color="rgb(0, 209, 236)" />
-                  </div>
+                  <span className='tech'>
+                    <SiReact />
+                  </span>
                 </OverlayTrigger>
                 <OverlayTrigger
-                  placement="bottom"
-                  delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("Scss")}
-                >
-                  <div className="tech">
-                    <FaSass size="30" color="rgb(214, 0, 143)" />
-                  </div>
-                </OverlayTrigger>
-                <OverlayTrigger
-                  placement="bottom"
+                  placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
                   overlay={renderTooltip("Redux")}
                 >
-                  <div className="tech">
-                    <SiRedux size="28" color="rgb(178, 0, 214)" />
-                  </div>
+                  <span className='tech'>
+                    <SiRedux />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Semantic UI")}
+                >
+                  <span className='tech'>
+                    <SiSemanticuireact />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("MySQL")}
+                >
+                  <span className='tech'>
+                    <SiNetlify />
+                  </span>
                 </OverlayTrigger>
               </div>
-              <div className="role-date">
-                <div className="role">
-                  <RiComputerFill />
-                  Frontend Project
+              <div className="type-date">
+                <div className="type">
+                  <RiComputerFill /> Frontend
                 </div>
                 <div className="date">
-                  <BsFillCalendarDateFill />
-                  07-2021
+                  <BsFillCalendarDateFill /> 01-01-2022
                 </div>
               </div>
             </div>

@@ -35,8 +35,9 @@
     }
 
     .desc {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       margin: 1rem;
+      line-height: 35px !important;
     }
 
     .date-link {
@@ -52,8 +53,10 @@
       }
 
       .date {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-size: 1.5rem;
-
         svg {
           margin-right: 1rem;
         }
