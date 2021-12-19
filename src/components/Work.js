@@ -2,6 +2,7 @@ import "../scss/work.scss";
 import React from "react";
 import Fade from "react-reveal/Fade";
 import { BsFillCalendarDateFill } from "react-icons/bs";
+import { FaCircle } from 'react-icons/fa';
 
 const Work = () => {
   return (
@@ -20,7 +21,7 @@ const Work = () => {
           <div className="date-link">
             <div className="date">
               <BsFillCalendarDateFill />
-              2021-04 / 2021-09
+              2021-04 - 2021-09
             </div>
             <div className="link">
               <img
@@ -51,7 +52,7 @@ const Work = () => {
           <div className="date-link">
             <div className="date">
               <BsFillCalendarDateFill />
-              <div>2021-07 / 2021-12</div>
+              <div>2021-07 - 2021-12</div>
             </div>
             <div className="link">
               <img
@@ -70,9 +71,10 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className="experience current">
+        <div className="experience">
           <div className="place">
-            [Current] Associate Software Engineer @ Beta Launch, Sri Lanka 🇱🇰
+            <FaCircle color='#33cc33' size='12' />
+            <span>Associate Software Engineer @ Beta Launch, Sri Lanka 🇱🇰</span>
           </div>
           <div className="desc">
             Contributed to applications which are based on the web, as a full
@@ -83,7 +85,7 @@ const Work = () => {
           <div className="date-link">
             <div className="date">
               <BsFillCalendarDateFill />
-              2021-09 / Present
+              2021-09 - Present
             </div>
             <div className="link">
               <img
