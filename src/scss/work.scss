@@ -21,17 +21,32 @@
   .experience {
     padding: 0.5rem;
     margin: 1rem;
-    background-color: rgba(231, 231, 231, 0.74);
     text-align: left !important;
     border: 2px solid rgb(231, 231, 231);
     color: rgb(0, 0, 0);
     transition: 0.3s;
 
     .place {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       font-size: 2rem;
       margin: 1rem;
       border-bottom: 2px solid grey;
       line-height: 40px;
+
+      svg {
+        animation: blink 1s step-start 0s infinite;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+
+      span {
+        margin-left: 0.5rem !important;
+      }
     }
 
     .desc {
