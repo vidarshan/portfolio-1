@@ -75,6 +75,7 @@
       display: grid !important;
       grid-template-columns: repeat(4, 1fr) !important;
       grid-gap: 2rem;
+      background-color: lightseagreen;
 
       .technology {
         display: flex;
@@ -94,10 +95,18 @@
   }
 }
 
+@media screen and (max-width: 1210px) {
+  .profile-container {
+    .technologies-grid {
+      grid-template-columns: repeat(7, 1fr) !important;
+    }
+  }
+}
+
 .technologies-grid {
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr) !important;
 
   .technology {
     display: flex;

@@ -93,10 +93,15 @@ html {
 @media screen and (max-width: 1366px) {
   .achievements,
   .projects,
-  .work,
   .profile,
   .contact {
     margin-top: 5rem !important;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .work {
+    margin-top: 10rem !important;
   }
 }
 
