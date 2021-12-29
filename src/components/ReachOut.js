@@ -9,6 +9,7 @@ import {
   BsStackOverflow,
 } from "react-icons/bs";
 import { ToastContainer, toast } from "react-toastify";
+import { FcAdvertising, FcBusinessContact, FcLike, FcAbout } from 'react-icons/fc';
 
 const ReachOut = () => {
   const sendEmail = (e) => {
@@ -52,11 +53,11 @@ const ReachOut = () => {
     <Fade bottom duration={2000}>
       <ToastContainer />
       <div className="reachout-container">
-        <div className="reachout-heading">👉 Reach Out.</div>
+        <div className="reachout-heading"><FcAdvertising /> Reach Out.</div>
         <div className="form-socials">
           <div className="reachout-form">
             <form onSubmit={sendEmail}>
-              <div className="text">Let's talk.😀</div>
+              <div className="text"><FcAbout /> Let's talk.</div>
               <input required type="text" placeholder="Name" name="name" />
 
               <input required type="email" placeholder="Email" name="email" />
@@ -74,7 +75,7 @@ const ReachOut = () => {
             </form>
           </div>
           <div className="email-socials">
-            <div className="email-text">📧 Email</div>
+            <div className="email-text"><FcBusinessContact /> Email</div>
             <div className="email">
               <a href="mailto:webmaster@example.com">
                 {" "}
@@ -82,7 +83,7 @@ const ReachOut = () => {
               </a>
             </div>
             <div className="socials">
-              <div className="social-text">👻 Socials</div>
+              <div className="social-text"><FcLike /> Socials</div>
               <div className="social-icons">
                 <div className="social">
                   <a

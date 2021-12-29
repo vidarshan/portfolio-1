@@ -23,6 +23,8 @@ import { AiOutlineAntDesign } from "react-icons/ai";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import { FiExternalLink } from "react-icons/fi";
 import { HiOutlineDocumentText } from "react-icons/hi";
+import { FcStatistics } from 'react-icons/fc';
+
 const Project = () => {
   const renderTooltip = (text) => (
     <Tooltip placement="top" className="in" id="tooltip-top">
@@ -33,7 +35,7 @@ const Project = () => {
   return (
     <Fade bottom duration={2000}>
       <div className="project-container">
-        <div className="project-heading">🚀 Projects.</div>
+        <div className="project-heading"><FcStatistics /> Projects.</div>
         <div className="project-grid">
           <div className="project">
             <div className="project-image">
