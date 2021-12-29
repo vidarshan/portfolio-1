@@ -9,7 +9,7 @@ import {
   BsStackOverflow,
 } from "react-icons/bs";
 import { ToastContainer, toast } from "react-toastify";
-import { FcAdvertising, FcBusinessContact, FcLike, FcAbout } from 'react-icons/fc';
+import { FcAdvertising, FcBusinessContact, FcLike } from 'react-icons/fc';
 
 const ReachOut = () => {
   const sendEmail = (e) => {
@@ -57,7 +57,6 @@ const ReachOut = () => {
         <div className="form-socials">
           <div className="reachout-form">
             <form onSubmit={sendEmail}>
-              <div className="text"><FcAbout /> Let's talk.</div>
               <input required type="text" placeholder="Name" name="name" />
 
               <input required type="email" placeholder="Email" name="email" />
