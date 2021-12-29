@@ -11,7 +11,7 @@ import "../scss/home.scss";
 
 const Home = () => {
   const [show, setShow] = useState(true);
-  const [things, setThings] = useState([<span>I'm a Software Engineer <FcPortraitMode /></span>]);
+  const [things, setThings] = useState([<span className='def'>I'm a Software Engineer <FcPortraitMode /></span>]);
   const [stars, setStars] = useState(0);
   const [contributions, setContributions] = useState(0);
   const [stackOverflow, setStackOverflow] = useState(0);
@@ -50,10 +50,10 @@ const Home = () => {
 
     let optionNo = 0;
     const stuff = [
-      <span>I create stuff for the Web <FcGlobe /></span>,
-      <span>I create stuff for Mobile <FcPhoneAndroid /></span>,
-      <span>I create stuff for Desktop<FcFilingCabinet /></span>,
-      <span>I'm a Software Engineer <FcPortraitMode /></span>,
+      <span className='def'>I create stuff for the Web <FcGlobe /></span>,
+      <span className='def'>I create stuff for Mobile <FcPhoneAndroid /></span>,
+      <span className='def'>I create stuff for Desktop <FcFilingCabinet /></span>,
+      <span className='def'>I'm a Software Engineer <FcPortraitMode /></span>,
     ];
 
     setInterval(() => {

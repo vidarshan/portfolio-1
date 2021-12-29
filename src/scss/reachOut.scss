@@ -4,6 +4,9 @@
   width: 100%;
 
   .reachout-heading {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
     color: $text-color-lighter;
     text-align: left;
     font-size: 5rem !important;
@@ -12,6 +15,10 @@
     padding: 0 2rem;
     transition: 0.3s;
     font-family: "San Francisco";
+
+    svg {
+      margin-right: 1rem !important;
+    }
   }
 
   .form-socials {
@@ -75,9 +82,16 @@
       font-family: "San Francisco" !important;
 
       .email-text {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
         font-size: 2rem;
         transition: 0.3s;
         font-family: "San Francisco" !important;
+
+        svg {
+          margin-right: 1rem;
+        }
       }
       .email {
         display: flex;
@@ -108,9 +122,17 @@
         font-family: "San Francisco" !important;
 
         .social-text {
+          display: flex !important;
+          flex-direction: row !important;
+          align-items: center !important;
+          justify-content: center !important;
           font-size: 2rem;
           transition: 0.3s;
           font-family: "San Francisco" !important;
+
+          svg {
+            margin-right: 1rem !important;
+          }
         }
 
         .social-icons {

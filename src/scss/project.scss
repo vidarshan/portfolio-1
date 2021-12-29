@@ -7,6 +7,9 @@
   justify-content: flex-start;
 
   .project-heading {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
     color: $text-color-lighter;
     text-align: left;
     font-size: 5rem !important;
@@ -15,6 +18,10 @@
     padding: 0 2rem;
     transition: 0.3s;
     font-family: "San Francisco";
+
+    svg {
+      margin-right: 1rem !important;
+    }
   }
 
   .badge-green {

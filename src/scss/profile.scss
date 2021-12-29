@@ -2,6 +2,8 @@
 
 .profile-container {
   .profile-heading {
+    display: flex !important;
+    align-items: center !important;
     color: $text-color-lighter;
     text-align: left;
     font-size: 5rem !important;
@@ -10,6 +12,10 @@
     padding: 0 2rem;
     transition: 0.3s;
     font-family: "San Francisco";
+
+    svg {
+      margin-right: 1rem;
+    }
   }
 
   .profile-info {
@@ -60,9 +66,6 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 376px) {
 }
 
 @media screen and (max-width: 376px) {
