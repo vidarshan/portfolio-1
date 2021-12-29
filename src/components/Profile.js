@@ -14,7 +14,7 @@ import {
 } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { BiCurrentLocation } from "react-icons/bi";
-import { FcPortraitMode } from 'react-icons/fc';
+import { FcBookmark } from 'react-icons/fc';
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import Fade from "react-reveal/Fade";
 import "../scss/profile.scss";
@@ -40,7 +40,7 @@ const Profile = () => {
   return (
     <Fade bottom duration={2000}>
       <div className="profile-container">
-        <div className="profile-heading"><FcPortraitMode /> Profile.</div>
+        <div className="profile-heading"><FcBookmark /> Profile.</div>
         <div className="profile-info">
           <div className="profile-overview-text">
             <div className="photo">

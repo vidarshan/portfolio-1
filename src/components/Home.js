@@ -4,13 +4,14 @@ import Fade from "react-reveal/Fade";
 import { BsGithub, BsStackOverflow } from "react-icons/bs";
 import CountUp from "react-countup";
 import { BiGitBranch, BiStar, BiMedal, BiUpArrow } from "react-icons/bi";
+import { FcGlobe, FcFilingCabinet, FcPhoneAndroid, FcPortraitMode } from 'react-icons/fc';
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
 import { getGithubContributions } from "github-contributions-counter";
 import "../scss/home.scss";
 
 const Home = () => {
   const [show, setShow] = useState(true);
-  const [things, setThings] = useState(["I'm a Software Engineer 👨‍💻"]);
+  const [things, setThings] = useState([<span>I'm a Software Engineer <FcPortraitMode /></span>]);
   const [stars, setStars] = useState(0);
   const [contributions, setContributions] = useState(0);
   const [stackOverflow, setStackOverflow] = useState(0);
@@ -49,10 +50,10 @@ const Home = () => {
 
     let optionNo = 0;
     const stuff = [
-      "I create stuff for the Web 🌎",
-      "I create stuff for Mobile 📱",
-      "I create stuff for Desktop 🖥️",
-      "I'm a Software Engineer 👨‍💻",
+      <span>I create stuff for the Web <FcGlobe /></span>,
+      <span>I create stuff for Mobile <FcPhoneAndroid /></span>,
+      <span>I create stuff for Desktop<FcFilingCabinet /></span>,
+      <span>I'm a Software Engineer <FcPortraitMode /></span>,
     ];
 
     setInterval(() => {

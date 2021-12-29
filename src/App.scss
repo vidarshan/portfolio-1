@@ -194,6 +194,7 @@ body {
     font-size: 3rem;
     border-bottom: 2px solid $text-color-lighter;
     cursor: pointer;
+
     img {
       padding: 0 0.6rem;
     }
@@ -205,6 +206,12 @@ body {
 
     a:hover {
       color: $text-color-lighter !important;
+    }
+  }
+
+  .social {
+    svg {
+      fill: white !important;
     }
   }
 
