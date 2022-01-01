@@ -14,8 +14,7 @@ import {
   SiNodedotjs,
   SiExpress,
   SiReact,
-  SiRedux,
-  SiSemanticuireact,
+  SiRedux
 } from "react-icons/si";
 import { FaReact, FaFolder } from "react-icons/fa";
 import { BsGithub, BsFillCalendarDateFill } from "react-icons/bs";
@@ -388,7 +387,7 @@ const Project = () => {
               <div className="title-links">
                 <div className="title">
                   {" "}
-                  <FaFolder /> Lufthansa Schedules{" "}
+                  <FaFolder /> Carmax ERP{" "}
                   <span className="upcoming">Upcoming</span>
                 </div>
                 <div>
@@ -410,14 +409,7 @@ const Project = () => {
                 </div>
               </div>
               <div className="description">
-                Find Lufthansa Flight Schedules and operating airports. Powered
-                by{" "}
-                <span className="underlined-text highlight">
-                  Lufthansa Open API
-                </span>
-                , built using{" "}
-                <span className="underlined-text highlight">React JS</span> and{" "}
-                <span className="underlined-text highlight">Semantic UI.</span>
+                Frontend for the ERP of a car service station, created to manage theor business activities conveniently. Made with <span className="underlined-text highlight">React JS</span> and <span className="underlined-text highlight">Mantine</span>
               </div>
               <div className="technologies">
                 <OverlayTrigger
@@ -438,31 +430,14 @@ const Project = () => {
                     <SiRedux />
                   </span>
                 </OverlayTrigger>
-                <OverlayTrigger
-                  placement="bottom-start"
-                  delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("Semantic UI")}
-                >
-                  <span className='tech'>
-                    <SiSemanticuireact />
-                  </span>
-                </OverlayTrigger>
-                <OverlayTrigger
-                  placement="bottom-start"
-                  delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("MySQL")}
-                >
-                  <span className='tech'>
-                    <SiNetlify />
-                  </span>
-                </OverlayTrigger>
+
               </div>
               <div className="type-date">
                 <div className="type">
                   <RiComputerFill /> Frontend
                 </div>
                 <div className="date">
-                  <BsFillCalendarDateFill /> 01-01-2022
+                  <BsFillCalendarDateFill /> 07-01-2022
                 </div>
               </div>
             </div>
