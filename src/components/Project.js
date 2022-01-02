@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 import "../scss/project.scss";
 import { RiComputerFill } from "react-icons/ri";
 import {
-  SiMysql,
+  SiPostgresql,
   SiNetlify,
   SiVercel,
   SiStrapi,
@@ -312,7 +312,7 @@ const Project = () => {
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
-                    overlay={renderTooltip("View Documentation")}
+                    overlay={renderTooltip("View Repo")}
                   >
                     <a
                       className="link-container"
@@ -327,12 +327,10 @@ const Project = () => {
               </div>
               <div className="description">
                 A <span className="underlined-text highlight">Node JS</span> API
-                with a <span className="underlined-text highlight"> MySQL</span>{" "}
-                DB with{" "}
-                <span className="underlined-text highlight">Sequelize</span> for
-                the Enterprise Management System of a Car Service Station to
-                manage jobs, inventory and suppliers. Built for a private
-                customer.
+                with a <span className="underlined-text highlight"> Postgre SQL</span>{" "}
+                and{" "}
+                <span className="underlined-text highlight">Sequelize </span>. This is an enterprise Management System of a car service station to
+                manage jobs, inventory and suppliers. Built for a real world use case.
               </div>
               <div className="technologies">
                 <OverlayTrigger
@@ -347,10 +345,10 @@ const Project = () => {
                 <OverlayTrigger
                   placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("mySQL")}
+                  overlay={renderTooltip("Postgre SQL")}
                 >
                   <span className='tech'>
-                    <SiMysql />
+                    <SiPostgresql />
                   </span>
                 </OverlayTrigger>
                 <OverlayTrigger
@@ -382,16 +380,35 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="project-dev">
+          <div className="project">
+            <div className="project-image">
+              <img
+                className="image"
+                src={require("../img/carmaxfe.png").default}
+                alt=""
+              />
+            </div>
             <div className="project-content">
               <div className="title-links">
                 <div className="title">
                   {" "}
-                  <FaFolder /> Carmax ERP{" "}
-                  <span className="upcoming">Upcoming</span>
+                  <FaFolder /> Carmax ERP
                 </div>
                 <div>
-
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Prototype")}
+                  >
+                    <a
+                      className="link-container"
+                      href="https://61d1d6eeff2a6b00076c7717--silly-villani-ee1088.netlify.app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FiExternalLink />
+                    </a>
+                  </OverlayTrigger>
                   <OverlayTrigger
                     placement="bottom"
                     delay={{ show: 250, hide: 400 }}
@@ -399,7 +416,7 @@ const Project = () => {
                   >
                     <a
                       className="link-container"
-                      href="https://github.com/vidarshanadithya/lufthansa-flight-schedules.git"
+                      href="https://github.com/vidarshanadithya/carmax-erp-api"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -409,7 +426,7 @@ const Project = () => {
                 </div>
               </div>
               <div className="description">
-                Frontend for the ERP of a car service station, created to manage theor business activities conveniently. Made with <span className="underlined-text highlight">React JS</span> and <span className="underlined-text highlight">Mantine</span>
+                Working frontend prototype of the ERP system of a car service station, created to manage their business activities conveniently. Made with <span className="underlined-text highlight">React JS</span> and <span className="underlined-text highlight">Mantine UI</span>. Deployed to <span className="underlined-text highlight">Netlify</span>.
               </div>
               <div className="technologies">
                 <OverlayTrigger
@@ -424,20 +441,19 @@ const Project = () => {
                 <OverlayTrigger
                   placement="bottom-start"
                   delay={{ show: 250, hide: 400 }}
-                  overlay={renderTooltip("Redux")}
+                  overlay={renderTooltip("Netlify")}
                 >
                   <span className='tech'>
-                    <SiRedux />
+                    <SiNetlify />
                   </span>
                 </OverlayTrigger>
-
               </div>
               <div className="type-date">
                 <div className="type">
                   <RiComputerFill /> Frontend
                 </div>
                 <div className="date">
-                  <BsFillCalendarDateFill /> 07-01-2022
+                  <BsFillCalendarDateFill /> 30-01-2022
                 </div>
               </div>
             </div>
