@@ -58,7 +58,7 @@ const Project = () => {
                   >
                     <a
                       className="link-container"
-                      href="https://findmystay.vercel.app/"
+                      href="https://find-your-home.vercel.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -454,6 +454,72 @@ const Project = () => {
                 </div>
                 <div className="date">
                   <BsFillCalendarDateFill /> 30-01-2022
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="project-dev">
+            <div className="project-content">
+              <div className="title-links">
+                <div className="title">
+                  {" "}
+                  <FaFolder /> Tech Stop <span className='upcoming'>Upcoming</span>
+                </div>
+                <div>
+                  <OverlayTrigger
+                    placement="bottom"
+                    delay={{ show: 250, hide: 400 }}
+                    overlay={renderTooltip("View Frontend Repo")}
+                  >
+                    <a
+                      href="https://github.com/vidarshanadithya/tech-stop"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <BsGithub />
+                    </a>
+                  </OverlayTrigger>
+                </div>
+              </div>
+              <div className="description">
+                An ecommerce website to sell tech-related items, with functions such as payments through Paypal. Made with <span className="underlined-text highlight">React JS (Typescript)</span> and <span className="underlined-text highlight">Node JS.</span>
+              </div>
+              <div className="technologies">
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("React JS")}
+                >
+                  <span className='tech'>
+                    <FaReact />
+                  </span>
+                </OverlayTrigger>
+
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Express JS")}
+                >
+                  <span className='tech'>
+                    <SiExpress />
+                  </span>
+                </OverlayTrigger>
+                <OverlayTrigger
+                  placement="bottom-start"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip("Node JS")}
+                >
+                  <span className='tech'>
+                    <SiNodedotjs />
+                  </span>
+                </OverlayTrigger>
+              </div>
+              <div className="type-date">
+                <div className="type">
+                  <RiComputerFill /> Full-stack
+                </div>
+                <div className="date">
+                  <BsFillCalendarDateFill /> 01-02-2022
                 </div>
               </div>
             </div>
