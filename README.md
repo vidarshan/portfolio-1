@@ -1,10 +1,12 @@
-<h1 align='center'>🧑‍💻 vidarshan.dev</h1> 
-<h4 align='center'>🌎 https://vidarshan.dev</h4>
+<h1 align='center'>🧑‍💻 Portfolio V1</h1> 
+<h4 align='center'>⚠️ Discontinued</h4>
 
-<h5 align='center'>This is my portfolio website. This website will be improved in the years to come, and will be updated regularly with my details and projects which I work on. Use the link above to visit the site.</h5>
+<h5 align='center'>The first version of my postfolio website.</h5>
+<h5 align='center'>https://brave-ritchie-79c17c.netlify.app/</h5>
    
-![image](https://user-images.githubusercontent.com/48169745/142243939-2c1a67b3-c7cc-44f1-a6de-284987d603a2.png)
 
+## Update: 25-01-2022
+- This version of my portfolio was Discontinued on 24th January 2022, in favour of https://github.com/vidarshanadithya/portfolio-v2. You can visit the new site with the link https://vidarshan.dev/.
 
 
 
@@ -14,11 +16,6 @@
 - Everything is CSS and tooltips are from React-bootstrap.
 - Github, Stackoverflow APIs are used for stats.
 - Email JS is used as mailing service.
-
-## 📌 Reuse
-
-- Reusing this codebase is fine, as long as some attribution to this repository is made. Since the repository is public,
-  it is impossible to avoid duplication, but I appreciate if the adequate credit is given to the author of this repository.
  
 
 ## 🏃‍♂️ To Run
