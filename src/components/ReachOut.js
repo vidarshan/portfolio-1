@@ -11,10 +11,11 @@ import {
 import { ToastContainer, toast } from "react-toastify";
 import { FcAdvertising, FcBusinessContact, FcLike } from 'react-icons/fc';
 
+
 const ReachOut = () => {
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log(e)
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE,
