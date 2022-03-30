@@ -1,7 +1,7 @@
 <h1 align='center'>🧑‍💻 Portfolio V1</h1> 
 <h4 align='center'>⚠️ Discontinued</h4>
 
-<h5 align='center'>The first version of my postfolio website.</h5>
+<h5 align='center'>The first version of my postfolio website</h5>
 <h5 align='center'>https://brave-ritchie-79c17c.netlify.app/</h5>
    
 
