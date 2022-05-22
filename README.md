@@ -25,7 +25,7 @@ Step 1:
 - Clone the Repository
 
 Step 2: 
-- Create a file named `env.development` in the root level and add the following environment variables.
+- Create a file named `env.development` in the root level and add the following environment variables
     
     
       REACT_APP_STACKOVERFLOW_KEY=<Your Key>
